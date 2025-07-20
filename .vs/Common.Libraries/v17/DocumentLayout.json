@@ -1,0 +1,264 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{05948531-67A7-4511-B48E-986B345AD1DB}|Common.Libraries.Services.Email\\Common.Libraries.Services.Email.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.email\\common.libraries.services.email.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{05948531-67A7-4511-B48E-986B345AD1DB}|Common.Libraries.Services.Email\\Common.Libraries.Services.Email.csproj|solutionrelative:common.libraries.services.email\\common.libraries.services.email.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05948531-67A7-4511-B48E-986B345AD1DB}|Common.Libraries.Services.Email\\Common.Libraries.Services.Email.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.email\\emailnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05948531-67A7-4511-B48E-986B345AD1DB}|Common.Libraries.Services.Email\\Common.Libraries.Services.Email.csproj|solutionrelative:common.libraries.services.email\\emailnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.services\\services\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|solutionrelative:commonlibraries.services\\services\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.services\\common.libraries.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|solutionrelative:commonlibraries.services\\common.libraries.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.services\\services\\iapirequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|solutionrelative:commonlibraries.services\\services\\iapirequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26EACC28-B760-4811-ABA9-0CF48DCBB144}|Common.Libraries.Services.Flurl\\Common.Libraries.Services.Flurl.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.flurl\\common.libraries.services.flurl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{26EACC28-B760-4811-ABA9-0CF48DCBB144}|Common.Libraries.Services.Flurl\\Common.Libraries.Services.Flurl.csproj|solutionrelative:common.libraries.services.flurl\\common.libraries.services.flurl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26EACC28-B760-4811-ABA9-0CF48DCBB144}|Common.Libraries.Services.Flurl\\Common.Libraries.Services.Flurl.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.flurl\\services\\flurlapirequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26EACC28-B760-4811-ABA9-0CF48DCBB144}|Common.Libraries.Services.Flurl\\Common.Libraries.Services.Flurl.csproj|solutionrelative:common.libraries.services.flurl\\services\\flurlapirequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.services\\services\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|solutionrelative:commonlibraries.services\\services\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.services\\exceptions\\globalexceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|solutionrelative:commonlibraries.services\\exceptions\\globalexceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.services\\exceptions\\customexceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|solutionrelative:commonlibraries.services\\exceptions\\customexceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B908AA-D72B-4C7E-81AB-8D5C11B00008}|CommonLibraries.EventStore\\Common.Libraries.EventStore.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.eventstore\\esaggregatestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10B908AA-D72B-4C7E-81AB-8D5C11B00008}|CommonLibraries.EventStore\\Common.Libraries.EventStore.csproj|solutionrelative:commonlibraries.eventstore\\esaggregatestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B908AA-D72B-4C7E-81AB-8D5C11B00008}|CommonLibraries.EventStore\\Common.Libraries.EventStore.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.eventstore\\eventdeserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10B908AA-D72B-4C7E-81AB-8D5C11B00008}|CommonLibraries.EventStore\\Common.Libraries.EventStore.csproj|solutionrelative:commonlibraries.eventstore\\eventdeserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B908AA-D72B-4C7E-81AB-8D5C11B00008}|CommonLibraries.EventStore\\Common.Libraries.EventStore.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.eventstore\\subscriptionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10B908AA-D72B-4C7E-81AB-8D5C11B00008}|CommonLibraries.EventStore\\Common.Libraries.EventStore.csproj|solutionrelative:commonlibraries.eventstore\\subscriptionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B908AA-D72B-4C7E-81AB-8D5C11B00008}|CommonLibraries.EventStore\\Common.Libraries.EventStore.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.eventstore\\escheckpointstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10B908AA-D72B-4C7E-81AB-8D5C11B00008}|CommonLibraries.EventStore\\Common.Libraries.EventStore.csproj|solutionrelative:commonlibraries.eventstore\\escheckpointstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B908AA-D72B-4C7E-81AB-8D5C11B00008}|CommonLibraries.EventStore\\Common.Libraries.EventStore.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.eventstore\\common.libraries.eventstore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{10B908AA-D72B-4C7E-81AB-8D5C11B00008}|CommonLibraries.EventStore\\Common.Libraries.EventStore.csproj|solutionrelative:commonlibraries.eventstore\\common.libraries.eventstore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Common.Libraries.Services.Email.csproj",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Email\\Common.Libraries.Services.Email.csproj",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.Email\\Common.Libraries.Services.Email.csproj",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Email\\Common.Libraries.Services.Email.csproj",
+              "RelativeToolTip": "Common.Libraries.Services.Email\\Common.Libraries.Services.Email.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-25T11:24:36.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmailNotification.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Email\\EmailNotification.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.Email\\EmailNotification.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Email\\EmailNotification.cs",
+              "RelativeToolTip": "Common.Libraries.Services.Email\\EmailNotification.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAuwEEAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T11:18:51.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Common.Libraries.Services.csproj",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Common.Libraries.Services.csproj",
+              "RelativeDocumentMoniker": "CommonLibraries.Services\\Common.Libraries.Services.csproj",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Common.Libraries.Services.csproj",
+              "RelativeToolTip": "CommonLibraries.Services\\Common.Libraries.Services.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-22T17:53:53.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Common.Libraries.Services.Flurl.csproj",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Flurl\\Common.Libraries.Services.Flurl.csproj",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.Flurl\\Common.Libraries.Services.Flurl.csproj",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Flurl\\Common.Libraries.Services.Flurl.csproj",
+              "RelativeToolTip": "Common.Libraries.Services.Flurl\\Common.Libraries.Services.Flurl.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-22T17:53:48.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FlurlApiRequestService.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Flurl\\Services\\FlurlApiRequestService.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.Flurl\\Services\\FlurlApiRequestService.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Flurl\\Services\\FlurlApiRequestService.cs",
+              "RelativeToolTip": "Common.Libraries.Services.Flurl\\Services\\FlurlApiRequestService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T17:44:01.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Service.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Services\\Service.cs",
+              "RelativeDocumentMoniker": "CommonLibraries.Services\\Services\\Service.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Services\\Service.cs",
+              "RelativeToolTip": "CommonLibraries.Services\\Services\\Service.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAA0AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T17:43:57.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IService.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Services\\IService.cs",
+              "RelativeDocumentMoniker": "CommonLibraries.Services\\Services\\IService.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Services\\IService.cs",
+              "RelativeToolTip": "CommonLibraries.Services\\Services\\IService.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAA5wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T17:43:53.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IApiRequestService.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Services\\IApiRequestService.cs",
+              "RelativeDocumentMoniker": "CommonLibraries.Services\\Services\\IApiRequestService.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Services\\IApiRequestService.cs",
+              "RelativeToolTip": "CommonLibraries.Services\\Services\\IApiRequestService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T17:43:36.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GlobalExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Exceptions\\GlobalExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "CommonLibraries.Services\\Exceptions\\GlobalExceptionMiddleware.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Exceptions\\GlobalExceptionMiddleware.cs",
+              "RelativeToolTip": "CommonLibraries.Services\\Exceptions\\GlobalExceptionMiddleware.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T11:21:48.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CustomExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Exceptions\\CustomExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "CommonLibraries.Services\\Exceptions\\CustomExceptionMiddleware.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Exceptions\\CustomExceptionMiddleware.cs",
+              "RelativeToolTip": "CommonLibraries.Services\\Exceptions\\CustomExceptionMiddleware.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADkAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T11:21:16.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EsAggregateStore.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore\\EsAggregateStore.cs",
+              "RelativeDocumentMoniker": "CommonLibraries.EventStore\\EsAggregateStore.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore\\EsAggregateStore.cs",
+              "RelativeToolTip": "CommonLibraries.EventStore\\EsAggregateStore.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T05:30:42.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EsCheckpointStore.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore\\EsCheckpointStore.cs",
+              "RelativeDocumentMoniker": "CommonLibraries.EventStore\\EsCheckpointStore.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore\\EsCheckpointStore.cs",
+              "RelativeToolTip": "CommonLibraries.EventStore\\EsCheckpointStore.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T05:29:50.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Common.Libraries.EventStore.csproj",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore\\Common.Libraries.EventStore.csproj",
+              "RelativeDocumentMoniker": "CommonLibraries.EventStore\\Common.Libraries.EventStore.csproj",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore\\Common.Libraries.EventStore.csproj",
+              "RelativeToolTip": "CommonLibraries.EventStore\\Common.Libraries.EventStore.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-21T05:29:22.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SubscriptionManager.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore\\SubscriptionManager.cs",
+              "RelativeDocumentMoniker": "CommonLibraries.EventStore\\SubscriptionManager.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore\\SubscriptionManager.cs",
+              "RelativeToolTip": "CommonLibraries.EventStore\\SubscriptionManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEwAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T05:25:04.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EventDeserializer.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore\\EventDeserializer.cs",
+              "RelativeDocumentMoniker": "CommonLibraries.EventStore\\EventDeserializer.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore\\EventDeserializer.cs",
+              "RelativeToolTip": "CommonLibraries.EventStore\\EventDeserializer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T05:24:16.049Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
