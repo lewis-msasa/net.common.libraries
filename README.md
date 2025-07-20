@@ -148,7 +148,17 @@ dependency injection.
   });
 ```
 
+##### Emailing
 
+Usage example to be added soon
+
+##### Message Queue
+
+Usage example to be added soon
+
+##### Logging
+
+Usage example to be added soon
 
 
 
