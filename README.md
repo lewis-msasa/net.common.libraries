@@ -30,21 +30,21 @@ git clone https://github.com/lewis-msasa/net.common.libraries.git
 
 #### Api Calls
 
-Project: Common.Libraries.Services
+Project: `Common.Libraries.Services`
 
-Folder: Services
+Folder: `Services`
 
-File: IApiRequestService
+File: `IApiRequestService`
 
 Usage: You can use it to implement your own RequestService using your preferred packages e.g. Flurl
 
 ##### Example Flurl Implementation for the api request service
 
-Project: Common.Libraries.Services.Flurl
+Project: `Common.Libraries.Services.Flurl`
 
-Folder: Services
+Folder: `Services`
 
-File: FlurlApiRequestService
+File: `FlurlApiRequestService`
 
 Don't forget to do your dependency injection e.g.
 
