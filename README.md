@@ -28,7 +28,7 @@ git clone https://github.com/lewis-msasa/net.common.libraries.git
 
 ### Usage
 
-#### Api Calls
+#### API REQUEST CALLS
 
 Project: `Common.Libraries.Services`
 
@@ -101,4 +101,54 @@ public class MyService
 }
 
 ```
+
+#### Databases
+
+We use them as a services calling repositories. They can also be used using Unit of Work
+
+Project: `Common.Libraries.Services`
+
+Folder: `Services`
+
+Files: `IService`, `Service`
+
+Usage: You can use it to implement IRepository your own Repository using your preferred packages e.g. EFCore
+
+##### Example EF Core
+
+Project: `Common.Libraries.Services.EFCore`
+
+Folder: `Repositories`
+
+Files: `EFRepository`
+
+dependency injection.
+
+```csharp
+
+ builder.Services.AddTransient<IRepository<MyEFEntity>, EFRepository<MyEFEntity, DBContext>>();
+
+ builder.Services.AddTransient<IService<MyEFEntity, MyEFEntityDto>, Service<MyEFEntity, MyEFEntityDto>>();
+
+```
+
+```csharp
+ app.MapPost(
+  "getData/{id}",
+  async (
+       string id,
+       IService<MyEFEntity, MyEFEntityDto> _myServiceervice
+      ) =>
+  {
+     
+      var entity = await _myService.GetOneAsync(t => t.id == id,
+          includeString: ["property","anotherProperty"]);
+    
+       return Results.Ok(entity);
+  });
+```
+
+
+
+
 
