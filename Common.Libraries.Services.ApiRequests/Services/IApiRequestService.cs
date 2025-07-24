@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Common.Libraries.Services.Services
+namespace Common.Libraries.Services.ApiRequests.Services
 {
     /// <summary>
     /// Defines an abstraction for making HTTP API requests (GET, POST, PUT, DELETE, PATCH)

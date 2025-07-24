@@ -1,4 +1,5 @@
 ﻿using Common.Libraries.Services.Entities;
+using Common.Libraries.Services.Mongo.BaseModel;
 using Common.Libraries.Services.Repositories;
 using MongoDB.Driver;
 using MongoDB.Driver.Linq;
@@ -11,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Common.Libraries.Services.Mongo.Repositories
 {
-    public class MongoRepository<T, Database> : IRepository<T> where T : class, IEntity where Database: IMongoDatabase
+    public class MongoRepository<T, Database> : IRepository<T> where T : MongoEntity where Database: IMongoDatabase
     {
         private IMongoCollection<T> _collection;
         private readonly Database _database;
@@ -37,9 +38,11 @@ namespace Common.Libraries.Services.Mongo.Repositories
 
         public async Task<int> DeleteAsync(T entity)
         {
-            
-            var result = await _collection.DeleteOneAsync(f => f == entity);
+
+            var filter = Builders<T>.Filter.Eq(e => e.Id, entity.Id);
+            var result = await _collection.DeleteOneAsync(filter);
             return Convert.ToInt32(result.DeletedCount);
+
         }
 
         public async Task<IReadOnlyList<T>> GetAllAsync()

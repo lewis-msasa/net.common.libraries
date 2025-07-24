@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Common.Libraries.Services.Flurl.Services
+namespace Common.Libraries.Services.ApiRequests.Flurl.Services
 {
     public class FlurlApiRequestService : IApiRequestService
     {
@@ -34,7 +34,7 @@ namespace Common.Libraries.Services.Flurl.Services
                 await logRequest(req, res, response.StatusCode);
             }
 
-
+          
             return (result, response.StatusCode);
         }
         public async Task<(T result, int statusCode)> PostAsync<T>(string url, Dictionary<string, string> headers, object data, Func<string, string, int, Task> logRequest = null) where T : class
@@ -74,7 +74,8 @@ namespace Common.Libraries.Services.Flurl.Services
                     request = request.WithHeader(header.Key, header.Value);
                 }
             }
-            var response = await url.SendJsonAsync(HttpMethod.Delete, data);
+           
+            var response = await request.SendJsonAsync(HttpMethod.Delete, data);
             var result = await response.GetJsonAsync<T>();
             if (logRequest != null)
             {

@@ -4,16 +4,16 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 
-namespace Common.Libraries.Services.Flurl.Utils
+namespace Common.Libraries.Services.ApiRequests.Flurl.Utils
 {
-    public class UntrustedCertClientFactory : DefaultHttpClientFactory
-    {
-        public override HttpMessageHandler CreateMessageHandler()
-        {
-            return new HttpClientHandler
-            {
-                ServerCertificateCustomValidationCallback = (_, b, c, d) => true
-            };
-        }
-    }
+    //public class UntrustedCertClientFactory : DefaultHttpClientFactory
+    //{
+    //    public override HttpMessageHandler CreateMessageHandler()
+    //    {
+    //        return new HttpClientHandler
+    //        {
+    //            ServerCertificateCustomValidationCallback = (_, b, c, d) => true
+    //        };
+    //    }
+    //}
 }

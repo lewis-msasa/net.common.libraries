@@ -30,7 +30,7 @@ git clone https://github.com/lewis-msasa/net.common.libraries.git
 
 #### API REQUEST CALLS
 
-Project: `Common.Libraries.Services`
+Project: `Common.Libraries.Services.ApiRequests`
 
 Folder: `Services`
 

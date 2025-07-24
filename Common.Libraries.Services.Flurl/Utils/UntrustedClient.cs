@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Common.Libraries.Services.Flurl.Utils
+namespace Common.Libraries.Services.ApiRequests.Flurl.Utils
 {
     public class UntrustedClient
     {
