@@ -1,7 +1,6 @@
 ﻿using Common.Libraries.EventSourcing;
 using Common.Libraries.Services.Entities;
 using Common.Libraries.Services.Repositories;
-using EventStore.ClientAPI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,7 +29,7 @@ namespace Common.Libraries.EventStore.Projection
         public async Task<long?> GetCheckpoint()
         {
             var checkPoint = await _repository.GetOneAsync(t => t.Id == _checkpointName);
-            return checkPoint?.Position ?? AllCheckpoint.AllStart?.CommitPosition;
+            return checkPoint?.Position;
         }
 
         public async Task StoreCheckpoint(long? position)
@@ -41,7 +40,7 @@ namespace Common.Libraries.EventStore.Projection
                 checkPoint = new Checkpoint
                 {
                     Id = _checkpointName,
-                    Position = position,
+                    Position = position ?? 0,
                 };
                 await _repository.AddAsync(checkPoint);
                 return;

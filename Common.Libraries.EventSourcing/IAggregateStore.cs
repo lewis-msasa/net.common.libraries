@@ -10,6 +10,12 @@ namespace Common.Libraries.EventSourcing
         Task Save<T>(T aggregate) where T : AggregateRoot;
 
         Task<T> Load<T>(AggregateId<T> aggregateId) where T : AggregateRoot;
+
+       
+    }
+    public interface ISaveSnapshot
+    {
+        Task SaveSnapshot<T>(T aggregate) where T : AggregateRoot;
     }
 
     public interface IFunctionalAggregateStore

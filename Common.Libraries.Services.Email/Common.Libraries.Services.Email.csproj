@@ -8,8 +8,10 @@
     <Version>1.0.6</Version>
   </PropertyGroup>
   <ItemGroup>
-		<PackageReference Include="Common.Libraries.Services" Version="1.2.11" />
 		<PackageReference Include="NETCore.MailKit" Version="2.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonLibraries.Services\Common.Libraries.Services.csproj" />
   </ItemGroup>
 
 </Project>

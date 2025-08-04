@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{350CD2BC-194C-4F06-9FFB-667DEF8B6A7F}|Common.Libraries.Services.ApiRequests.Refit.Tests\\Common.Libraries.Services.ApiRequests.Refit.Tests.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.apirequests.refit.tests\\refittests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{350CD2BC-194C-4F06-9FFB-667DEF8B6A7F}|Common.Libraries.Services.ApiRequests.Refit.Tests\\Common.Libraries.Services.ApiRequests.Refit.Tests.csproj|solutionrelative:common.libraries.services.apirequests.refit.tests\\refittests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2685366-7791-43B4-A9A3-880FBD49B4D2}|CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.eventstore.projection\\common.libraries.eventstore.ef.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C2685366-7791-43B4-A9A3-880FBD49B4D2}|CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj|solutionrelative:commonlibraries.eventstore.projection\\common.libraries.eventstore.ef.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{82F9E197-E07A-42E7-B86E-CE28F22BC0FE}|Common.Libraries.Services.ApiRequests.Refit\\Common.Libraries.Services.ApiRequests.Refit.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.apirequests.refit\\services\\refitapirequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82F9E197-E07A-42E7-B86E-CE28F22BC0FE}|Common.Libraries.Services.ApiRequests.Refit\\Common.Libraries.Services.ApiRequests.Refit.csproj|solutionrelative:common.libraries.services.apirequests.refit\\services\\refitapirequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2685366-7791-43B4-A9A3-880FBD49B4D2}|CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.eventstore.projection\\common.libraries.eventstore.ef.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{C2685366-7791-43B4-A9A3-880FBD49B4D2}|CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj|solutionrelative:commonlibraries.eventstore.projection\\common.libraries.eventstore.ef.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{632A22A7-F91A-4DF2-B2F3-D439758438BB}|Common.Libraries.Services.ApiRequests.Flurl.Tests\\Common.Libraries.Services.ApiRequests.Flurl.Tests.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.apirequests.flurl.tests\\flurltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{632A22A7-F91A-4DF2-B2F3-D439758438BB}|Common.Libraries.Services.ApiRequests.Flurl.Tests\\Common.Libraries.Services.ApiRequests.Flurl.Tests.csproj|solutionrelative:common.libraries.services.apirequests.flurl.tests\\flurltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2685366-7791-43B4-A9A3-880FBD49B4D2}|CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.Projection.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.eventstore.projection\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2685366-7791-43B4-A9A3-880FBD49B4D2}|CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.Projection.csproj|solutionrelative:commonlibraries.eventstore.projection\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26EACC28-B760-4811-ABA9-0CF48DCBB144}|Common.Libraries.Services.Flurl\\Common.Libraries.Services.ApiRequests.Flurl.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.flurl\\services\\flurlapirequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26EACC28-B760-4811-ABA9-0CF48DCBB144}|Common.Libraries.Services.Flurl\\Common.Libraries.Services.ApiRequests.Flurl.csproj|solutionrelative:common.libraries.services.flurl\\services\\flurlapirequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2685366-7791-43B4-A9A3-880FBD49B4D2}|CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.Projection.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.eventstore.projection\\efcheckpointstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2685366-7791-43B4-A9A3-880FBD49B4D2}|CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.Projection.csproj|solutionrelative:commonlibraries.eventstore.projection\\efcheckpointstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2685366-7791-43B4-A9A3-880FBD49B4D2}|CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.Projection.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.eventstore.projection\\projectionworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2685366-7791-43B4-A9A3-880FBD49B4D2}|CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.Projection.csproj|solutionrelative:commonlibraries.eventstore.projection\\projectionworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +30,70 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FlurlTests.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.ApiRequests.Flurl.Tests\\FlurlTests.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.Services.ApiRequests.Flurl.Tests\\FlurlTests.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.ApiRequests.Flurl.Tests\\FlurlTests.cs",
-              "RelativeToolTip": "Common.Libraries.Services.ApiRequests.Flurl.Tests\\FlurlTests.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAwwCEAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T03:52:46.587Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FlurlApiRequestService.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Flurl\\Services\\FlurlApiRequestService.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.Services.Flurl\\Services\\FlurlApiRequestService.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Flurl\\Services\\FlurlApiRequestService.cs",
-              "RelativeToolTip": "Common.Libraries.Services.Flurl\\Services\\FlurlApiRequestService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T04:01:29.155Z",
+              "DocumentIndex": 1,
+              "Title": "Common.Libraries.EventStore.EF",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj",
+              "RelativeDocumentMoniker": "CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj",
+              "RelativeToolTip": "CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-04T09:22:48.282Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RefitTests.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.ApiRequests.Refit.Tests\\RefitTests.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.Services.ApiRequests.Refit.Tests\\RefitTests.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.ApiRequests.Refit.Tests\\RefitTests.cs*",
-              "RelativeToolTip": "Common.Libraries.Services.ApiRequests.Refit.Tests\\RefitTests.cs*",
-              "ViewState": "AgIAAOkAAAAAAAAAAAAUwOMAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T03:52:06.735Z",
+              "Title": "Common.Libraries.EventStore.EF.csproj",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj",
+              "RelativeDocumentMoniker": "CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj",
+              "RelativeToolTip": "CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-04T09:21:02.26Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RefitApiRequestService.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.ApiRequests.Refit\\Services\\RefitApiRequestService.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.Services.ApiRequests.Refit\\Services\\RefitApiRequestService.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.ApiRequests.Refit\\Services\\RefitApiRequestService.cs",
-              "RelativeToolTip": "Common.Libraries.Services.ApiRequests.Refit\\Services\\RefitApiRequestService.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAIwEEAAAAdAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore.Projection\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "CommonLibraries.EventStore.Projection\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore.Projection\\DependencyInjection.cs",
+              "RelativeToolTip": "CommonLibraries.EventStore.Projection\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T03:18:51.835Z",
+              "WhenOpened": "2025-08-04T09:11:47.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EFCheckpointStore.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore.Projection\\EFCheckpointStore.cs",
+              "RelativeDocumentMoniker": "CommonLibraries.EventStore.Projection\\EFCheckpointStore.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore.Projection\\EFCheckpointStore.cs",
+              "RelativeToolTip": "CommonLibraries.EventStore.Projection\\EFCheckpointStore.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA1wBUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T08:59:14.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProjectionWorker.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore.Projection\\ProjectionWorker.cs",
+              "RelativeDocumentMoniker": "CommonLibraries.EventStore.Projection\\ProjectionWorker.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore.Projection\\ProjectionWorker.cs",
+              "RelativeToolTip": "CommonLibraries.EventStore.Projection\\ProjectionWorker.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAADwvzcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T08:55:18.878Z",
               "EditorCaption": ""
             }
           ]

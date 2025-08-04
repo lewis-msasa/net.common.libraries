@@ -11,9 +11,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-	  <PackageReference Include="Common.Libraries.Services" Version="1.2.11" />
 	 <PackageReference Include="CassandraCSharpDriver" Version="3.22.0" />
    </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CommonLibraries.Services\Common.Libraries.Services.csproj" />
+  </ItemGroup>
 
 
 

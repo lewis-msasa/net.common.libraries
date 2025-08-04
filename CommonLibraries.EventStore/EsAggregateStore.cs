@@ -14,7 +14,7 @@ namespace Common.Libraries.EventStore
         readonly IEventStoreConnection _connection;
 
         public EsAggregateStore(IEventStoreConnection connection,
-            Microsoft.Extensions.Logging.ILogger<EsAggregateStore> logger)
+            ILogger<EsAggregateStore> logger)
         { 
             _connection = connection;
             _logger = logger;
@@ -76,5 +76,7 @@ namespace Common.Libraries.EventStore
         static string GetStreamName<T>(T aggregate)
             where T : AggregateRoot
             => $"{typeof(T).Name}-{aggregate.Id.ToString()}";
+
+     
     }
 }

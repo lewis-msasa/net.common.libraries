@@ -10,7 +10,7 @@ namespace Common.Libraries.EventSourcing
 
         public Guid Id { get; protected set; }
 
-        public int Version { get; private set; } = -1;
+        public int Version { get;  set; } = -1;
 
         void IInternalEventHandler.Handle(object @event) => When(@event);
 

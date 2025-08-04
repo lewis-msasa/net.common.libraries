@@ -15,9 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{0B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Libraries.Services", "CommonLibraries.Services\Common.Libraries.Services.csproj", "{B65A079B-68D3-449D-B7B4-6228953AF6C9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Libraries.EventStore.Projection", "CommonLibraries.EventStore.Projection\Common.Libraries.EventStore.Projection.csproj", "{C2685366-7791-43B4-A9A3-880FBD49B4D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Libraries.EventStore.EF", "CommonLibraries.EventStore.Projection\Common.Libraries.EventStore.EF.csproj", "{C2685366-7791-43B4-A9A3-880FBD49B4D2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Libraries.EventStore.Projection.Cassandra", "Common.Libraries.EventStore.Projection.Cassandra\Common.Libraries.EventStore.Projection.Cassandra.csproj", "{44B643F8-B1D8-4240-A640-387A982D3081}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Libraries.EventStore.Cassandra", "Common.Libraries.EventStore.Projection.Cassandra\Common.Libraries.EventStore.Cassandra.csproj", "{44B643F8-B1D8-4240-A640-387A982D3081}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Libraries.Services.EFCore", "Common.Libraries.Services.EFCore\Common.Libraries.Services.EFCore.csproj", "{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}"
 EndProject
