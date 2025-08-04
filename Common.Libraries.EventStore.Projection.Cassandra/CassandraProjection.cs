@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Common.Libraries.EventStore.Projection.Cassandra
 {
-    public class CassandraProjection : ISubscription
+    public class CassandraProjection<T> : ISubscription<T> where T : class
     {
         public CassandraProjection(
              GetSession getSession,

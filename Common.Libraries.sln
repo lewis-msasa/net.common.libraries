@@ -81,6 +81,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Libraries.Services.A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Libraries.Services.ApiRequests.Refit.Tests", "Common.Libraries.Services.ApiRequests.Refit.Tests\Common.Libraries.Services.ApiRequests.Refit.Tests.csproj", "{350CD2BC-194C-4F06-9FFB-667DEF8B6A7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Libraries.EventStore.EF.TestApi", "Common.Libraries.EventStore.EF.TestApi\Common.Libraries.EventStore.EF.TestApi.csproj", "{46390ADB-25C2-4DBC-92BD-2B7E7F4FD36D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -195,6 +197,10 @@ Global
 		{350CD2BC-194C-4F06-9FFB-667DEF8B6A7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{350CD2BC-194C-4F06-9FFB-667DEF8B6A7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{350CD2BC-194C-4F06-9FFB-667DEF8B6A7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46390ADB-25C2-4DBC-92BD-2B7E7F4FD36D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46390ADB-25C2-4DBC-92BD-2B7E7F4FD36D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46390ADB-25C2-4DBC-92BD-2B7E7F4FD36D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46390ADB-25C2-4DBC-92BD-2B7E7F4FD36D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -229,6 +235,7 @@ Global
 		{AED18574-468E-4C5C-980A-7D8620AEF80D} = {63F53406-8CE7-42FB-A927-1C45989219AA}
 		{28854B46-859B-4FCE-A440-1FC274B3CAF8} = {63F53406-8CE7-42FB-A927-1C45989219AA}
 		{66D86B44-CD9A-49D9-9D6C-8AE02C57B16C} = {63F53406-8CE7-42FB-A927-1C45989219AA}
+		{46390ADB-25C2-4DBC-92BD-2B7E7F4FD36D} = {5B36194F-3BEB-4166-B862-101957741C9D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {098DBDEC-B2B4-4933-B702-29F37D9A77A1}

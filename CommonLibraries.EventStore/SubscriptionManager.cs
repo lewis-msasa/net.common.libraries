@@ -46,7 +46,7 @@ namespace Common.Libraries.EventStore
 
             _subscription = _connection.SubscribeToAllFrom(
                 GetPosition(),
-                settings, 
+                settings,
                 EventAppeared
             );
             _logger.LogDebug("Subscribed to $all stream");

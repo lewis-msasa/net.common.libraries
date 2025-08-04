@@ -1,4 +1,5 @@
 ﻿using Common.Libraries.EventSourcing;
+using Common.Libraries.Services.Dtos;
 using Common.Libraries.Services.Entities;
 using Common.Libraries.Services.Repositories;
 using System;
@@ -10,6 +11,11 @@ using System.Threading.Tasks;
 namespace Common.Libraries.EventStore.Projection
 {
     public class Checkpoint : IEntity
+    {
+        public string Id { get; set; }
+        public long? Position { get; set; }
+    }
+    public class CheckpointDto : IDTO
     {
         public string Id { get; set; }
         public long? Position { get; set; }

@@ -1,35 +1,40 @@
 ﻿using Common.Libraries.EventSourcing;
+using Common.Libraries.Services.Entities;
 using Common.Libraries.Services.Services;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Common.Libraries.EventStore.Projection
 {
-    public class ProjectionWorker : BackgroundService
+    public class ProjectionWorker<T> : BackgroundService where T : class, IEntity
     {
-        private readonly ISubscription _projection;
-        private readonly ICheckpointStore _checkpointStore;
-        private readonly IEventDeserializer _deserializer;
-        private readonly IService<Event, EventDto> _eventService;
-        private readonly IService<Snapshot, SnapshotDto> _eventSnapshotService;
+        private  ISubscription<T> _projection;
+        private  ICheckpointStore _checkpointStore;
+        private IEventDeserializer _deserializer;
+        private IService<Event, EventDto> _eventService;
+        private IService<Snapshot, SnapshotDto> _eventSnapshotService;
+        private IServiceScopeFactory _scopeFactory;
 
-        public ProjectionWorker(ISubscription projection, ICheckpointStore checkpointStore, 
-            IEventDeserializer deserializer, 
-            IService<Event, EventDto> eventService, IService<Snapshot, SnapshotDto> eventSnapshotService)
+        public ProjectionWorker(IServiceScopeFactory scopeFactory)
         {
-            _projection = projection;
-            _checkpointStore = checkpointStore;
-            _deserializer = deserializer;
-            _eventService = eventService;
-            _eventSnapshotService = eventSnapshotService;
+            _scopeFactory = scopeFactory;
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
+            
+            using var scope = _scopeFactory.CreateScope();
+            _checkpointStore = scope.ServiceProvider.GetRequiredService<ICheckpointStore>();
+            _projection = scope.ServiceProvider.GetRequiredService<ISubscription<T>>();
+            _deserializer = scope.ServiceProvider.GetRequiredService<IEventDeserializer>();
+            _eventService = scope.ServiceProvider.GetRequiredService<IService<Event, EventDto>>();  
+            _eventSnapshotService = scope.ServiceProvider.GetRequiredService<IService<Snapshot, SnapshotDto>>();
             long lastCheckpoint = await _checkpointStore.GetCheckpoint() ?? 0;
 
             while (!stoppingToken.IsCancellationRequested)

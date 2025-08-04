@@ -5,12 +5,12 @@ using System.Threading.Tasks;
 
 namespace Common.Libraries.EventStore
 {
-    public abstract class ReactorBase : ISubscription
+    public abstract class ReactorBase<T> : ISubscription<T> where T : class
     {
-        private readonly ILogger<ReactorBase> _logger;
+        private readonly ILogger<ReactorBase<T>> _logger;
 
         public ReactorBase(Reactor reactor,
-            ILogger<ReactorBase> logger)
+            ILogger<ReactorBase<T>> logger)
         {
             _reactor = reactor;
             _logger = logger;

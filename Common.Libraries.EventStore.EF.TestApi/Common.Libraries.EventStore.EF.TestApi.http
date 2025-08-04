@@ -1,0 +1,6 @@
+@Common.Libraries.EventStore.EF.TestApi_HostAddress = http://localhost:5209
+
+GET {{Common.Libraries.EventStore.EF.TestApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

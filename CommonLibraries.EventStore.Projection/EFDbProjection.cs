@@ -9,15 +9,24 @@ using System.Threading.Tasks;
 
 namespace Common.Libraries.EventStore.Projection
 {
-    public class EFDbProjection<T> : ISubscription where T : class, IEntity
+    public interface IProjectorProvider<T> where T: class, IEntity
     {
-        readonly Projector _projector;
+        Projector<T> GetProjector();
+    }
+    public delegate Func<Task> Projector<T>(
+           IRepository<T> repository,
+           object @event
+       ) where T: class, IEntity;
+
+    public class EFDbProjection<T> : ISubscription<T> where T : class, IEntity
+    {
+        readonly Projector<T> _projector;
         readonly IRepository<T> _repository;
 
-        public EFDbProjection(EFDbProjection<T>.Projector projector, 
+        public EFDbProjection(IProjectorProvider<T> projector, 
             IRepository<T> repository)
         {
-            _projector = projector;
+            _projector = projector.GetProjector();
             _repository = repository;
         }
 
@@ -28,9 +37,6 @@ namespace Common.Libraries.EventStore.Projection
             await handler();
             
         }
-        public delegate Func<Task> Projector(
-            IRepository<T> repository,
-            object @event
-        );
+       
     }
 }

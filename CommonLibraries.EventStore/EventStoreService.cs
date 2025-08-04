@@ -32,11 +32,11 @@ namespace Common.Libraries.EventStore
 
         public Task StopAsync(CancellationToken cancellationToken)
         {
-            foreach(var subscriptionManager in _subscriptionManagers)
+            foreach (var subscriptionManager in _subscriptionManagers)
             {
                 subscriptionManager.Stop();
             }
-            
+
             _esConnection.Close();
             return Task.CompletedTask;
         }
