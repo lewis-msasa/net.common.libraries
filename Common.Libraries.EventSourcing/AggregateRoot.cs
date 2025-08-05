@@ -4,7 +4,13 @@ using System.Linq;
 
 namespace Common.Libraries.EventSourcing
 {
-    public abstract class AggregateRoot : IInternalEventHandler
+    public interface ISnapshot
+    {
+        Guid AggregateId { get; }
+        int Version { get; }
+        public DateTime Timestamp { get; set; }
+    }
+    public abstract class AggregateRoot<TSnapshot> : IInternalEventHandler where TSnapshot : ISnapshot
     {
         readonly List<object> _changes = new List<object>();
 
@@ -33,6 +39,18 @@ namespace Common.Libraries.EventSourcing
                 Version++;
             }
         }
+
+        public void LoadFromHistory(TSnapshot? snapshot, IEnumerable<object> events)
+        {
+            if (snapshot is not null)
+                LoadSnapshot(snapshot);
+
+            Load(events);
+        }
+
+        protected abstract void LoadSnapshot(TSnapshot snapshot);
+
+        public abstract TSnapshot CreateSnapShot();
 
         public void ClearChanges() => _changes.Clear();
 

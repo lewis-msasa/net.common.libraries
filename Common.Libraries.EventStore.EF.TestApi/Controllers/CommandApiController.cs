@@ -3,20 +3,20 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Common.Libraries.EventStore.EF.TestApi.Controllers
 {
-    public abstract class CommandApi<T> : ControllerBase
-         where T : AggregateRoot
+    public abstract class CommandApi<T,TSnapshot> : ControllerBase
+         where T : AggregateRoot<TSnapshot>, new() where TSnapshot : ISnapshot
     {
         readonly ILogger _log;
 
         protected CommandApi(
-            ApplicationService<T> applicationService,
+            ApplicationService<T,TSnapshot> applicationService,
             ILoggerFactory loggerFactory)
         {
             _log = loggerFactory.CreateLogger(GetType());
             Service = applicationService;
         }
 
-        ApplicationService<T> Service { get; }
+        ApplicationService<T, TSnapshot> Service { get; }
 
         protected async Task<IActionResult> HandleCommand<TCommand>(
             TCommand command,

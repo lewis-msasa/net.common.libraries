@@ -1,13 +1,16 @@
 ﻿using Common.Libraries.EventSourcing;
+using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
 
 namespace Common.Libraries.EventStore.EF.TestApi
 {
     public class Username : Value<Username>
     {
+        [JsonConstructor]
         internal Username(string value) => Value = value;
 
         // Satisfy the serialization requirements 
+       
         protected Username() { }
 
         public string Value { get; }

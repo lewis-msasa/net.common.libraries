@@ -4,4 +4,9 @@
     {
         public string Name { get; set; }
     }
+    public class ChangeNameRequest
+    {
+        public string Name { get; set; }
+        public Guid Id { get; set; }
+    }
 }

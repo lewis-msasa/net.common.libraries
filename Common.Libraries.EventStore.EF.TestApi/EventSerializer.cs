@@ -18,12 +18,13 @@ namespace Common.Libraries.EventStore.EF.TestApi
         {
             if (!_typeRegistry.TryGetValue(eventType, out var type))
                 throw new InvalidOperationException($"Unknown event type: {eventType}");
-
+            //return JsonConvert.DeserializeObject(eventData, type);
             return JsonSerializer.Deserialize(eventData, type, _options);
         }
 
         public T Deserialize<T>(string eventData)
         {
+            //return JsonConvert.DeserializeObject<T>(eventData);
             return JsonSerializer.Deserialize<T>(eventData, _options);
         }
 

@@ -22,14 +22,14 @@ namespace Common.Libraries.EventStore.Projection.Cassandra
             _mapper = new Mapper(_getSession());
         }
 
-        public async Task<long?> GetCheckpoint()
+        public async Task<long?> GetCheckpoint(string projector, CancellationToken cancellationToken)
         {
             
             var checkpoint = await _mapper.FirstAsync<Checkpoint>("SELECT id, position FROM checkpoints WHERE SET  id =? ", _checkpointName);
             return checkpoint.Position;
         }
 
-        public async Task StoreCheckpoint(long? position)
+        public async Task StoreCheckpoint(string projector,long? position, CancellationToken cancellationToken)
         {
             var checkpoint = await _mapper.FirstAsync<Checkpoint>("SELECT id, position FROM checkpoints WHERE SET  id =? ", _checkpointName);
             if (checkpoint == null)

@@ -2,8 +2,8 @@ using System;
 
 namespace Common.Libraries.EventSourcing
 {
-    public abstract class AggregateId<T> : Value<AggregateId<T>>
-        where T : AggregateRoot
+    public abstract class AggregateId<T,TSnapshot> : Value<AggregateId<T,TSnapshot>>
+        where T : AggregateRoot<TSnapshot>, new () where TSnapshot : ISnapshot
     {
         protected AggregateId(Guid value)
         {
@@ -17,7 +17,7 @@ namespace Common.Libraries.EventSourcing
 
         public Guid Value { get; }
         
-        public static implicit operator Guid(AggregateId<T> self) => self.Value;
+        public static implicit operator Guid(AggregateId<T, TSnapshot> self) => self.Value;
 
         public override string ToString() => Value.ToString();
     }

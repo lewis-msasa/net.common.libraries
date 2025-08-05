@@ -28,7 +28,7 @@ namespace Common.Libraries.EventStore.EF.TestApi
 
         public DbSet<Checkpoint> CheckPoints { get; set; }
 
-        public DbSet<Snapshot> Snapshots { get; set; }
+        public DbSet<UserSnapshot> UserSnapshots { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {

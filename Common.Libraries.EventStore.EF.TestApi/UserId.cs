@@ -2,7 +2,7 @@
 
 namespace Common.Libraries.EventStore.EF.TestApi
 {
-    public class UserId : AggregateId<User>
+    public class UserId : AggregateId<User,UserSnapshot>
     {
         UserId(Guid value) : base(value) { }
 

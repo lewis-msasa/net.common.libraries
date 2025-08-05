@@ -8,6 +8,7 @@ namespace Common.Libraries.EventSourcing
     }
     public interface ISubscription<T> : ISubscription where T : class
     {
+
         Task Project(object @event);
     }
 }

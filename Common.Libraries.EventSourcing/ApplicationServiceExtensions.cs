@@ -5,12 +5,12 @@ namespace Common.Libraries.EventSourcing
 {
     public static class ApplicationServiceExtensions
     {
-        public static async Task HandleUpdate<T>(
+        public static async Task HandleUpdate<T,TSnapshot>(
             this IApplicationService service,
-            IAggregateStore store,
-            AggregateId<T> aggregateId,
+            IAggregateStore<T,TSnapshot> store,
+            AggregateId<T,TSnapshot> aggregateId,
             Action<T> operation)
-            where T : AggregateRoot
+            where T : AggregateRoot<TSnapshot>, new() where TSnapshot : ISnapshot
         {
             var aggregate = await store.Load(aggregateId);
 

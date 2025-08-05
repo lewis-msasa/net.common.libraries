@@ -27,19 +27,21 @@ builder.Services.AddHostedService<ProjectionWorker<UserDetails>>();
 builder.Services.AddDbContext<TestDBContext>(
           opts => opts.UseMySql(builder.Configuration["ConnectionStrings:TestDB"],
           ServerVersion.AutoDetect(builder.Configuration["ConnectionStrings:TestDB"])));
-builder.Services.AddScoped<ApplicationService<User>, UserCommandService>();
+builder.Services.AddScoped<ApplicationService<User, UserSnapshot>, UserCommandService>();
 builder.Services.AddScoped<IRepository<UserDetails>, EFRepository<UserDetails, TestDBContext>>();
 builder.Services.AddScoped<IService<UserDetails, UserDetailsDto>, Service<UserDetails, UserDetailsDto>>();
+
+
+builder.Services.AddScoped<IAggregateStore<User,UserSnapshot>, EFAggregateStore<User, UserSnapshot>>();
+builder.Services.AddScoped<ISaveSnapshot<User, UserSnapshot>, EFAggregateStore<User, UserSnapshot>>();
 
 builder.Services.AddScoped<IRepository<Event>, EFRepository<Event, TestDBContext>>();
 builder.Services.AddScoped<IService<Event, EventDto>, Service<Event, EventDto>>();
 
 builder.Services.AddScoped<IRepository<Checkpoint>, EFRepository<Checkpoint, TestDBContext>>();
+builder.Services.AddScoped<IRepository<UserSnapshot>, EFRepository<UserSnapshot, TestDBContext>>();
 builder.Services.AddScoped<IService<Checkpoint, CheckpointDto>, Service<Checkpoint, CheckpointDto>>();
 
-
-builder.Services.AddScoped<IRepository<Snapshot>, EFRepository<Snapshot, TestDBContext>>();
-builder.Services.AddScoped<IService<Snapshot, SnapshotDto>, Service<Snapshot, SnapshotDto>>();
 
 builder.Services.AddSingleton<IEventDeserializer>(sp =>
     new EventDeserializer(

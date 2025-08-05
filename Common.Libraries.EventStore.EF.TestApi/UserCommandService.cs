@@ -2,9 +2,9 @@
 
 namespace Common.Libraries.EventStore.EF.TestApi
 {
-    public class UserCommandService : ApplicationService<User>
+    public class UserCommandService : ApplicationService<User,UserSnapshot>
     {
-        public UserCommandService(IAggregateStore store) : base(store)
+        public UserCommandService(IAggregateStore<User, UserSnapshot> store) : base(store)
         {
             CreateWhen<Create>(
                cmd => UserId.FromGuid(cmd.Id),
@@ -16,8 +16,7 @@ namespace Common.Libraries.EventStore.EF.TestApi
            );
             UpdateWhen<ChangeUsername>(
                cmd => UserId.FromGuid(cmd.Id),
-               (usr, cmd)
-                   => usr.SetName(Username.FromString(cmd.Name))
+               (usr, cmd) => usr.SetName(Username.FromString(cmd.Name))
            );
         }
     }

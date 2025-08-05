@@ -3,7 +3,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace Common.Libraries.EventStore.EF.TestApi
 {
-    public class User : AggregateRoot
+    public class User : AggregateRoot<UserSnapshot>
     {
         public static User Create(UserId id, UserId spouseId, string username)
         {
@@ -28,10 +28,8 @@ namespace Common.Libraries.EventStore.EF.TestApi
 
         public void SetName(Username name)
           => Apply(
-              new UsernameChanged
-              {
-                 Username = name
-              }
+              new UsernameChanged(Id,name)
+              
           );
         protected override void EnsureValidState()
         {
@@ -44,6 +42,7 @@ namespace Common.Libraries.EventStore.EF.TestApi
             {
                 case UsernameChanged e:
                     Username = new Username(e.Username);
+                    //Id = e.Id;
                     break;
                 case UserCreated ev:
                     Id = ev.Id;
@@ -55,5 +54,22 @@ namespace Common.Libraries.EventStore.EF.TestApi
                 
             }
         }
+
+        protected override void LoadSnapshot(UserSnapshot snapshot)
+        {
+            Username = new Username(snapshot.UserName);
+            Version = snapshot.Version;
+            Id = snapshot.AggregateId;
+
+        }
+
+        public override UserSnapshot CreateSnapShot() => new()
+        {
+            UserName = Username.Value,
+            Version = Version,
+            AggregateId = Id,
+            Timestamp = DateTime.UtcNow
+
+        };
     }
 }

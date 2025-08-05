@@ -23,29 +23,27 @@ namespace Common.Libraries.EventStore.Projection
     public class EFCheckpointStore : ICheckpointStore
     {
         private readonly IRepository<Checkpoint> _repository;
-        readonly string _checkpointName;
-
-        public EFCheckpointStore(IRepository<Checkpoint> repository, 
-            string checkpointName)
+        const string CheckpointStreamPrefix = "checkpoint:";
+        public EFCheckpointStore(IRepository<Checkpoint> repository
+            )
         {
             _repository = repository;
-            _checkpointName = checkpointName;
         }
 
-        public async Task<long?> GetCheckpoint()
+        public async Task<long?> GetCheckpoint(string projector,CancellationToken cancellationToken)
         {
-            var checkPoint = await _repository.GetOneAsync(t => t.Id == _checkpointName);
+            var checkPoint = await _repository.GetOneAsync(t => t.Id == CheckpointStreamPrefix + projector);
             return checkPoint?.Position;
         }
 
-        public async Task StoreCheckpoint(long? position)
+        public async Task StoreCheckpoint(string projector,long? position, CancellationToken cancellationToken)
         {
-            var checkPoint = await _repository.GetOneAsync(t => t.Id == _checkpointName);
+            var checkPoint = await _repository.GetOneAsync(t => t.Id == CheckpointStreamPrefix +  projector);
             if (checkPoint == null)
             {
                 checkPoint = new Checkpoint
                 {
-                    Id = _checkpointName,
+                    Id = CheckpointStreamPrefix +  projector,
                     Position = position ?? 0,
                 };
                 await _repository.AddAsync(checkPoint);

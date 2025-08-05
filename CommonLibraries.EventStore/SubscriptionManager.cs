@@ -33,58 +33,58 @@ namespace Common.Libraries.EventStore
 
         public async Task Start()
         {
-            var settings = new CatchUpSubscriptionSettings(
-                2000, 500,
-                _logger.IsEnabled(LogLevel.Debug),
-                false, _name
-            );
+            //var settings = new CatchUpSubscriptionSettings(
+            //    2000, 500,
+            //    _logger.IsEnabled(LogLevel.Debug),
+            //    false, _name
+            //);
 
-            _logger.LogDebug("Starting the projection manager...");
+            //_logger.LogDebug("Starting the projection manager...");
 
-            var position = await _checkpointStore.GetCheckpoint();
-            _logger.LogDebug("Retrieved the checkpoint: {checkpoint}", position);
+            //var position = await _checkpointStore.GetCheckpoint();
+            //_logger.LogDebug("Retrieved the checkpoint: {checkpoint}", position);
 
-            _subscription = _connection.SubscribeToAllFrom(
-                GetPosition(),
-                settings,
-                EventAppeared
-            );
-            _logger.LogDebug("Subscribed to $all stream");
+            //_subscription = _connection.SubscribeToAllFrom(
+            //    GetPosition(),
+            //    settings,
+            //    EventAppeared
+            //);
+            //_logger.LogDebug("Subscribed to $all stream");
 
-            Position? GetPosition()
-                => position.HasValue
-                    ? new Position(position.Value, position.Value)
-                    : AllCheckpoint.AllStart;
+            //Position? GetPosition()
+            //    => position.HasValue
+            //        ? new Position(position.Value, position.Value)
+            //        : AllCheckpoint.AllStart;
         }
 
         async Task EventAppeared(
             EventStoreCatchUpSubscription _,
             ResolvedEvent resolvedEvent)
         {
-            if (resolvedEvent.Event.EventType.StartsWith("$")) return;
+            //if (resolvedEvent.Event.EventType.StartsWith("$")) return;
 
-            var @event = resolvedEvent.Deserialze();
+            //var @event = resolvedEvent.Deserialze();
 
-            _logger.LogDebug("Projecting event {event}", @event.ToString());
+            //_logger.LogDebug("Projecting event {event}", @event.ToString());
 
-            try
-            {
-                await Task.WhenAll(_subscriptions.Select(x => x.Project(@event)));
+            //try
+            //{
+            //    await Task.WhenAll(_subscriptions.Select(x => x.Project(@event)));
 
-                await _checkpointStore.StoreCheckpoint(
-                    // ReSharper disable once PossibleInvalidOperationException
-                    resolvedEvent.OriginalPosition.Value.CommitPosition
-                );
-            }
-            catch (Exception e)
-            {
-                _logger.LogError(
-                    e,
-                    "Error occured when projecting the event {event}",
-                    @event
-                );
-                throw;
-            }
+            //    await _checkpointStore.StoreCheckpoint(
+            //        // ReSharper disable once PossibleInvalidOperationException
+            //        resolvedEvent.OriginalPosition.Value.CommitPosition
+            //    );
+            //}
+            //catch (Exception e)
+            //{
+            //    _logger.LogError(
+            //        e,
+            //        "Error occured when projecting the event {event}",
+            //        @event
+            //    );
+            //    throw;
+            //}
         }
 
         public void Stop() => _subscription.Stop();

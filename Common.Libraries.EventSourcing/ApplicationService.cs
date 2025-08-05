@@ -4,14 +4,14 @@ using System.Threading.Tasks;
 
 namespace Common.Libraries.EventSourcing
 {
-    public abstract class ApplicationService<T> where T : AggregateRoot
+    public abstract class ApplicationService<T,TSnapshot> where T : AggregateRoot<TSnapshot>, new() where TSnapshot : ISnapshot
     {
         readonly Dictionary<Type, Func<object, Task>> _handlers =
             new Dictionary<Type, Func<object, Task>>();
 
-        readonly IAggregateStore _store;
+        readonly IAggregateStore<T,TSnapshot> _store;
 
-        protected ApplicationService(IAggregateStore store) => _store = store;
+        protected ApplicationService(IAggregateStore<T,TSnapshot> store) => _store = store;
 
         //static ILog Log => LogProvider.GetCurrentClassLogger();
 
@@ -27,8 +27,8 @@ namespace Common.Libraries.EventSourcing
         }
 
         protected void CreateWhen<TCommand>(
-            Func<TCommand, AggregateId<T>> getAggregateId,
-            Func<TCommand, AggregateId<T>, T> creator)
+            Func<TCommand, AggregateId<T,TSnapshot>> getAggregateId,
+            Func<TCommand, AggregateId<T, TSnapshot>, T> creator)
             where TCommand : class
             => When<TCommand>(
                 async command =>
@@ -47,7 +47,7 @@ namespace Common.Libraries.EventSourcing
             );
 
         protected void UpdateWhen<TCommand>(
-            Func<TCommand, AggregateId<T>> getAggregateId,
+            Func<TCommand, AggregateId<T, TSnapshot>> getAggregateId,
             Action<T, TCommand> updater) where TCommand : class
             => When<TCommand>(
                 async command =>
@@ -66,7 +66,7 @@ namespace Common.Libraries.EventSourcing
             );
 
         protected void UpdateWhen<TCommand>(
-            Func<TCommand, AggregateId<T>> getAggregateId,
+            Func<TCommand, AggregateId<T, TSnapshot>> getAggregateId,
             Func<T, TCommand, Task> updater) where TCommand : class
             => When<TCommand>(
                 async command =>

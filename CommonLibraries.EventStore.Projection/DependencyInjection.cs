@@ -13,11 +13,11 @@ namespace Common.Libraries.EventStore.Projection
     {
         public static IServiceCollection AddEventStoreEFPersistence(this IServiceCollection services, string projectionName)
         {
-            services.AddScoped<IAggregateStore, EFAggregateStore>();
-            services.AddScoped<ISaveSnapshot, EFAggregateStore>();
+            //services.AddScoped<IAggregateStore, EFAggregateStore>();
+            //services.AddScoped<ISaveSnapshot, EFAggregateStore>();
             //services.AddScoped<ICheckpointStore, EFCheckpointStore>();
             services.AddScoped<ICheckpointStore>(sp =>
-                      new EFCheckpointStore(sp.GetRequiredService<IRepository<Checkpoint>>(), projectionName));
+                      new EFCheckpointStore(sp.GetRequiredService<IRepository<Checkpoint>>()));
           
 
             return services;

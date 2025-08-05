@@ -1,6 +1,7 @@
 ﻿using Common.Libraries.EventSourcing;
 using Common.Libraries.Services.Dtos;
 using Common.Libraries.Services.Entities;
+using Common.Libraries.Services.Repositories;
 using Common.Libraries.Services.Services;
 using System;
 using System.Collections.Generic;
@@ -38,109 +39,87 @@ namespace Common.Libraries.EventStore.Projection
         public int Version { get; set; }
         public DateTime Timestamp { get; set; }
     }
-    public class Snapshot : IEntity
+    public class EFAggregateStore<T,TSnapshot> : IAggregateStore<T,TSnapshot>, ISaveSnapshot<T,TSnapshot> where T : AggregateRoot<TSnapshot>, new() where TSnapshot : class,ISnapshot,IEntity
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int RecordId { get; set; }
-        public Guid AggregateId { get; set; }
-        public string AggregateType { get; set; }
-        public string SnapshotData { get; set; }
-        public int Version { get; set; }
-        public DateTime Timestamp { get; set; }
-    }
-    public class SnapshotDto : IDTO
-    {
-      
-        public int RecordId { get; set; }
-        public Guid AggregateId { get; set; }
-        public string AggregateType { get; set; }
-        public string SnapshotData { get; set; }
-        public int Version { get; set; }
-        public DateTime Timestamp { get; set; }
-    }
-
-    public class EFAggregateStore : IAggregateStore, ISaveSnapshot
-    {
-        private readonly IService<Event, EventDto> _eventService;
-        private readonly IService<Snapshot, SnapshotDto> _eventSnapshotService;
+        private readonly IRepository<Event> _eventRepository;
+        private readonly IRepository<TSnapshot> _eventSnapshotRepository;
         private readonly IEventDeserializer _deserializer;
 
-        public EFAggregateStore(IService<Event, EventDto> eventService, IService<Snapshot, SnapshotDto> eventSnapshotService, IEventDeserializer deserializer)
+        public EFAggregateStore(IRepository<Event> eventRepository, IRepository<TSnapshot> eventSnapshotRepository, IEventDeserializer deserializer)
         {
-            _eventService = eventService;
-            _eventSnapshotService = eventSnapshotService;
+            _eventRepository = eventRepository;
+            _eventSnapshotRepository = eventSnapshotRepository;
             _deserializer = deserializer;
         }
 
-        public async Task<bool> Exists<T>(AggregateId<T> aggregateId) where T : AggregateRoot
+        public async Task<bool> Exists(AggregateId<T,TSnapshot> aggregateId)
         {
-            var eventItem = await _eventService.GetOneAsync(e => e.AggregateId == aggregateId.Value);
+            var eventItem = await _eventRepository.GetOneAsync(e => e.AggregateId == aggregateId.Value);
             return (eventItem != null);
         }
 
-        public async Task<T> Load<T>(AggregateId<T> aggregateId) where T : AggregateRoot
+        public async Task<T> Load(AggregateId<T,TSnapshot> aggregateId)
         {
             var aggregateType = typeof(T).Name;
 
-            var snapshot = await _eventSnapshotService.GetOneAsync(s => s.AggregateId == aggregateId.Value && s.AggregateType == aggregateType, o => o.OrderByDescending(t => t.Timestamp));
+            var snapshot = await _eventSnapshotRepository.GetOneAsync(s => s.AggregateId == aggregateId.Value, o => o.OrderByDescending(t => t.Timestamp));
             var aggregate = (T)Activator.CreateInstance(typeof(T), true);
-
-            int snapshotVersion = -1;
-
-            if (snapshot != null)
-            {
-                snapshotVersion = snapshot.Version;
-                var state = JsonSerializer.Deserialize(snapshot.SnapshotData, typeof(T));
-                var field = typeof(T).GetField("_state", BindingFlags.Instance | BindingFlags.NonPublic);
-                field?.SetValue(aggregate, state);
-                aggregate.Version = snapshot.Version;
-            }
-
-
-            var events = await _eventService.GetByConditionAsync(e => e.AggregateId == aggregateId.Value && e.AggregateType == typeof(T).Name);
+            var events = await _eventRepository.GetAsync(e => e.AggregateId == aggregateId.Value && e.AggregateType == typeof(T).Name);
             if (!events.Any())
                 return null;
-
             var domainEvents = events.Select(e => _deserializer.Deserialize(e.EventData, e.EventType));
-            aggregate.Load(domainEvents);
+            
+            int snapshotVersion = snapshot?.Version ?? -1;
+            if(snapshot != null)
+                   aggregate.LoadFromHistory(snapshot, domainEvents);
+            else
+                   aggregate.Load(domainEvents);
+            aggregate.Version = snapshotVersion;
 
             return aggregate;
 
             
         }
 
-        public async Task Save<T>(T aggregate) where T : AggregateRoot
+        public async Task Save(T aggregate)
         {
             var changes = aggregate.GetChanges().ToList();
 
+            var events = await _eventRepository.GetAsync(t => t.AggregateId == aggregate.Id);
+            var currentVersion = events.MaxBy(t => t.Version)?.Version ?? -1;
+            aggregate.Version = currentVersion;
             var eventEntities = changes.Select((e, index) => new Event
             {
                 AggregateId = aggregate.Id,
                 AggregateType = typeof(T).Name,
                 EventType = e.GetType().Name,
                 EventData = JsonSerializer.Serialize(e, e.GetType()), 
-                Version = aggregate.Version + 1 + index,
+                Version = currentVersion + 1 + index,
                 Timestamp = DateTime.UtcNow
             });
-            await _eventService.CreateManyAsync(eventEntities.ToList());
+            foreach(var entiy in eventEntities.ToList())
+            {
+                await _eventRepository.AddAsync(entiy);
+            }
+            if (ShouldSnapshot(aggregate))
+            {
+                await SaveSnapshot(aggregate);
+            }
 
             aggregate.ClearChanges();
 
         }
 
-        public async Task SaveSnapshot<T>(T aggregate) where T : AggregateRoot
+        public async Task SaveSnapshot(T aggregate)
         {
-            var snapshot = new Snapshot
-            {
-                AggregateId = aggregate.Id,
-                AggregateType = typeof(T).Name,
-                Version = aggregate.Version,
-                SnapshotData = JsonSerializer.Serialize(aggregate, aggregate.GetType()), // assuming state is internal
-                Timestamp = DateTime.UtcNow
-            };
-            await _eventSnapshotService.UpdateAsync(snapshot);
+            var snapshot = aggregate.CreateSnapShot();
+            await _eventSnapshotRepository.UpdateAsync(snapshot);
 
+        }
+        private bool ShouldSnapshot(T aggregate)
+        {
+            //every 100
+            return aggregate.Version % 100 == 0;
         }
     }
 }

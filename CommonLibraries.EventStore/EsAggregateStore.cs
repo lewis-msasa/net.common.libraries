@@ -7,20 +7,20 @@ using Microsoft.Extensions.Logging;
 
 namespace Common.Libraries.EventStore
 {
-    public class EsAggregateStore : IAggregateStore
+    public class EsAggregateStore<T, TSnapshot> : IAggregateStore<T, TSnapshot> where T : AggregateRoot<TSnapshot>, new () where TSnapshot : class,ISnapshot
     {
         
-        private readonly ILogger<EsAggregateStore> _logger;
+        private readonly ILogger<EsAggregateStore<T,TSnapshot>> _logger;
         readonly IEventStoreConnection _connection;
 
         public EsAggregateStore(IEventStoreConnection connection,
-            ILogger<EsAggregateStore> logger)
+            ILogger<EsAggregateStore<T,TSnapshot>> logger)
         { 
             _connection = connection;
             _logger = logger;
         }
 
-        public async Task Save<T>(T aggregate) where T : AggregateRoot
+        public async Task Save(T aggregate)
         {
             if (aggregate == null)
                 throw new ArgumentNullException(nameof(aggregate));
@@ -36,8 +36,7 @@ namespace Common.Libraries.EventStore
             aggregate.ClearChanges();
         }
 
-        public async Task<T> Load<T>(AggregateId<T> aggregateId)
-            where T : AggregateRoot
+        public async Task<T> Load(AggregateId<T,TSnapshot> aggregateId)
         {
             if (aggregateId == null)
                 throw new ArgumentNullException(nameof(aggregateId));
@@ -61,20 +60,17 @@ namespace Common.Libraries.EventStore
             return aggregate;
         }
 
-        public async Task<bool> Exists<T>(AggregateId<T> aggregateId) 
-            where T : AggregateRoot
+        public async Task<bool> Exists(AggregateId<T,TSnapshot> aggregateId) 
         {
             var stream = GetStreamName(aggregateId);
             var result = await _connection.ReadEventAsync(stream, 1, false);
             return result.Status != EventReadStatus.NoStream;
         }
 
-        static string GetStreamName<T>(AggregateId<T> aggregateId) 
-            where T : AggregateRoot 
+        static string GetStreamName(AggregateId<T,TSnapshot> aggregateId) 
             => $"{typeof(T).Name}-{aggregateId}";
 
-        static string GetStreamName<T>(T aggregate)
-            where T : AggregateRoot
+        static string GetStreamName(T aggregate)
             => $"{typeof(T).Name}-{aggregate.Id.ToString()}";
 
      

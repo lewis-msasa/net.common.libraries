@@ -3,19 +3,19 @@ using System.Threading.Tasks;
 
 namespace Common.Libraries.EventSourcing
 {
-    public interface IAggregateStore
+    public interface IAggregateStore<T, TSnapshot> where T : AggregateRoot<TSnapshot>, new() where TSnapshot : ISnapshot
     {
-        Task<bool> Exists<T>(AggregateId<T> aggregateId) where T : AggregateRoot;
+        Task<bool> Exists(AggregateId<T, TSnapshot> aggregateId);
 
-        Task Save<T>(T aggregate) where T : AggregateRoot;
+        Task Save(T aggregate);
 
-        Task<T> Load<T>(AggregateId<T> aggregateId) where T : AggregateRoot;
+        Task<T> Load(AggregateId<T, TSnapshot> aggregateId);
 
        
     }
-    public interface ISaveSnapshot
+    public interface ISaveSnapshot<T, TSnapshot> where T : AggregateRoot<TSnapshot>, new() where TSnapshot : ISnapshot
     {
-        Task SaveSnapshot<T>(T aggregate) where T : AggregateRoot;
+        Task SaveSnapshot(T aggregate);
     }
 
     public interface IFunctionalAggregateStore

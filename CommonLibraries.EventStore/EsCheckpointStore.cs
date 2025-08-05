@@ -12,37 +12,34 @@ namespace Common.Libraries.EventStore
     {
         const string CheckpointStreamPrefix = "checkpoint:";
         readonly IEventStoreConnection _connection;
-        readonly string _streamName;
-
         public EsCheckpointStore(
-            IEventStoreConnection connection,
-            string subscriptionName)
+            IEventStoreConnection connection
+            )
         {
             _connection = connection;
-            _streamName = CheckpointStreamPrefix + subscriptionName;
         }
 
-        public async Task<long?> GetCheckpoint()
+        public async Task<long?> GetCheckpoint(string projector, CancellationToken cancellationToken)
         {
             var slice = await _connection
-                .ReadStreamEventsBackwardAsync(_streamName, -1, 1, false);
+                .ReadStreamEventsBackwardAsync(CheckpointStreamPrefix + projector, -1, 1, false);
 
             var eventData = slice.Events.FirstOrDefault();
 
             if (eventData.Equals(default(ResolvedEvent)))
             {
-                await StoreCheckpoint(AllCheckpoint.AllStart?.CommitPosition);
-                await SetStreamMaxCount();
+                await StoreCheckpoint(projector, AllCheckpoint.AllStart?.CommitPosition, cancellationToken);
+                await SetStreamMaxCount(projector);
                 return null;
             }
 
             return eventData.Deserialze<Checkpoint>()?.Position;
         }
 
-        public Task StoreCheckpoint(long? checkpoint)
+        public Task StoreCheckpoint(string projector,long? checkpoint,CancellationToken cancellationToken)
         {
             var @event = new Checkpoint {Position = checkpoint};
-
+            
             var preparedEvent =
                 new EventData(
                     Guid.NewGuid(),
@@ -55,19 +52,19 @@ namespace Common.Libraries.EventStore
                 );
 
             return _connection.AppendToStreamAsync(
-                _streamName,
+                CheckpointStreamPrefix + projector,
                 ExpectedVersion.Any,
                 preparedEvent
             );
         }
 
-        async Task SetStreamMaxCount()
+        async Task SetStreamMaxCount(string projector)
         {
-            var metadata = await _connection.GetStreamMetadataAsync(_streamName);
+            var metadata = await _connection.GetStreamMetadataAsync(CheckpointStreamPrefix + projector);
 
             if (!metadata.StreamMetadata.MaxCount.HasValue)
                 await _connection.SetStreamMetadataAsync(
-                    _streamName, ExpectedVersion.Any,
+                    CheckpointStreamPrefix + projector, ExpectedVersion.Any,
                     StreamMetadata.Create(1)
                 );
         }
