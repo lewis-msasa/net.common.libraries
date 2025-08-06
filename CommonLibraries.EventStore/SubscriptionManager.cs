@@ -31,7 +31,7 @@ namespace Common.Libraries.EventStore
             _subscriptions = subscriptions;
         }
 
-        public async Task Start()
+        public async Task Start(CancellationToken cancellationToken)
         {
             //var settings = new CatchUpSubscriptionSettings(
             //    2000, 500,
