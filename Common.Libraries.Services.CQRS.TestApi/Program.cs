@@ -1,4 +1,5 @@
 using Common.Libraries.Services.CQRS;
+using Common.Libraries.Services.CQRS.PipelineBehaviors;
 using Common.Libraries.Services.CQRS.TestApi;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,10 +14,12 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 builder.Services.AddMemoryCache();
-builder.Services.AddScoped<IDispatcher, Dispatcher>();
-builder.Services.AddScoped<IRequestHandler<CreateOrderCommand, Guid>, CreateOrderHandler>();
-builder.Services.AddScoped<IRequestHandler<GetOrderByIdQuery, OrderDto>, GetOrderByIdHandler>();
+//builder.Services.AddScoped<IDispatcher, Dispatcher>();
+//builder.Services.AddScoped<IRequestHandler<CreateOrderCommand, Guid>, CreateOrderHandler>();
+//builder.Services.AddScoped<IRequestHandler<GetOrderByIdQuery, OrderDto>, GetOrderByIdHandler>();
+builder.Services.AddRequestHandlers([typeof(CreateOrderHandler).Assembly]);
 
+builder.Services.RegisterCORSBehaviorsServices();
 builder.Services.AddScoped<ICacheStrategy<GetOrderByIdQuery, OrderDto>, GetOrderByIdCache>();
 builder.Services.AddScoped<IMetricsStrategy<GetOrderByIdQuery, OrderDto>, BasicMetrics<GetOrderByIdQuery, OrderDto>>();
 builder.Services.AddScoped<IPermissionStrategy<CreateOrderCommand>, CreateOrderPermissionStrategy>();
@@ -28,7 +31,7 @@ var app = builder.Build();
 
 app.MapPost("/orders", async (CreateOrderCommand command, IDispatcher dispatcher) =>
 {
-    var orderId = await dispatcher.Send(command);
+    var orderId = await dispatcher.SendWithPipelines(command); //.Send(command);
     return Results.Ok(orderId);
 });
 

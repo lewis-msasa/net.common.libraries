@@ -12,6 +12,7 @@ namespace Common.Libraries.Services.CQRS
     public interface IDispatcher
     {
         Task<TResponse> Send<TResponse>(IRequest<TResponse> request, CancellationToken cancellationToken = default);
+        Task<TResponse> SendWithPipelines<TResponse>(IRequest<TResponse> request, CancellationToken cancellationToken = default);
     }
     public record RequestContext(
         object Request,
@@ -28,6 +29,31 @@ namespace Common.Libraries.Services.CQRS
         public Dispatcher(IServiceProvider provider)
         {
             _provider = provider;
+        }
+        public async Task<TResponse> SendWithPipelines<TResponse>(IRequest<TResponse> request, CancellationToken cancellationToken = default)
+        {
+            var requestType = request.GetType();
+            var handlerType = typeof(IRequestHandler<,>).MakeGenericType(requestType, typeof(TResponse));
+            var handler = _provider.GetRequiredService(handlerType);
+
+            var behaviors = _provider.GetServices(typeof(IPipelineBehavior<,>)
+                    .MakeGenericType(requestType, typeof(TResponse)))
+                .Cast<object>()
+                .ToList();
+
+            RequestHandlerDelegate<TResponse> handlerDelegate = () =>
+            {
+                var method = handlerType.GetMethod("Handle");
+                return (Task<TResponse>)method.Invoke(handler, [request, cancellationToken]);
+            };
+
+            foreach (var behavior in behaviors.AsEnumerable().Reverse())
+            {
+                var next = handlerDelegate;
+                handlerDelegate = () => ((dynamic)behavior).Handle((dynamic)request, next);
+            }
+
+            return await handlerDelegate();
         }
         public async Task<TResponse> Send<TResponse>(IRequest<TResponse> request, CancellationToken cancellationToken = default)
         {
