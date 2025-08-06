@@ -1,4 +1,5 @@
 ﻿using Hangfire;
+using Hangfire.MemoryStorage;
 using Hangfire.MySql;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;
@@ -14,19 +15,28 @@ namespace Common.Libraries.Services.BackgroundWork.Hangfire
 {
     public static class DependencyInjection
     {
-        public static IServiceCollection AddHangfireDependencies(this IServiceCollection services, IConfiguration Configuration)
+        public static IServiceCollection AddHangfireDependencies(this IServiceCollection services, IConfiguration Configuration,bool inMemory = false)
         {
-            var connectionString = Configuration.GetConnectionString("HangfireConnection");
+            
             services.AddHangfire(configuration =>
             {
-                configuration.UseStorage(
-                    new MySqlStorage(connectionString, new MySqlStorageOptions
-                    {
+                if (!inMemory)
+                {
+                    var connectionString = Configuration.GetConnectionString("HangfireConnection");
+                    configuration.UseStorage(
+                        new MySqlStorage(connectionString, new MySqlStorageOptions
+                        {
 
-                        TablesPrefix = "Hangfire"
-                    }));
+                            TablesPrefix = "Hangfire"
+                        }));
+                }
+                else
+                {
+                    configuration.UseMemoryStorage();
+                }
             });
             services.AddHangfireServer();
+           
             services.AddSingleton<IBackgroundJobService, HangfireBackgroundJobService>();
             return services;
         }
