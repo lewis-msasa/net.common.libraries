@@ -13,4 +13,11 @@ namespace Common.Libraries.Services.CQRS
 
     public delegate Task<TResponse> RequestHandlerDelegate<TResponse>();
 
+    public interface IVoidPipelineBehavior<in TRequest>
+    where TRequest : IRequest
+    {
+        Task Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate next);
+    }
+    public delegate Task RequestHandlerDelegate();
+
 }

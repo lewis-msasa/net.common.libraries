@@ -3,48 +3,84 @@
   "WorkspaceRootPath": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.cqrs\\pipelinebehaviors\\metricsbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|solutionrelative:common.libraries.services.cqrs\\pipelinebehaviors\\metricsbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.services\\services\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|solutionrelative:commonlibraries.services\\services\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.cqrs\\pipelinebehaviors\\validatorbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|solutionrelative:common.libraries.services.cqrs\\pipelinebehaviors\\validatorbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.services\\services\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|solutionrelative:commonlibraries.services\\services\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.cqrs\\pipelinebehaviors\\loggingbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|solutionrelative:common.libraries.services.cqrs\\pipelinebehaviors\\loggingbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.efcore\\common.libraries.services.efcore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|solutionrelative:common.libraries.services.efcore\\common.libraries.services.efcore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.cqrs\\pipelinebehaviors\\cachingbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|solutionrelative:common.libraries.services.cqrs\\pipelinebehaviors\\cachingbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.efcore\\unitofwork\\unitofworkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|solutionrelative:common.libraries.services.efcore\\unitofwork\\unitofworkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.cqrs\\pipelinebehaviors\\authorizationbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|solutionrelative:common.libraries.services.cqrs\\pipelinebehaviors\\authorizationbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.efcore\\repositories\\efrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|solutionrelative:common.libraries.services.efcore\\repositories\\efrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.cqrs\\pipelinebehaviors\\auditbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|solutionrelative:common.libraries.services.cqrs\\pipelinebehaviors\\auditbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.efcore\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|solutionrelative:common.libraries.services.efcore\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.services\\results\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|solutionrelative:commonlibraries.services\\results\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{091D8DEF-2312-413C-BC77-1C855CBAF015}|Common.Libraries.Services.CQRS.TestApi\\Common.Libraries.Services.CQRS.TestApi.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.cqrs.testapi\\handlers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{091D8DEF-2312-413C-BC77-1C855CBAF015}|Common.Libraries.Services.CQRS.TestApi\\Common.Libraries.Services.CQRS.TestApi.csproj|solutionrelative:common.libraries.services.cqrs.testapi\\handlers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.services\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|solutionrelative:commonlibraries.services\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2685366-7791-43B4-A9A3-880FBD49B4D2}|CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.eventstore.projection\\common.libraries.eventstore.ef.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C2685366-7791-43B4-A9A3-880FBD49B4D2}|CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj|solutionrelative:commonlibraries.eventstore.projection\\common.libraries.eventstore.ef.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{091D8DEF-2312-413C-BC77-1C855CBAF015}|Common.Libraries.Services.CQRS.TestApi\\Common.Libraries.Services.CQRS.TestApi.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.cqrs.testapi\\createordercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{091D8DEF-2312-413C-BC77-1C855CBAF015}|Common.Libraries.Services.CQRS.TestApi\\Common.Libraries.Services.CQRS.TestApi.csproj|solutionrelative:common.libraries.services.cqrs.testapi\\createordercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.cqrs\\common.libraries.services.cqrs.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|solutionrelative:common.libraries.services.cqrs\\common.libraries.services.cqrs.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.cqrs\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|solutionrelative:common.libraries.services.cqrs\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{091D8DEF-2312-413C-BC77-1C855CBAF015}|Common.Libraries.Services.CQRS.TestApi\\Common.Libraries.Services.CQRS.TestApi.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.cqrs.testapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{091D8DEF-2312-413C-BC77-1C855CBAF015}|Common.Libraries.Services.CQRS.TestApi\\Common.Libraries.Services.CQRS.TestApi.csproj|solutionrelative:common.libraries.services.cqrs.testapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.cqrs\\dispatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|solutionrelative:common.libraries.services.cqrs\\dispatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2685366-7791-43B4-A9A3-880FBD49B4D2}|CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.eventstore.projection\\projectionworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2685366-7791-43B4-A9A3-880FBD49B4D2}|CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj|solutionrelative:commonlibraries.eventstore.projection\\projectionworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.cqrs\\ipipelinebehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|solutionrelative:common.libraries.services.cqrs\\ipipelinebehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{091D8DEF-2312-413C-BC77-1C855CBAF015}|Common.Libraries.Services.CQRS.TestApi\\Common.Libraries.Services.CQRS.TestApi.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.cqrs.testapi\\sendorderemailhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{091D8DEF-2312-413C-BC77-1C855CBAF015}|Common.Libraries.Services.CQRS.TestApi\\Common.Libraries.Services.CQRS.TestApi.csproj|solutionrelative:common.libraries.services.cqrs.testapi\\sendorderemailhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.cqrs\\notification\\pipelinebehaviors\\inotificationbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|solutionrelative:common.libraries.services.cqrs\\notification\\pipelinebehaviors\\inotificationbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{091D8DEF-2312-413C-BC77-1C855CBAF015}|Common.Libraries.Services.CQRS.TestApi\\Common.Libraries.Services.CQRS.TestApi.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.cqrs.testapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{091D8DEF-2312-413C-BC77-1C855CBAF015}|Common.Libraries.Services.CQRS.TestApi\\Common.Libraries.Services.CQRS.TestApi.csproj|solutionrelative:common.libraries.services.cqrs.testapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.cqrs\\notification\\pipelinebehaviors\\loggingbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|solutionrelative:common.libraries.services.cqrs\\notification\\pipelinebehaviors\\loggingbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.cqrs\\notification\\inotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|solutionrelative:common.libraries.services.cqrs\\notification\\inotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.cqrs\\irequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|solutionrelative:common.libraries.services.cqrs\\irequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,149 +90,266 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IService.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Services\\IService.cs",
+              "RelativeDocumentMoniker": "CommonLibraries.Services\\Services\\IService.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Services\\IService.cs",
+              "RelativeToolTip": "CommonLibraries.Services\\Services\\IService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T04:35:26.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CachingBehavior.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\PipelineBehaviors\\CachingBehavior.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.Services.CQRS\\PipelineBehaviors\\CachingBehavior.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\PipelineBehaviors\\CachingBehavior.cs",
-              "RelativeToolTip": "Common.Libraries.Services.CQRS\\PipelineBehaviors\\CachingBehavior.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
+              "Title": "UnitOfWorkRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\UnitOfWork\\UnitOfWorkRepository.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.EFCore\\UnitOfWork\\UnitOfWorkRepository.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\UnitOfWork\\UnitOfWorkRepository.cs",
+              "RelativeToolTip": "Common.Libraries.Services.EFCore\\UnitOfWork\\UnitOfWorkRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKAAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T02:11:27.66Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Dispatcher.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\Dispatcher.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.Services.CQRS\\Dispatcher.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\Dispatcher.cs",
-              "RelativeToolTip": "Common.Libraries.Services.CQRS\\Dispatcher.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAswCsAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T01:19:04.604Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AuthorizationBehavior.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\PipelineBehaviors\\AuthorizationBehavior.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.Services.CQRS\\PipelineBehaviors\\AuthorizationBehavior.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\PipelineBehaviors\\AuthorizationBehavior.cs",
-              "RelativeToolTip": "Common.Libraries.Services.CQRS\\PipelineBehaviors\\AuthorizationBehavior.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T01:19:04.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoggingBehavior.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\PipelineBehaviors\\LoggingBehavior.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.Services.CQRS\\PipelineBehaviors\\LoggingBehavior.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\PipelineBehaviors\\LoggingBehavior.cs",
-              "RelativeToolTip": "Common.Libraries.Services.CQRS\\PipelineBehaviors\\LoggingBehavior.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAADgvxYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T01:19:04.627Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SendOrderEmailHandler.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS.TestApi\\SendOrderEmailHandler.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.Services.CQRS.TestApi\\SendOrderEmailHandler.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS.TestApi\\SendOrderEmailHandler.cs",
-              "RelativeToolTip": "Common.Libraries.Services.CQRS.TestApi\\SendOrderEmailHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T01:19:04.643Z",
+              "WhenOpened": "2025-08-07T04:31:15.493Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "AuditBehavior.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\PipelineBehaviors\\AuditBehavior.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.Services.CQRS\\PipelineBehaviors\\AuditBehavior.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\PipelineBehaviors\\AuditBehavior.cs",
-              "RelativeToolTip": "Common.Libraries.Services.CQRS\\PipelineBehaviors\\AuditBehavior.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAMAAAAAAAAAA==",
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\UnitOfWork\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.EFCore\\UnitOfWork\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\UnitOfWork\\IUnitOfWork.cs",
+              "RelativeToolTip": "Common.Libraries.Services.EFCore\\UnitOfWork\\IUnitOfWork.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwCcAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T01:12:50.221Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MetricsBehaviour.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\PipelineBehaviors\\MetricsBehaviour.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.Services.CQRS\\PipelineBehaviors\\MetricsBehaviour.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\PipelineBehaviors\\MetricsBehaviour.cs",
-              "RelativeToolTip": "Common.Libraries.Services.CQRS\\PipelineBehaviors\\MetricsBehaviour.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T01:12:40.829Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ValidatorBehaviour.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\PipelineBehaviors\\ValidatorBehaviour.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.Services.CQRS\\PipelineBehaviors\\ValidatorBehaviour.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\PipelineBehaviors\\ValidatorBehaviour.cs",
-              "RelativeToolTip": "Common.Libraries.Services.CQRS\\PipelineBehaviors\\ValidatorBehaviour.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAArwB8AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T01:19:04.627Z",
+              "WhenOpened": "2025-08-07T04:29:40.904Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.Services.CQRS\\DependencyInjection.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\DependencyInjection.cs",
-              "RelativeToolTip": "Common.Libraries.Services.CQRS\\DependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Title": "Result.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Results\\Result.cs",
+              "RelativeDocumentMoniker": "CommonLibraries.Services\\Results\\Result.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Results\\Result.cs",
+              "RelativeToolTip": "CommonLibraries.Services\\Results\\Result.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T01:19:04.643Z",
+              "WhenOpened": "2025-08-07T04:27:11.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Common.Libraries.Services.EFCore",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj",
+              "RelativeToolTip": "Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-07T04:16:26.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Service.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Services\\Service.cs",
+              "RelativeDocumentMoniker": "CommonLibraries.Services\\Services\\Service.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Services\\Service.cs",
+              "RelativeToolTip": "CommonLibraries.Services\\Services\\Service.cs",
+              "ViewState": "AgIAAJkAAAAAAAAAAAA1wA0AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T04:11:42.369Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "ProjectionWorker.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore.Projection\\ProjectionWorker.cs",
-              "RelativeDocumentMoniker": "CommonLibraries.EventStore.Projection\\ProjectionWorker.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore.Projection\\ProjectionWorker.cs",
-              "RelativeToolTip": "CommonLibraries.EventStore.Projection\\ProjectionWorker.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Repositories\\IRepository.cs",
+              "RelativeDocumentMoniker": "CommonLibraries.Services\\Repositories\\IRepository.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Repositories\\IRepository.cs",
+              "RelativeToolTip": "CommonLibraries.Services\\Repositories\\IRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T01:19:04.596Z",
+              "WhenOpened": "2025-08-07T04:09:19.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EFRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\Repositories\\EFRepository.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.EFCore\\Repositories\\EFRepository.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\Repositories\\EFRepository.cs",
+              "RelativeToolTip": "Common.Libraries.Services.EFCore\\Repositories\\EFRepository.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAgwBEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T02:58:00.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Common.Libraries.EventStore.EF",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj",
+              "RelativeDocumentMoniker": "CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj",
+              "RelativeToolTip": "CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-07T04:08:37.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Common.Libraries.Services.CQRS",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj",
+              "RelativeToolTip": "Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-07T03:13:15.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "INotificationBehavior.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\Notification\\PipelineBehaviors\\INotificationBehavior.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.CQRS\\Notification\\PipelineBehaviors\\INotificationBehavior.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\Notification\\PipelineBehaviors\\INotificationBehavior.cs",
+              "RelativeToolTip": "Common.Libraries.Services.CQRS\\Notification\\PipelineBehaviors\\INotificationBehavior.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T03:05:10.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "INotification.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\Notification\\INotification.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.CQRS\\Notification\\INotification.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\Notification\\INotification.cs",
+              "RelativeToolTip": "Common.Libraries.Services.CQRS\\Notification\\INotification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T03:05:07.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Handlers.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS.TestApi\\Handlers.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.CQRS.TestApi\\Handlers.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS.TestApi\\Handlers.cs",
+              "RelativeToolTip": "Common.Libraries.Services.CQRS.TestApi\\Handlers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T02:49:45.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LoggingBehavior.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\Notification\\PipelineBehaviors\\LoggingBehavior.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.CQRS\\Notification\\PipelineBehaviors\\LoggingBehavior.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\Notification\\PipelineBehaviors\\LoggingBehavior.cs",
+              "RelativeToolTip": "Common.Libraries.Services.CQRS\\Notification\\PipelineBehaviors\\LoggingBehavior.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T03:05:12.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IPipelineBehavior.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\IPipelineBehavior.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.CQRS\\IPipelineBehavior.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\IPipelineBehavior.cs",
+              "RelativeToolTip": "Common.Libraries.Services.CQRS\\IPipelineBehavior.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAowBQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T03:04:34.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Dispatcher.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\Dispatcher.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.CQRS\\Dispatcher.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\Dispatcher.cs",
+              "RelativeToolTip": "Common.Libraries.Services.CQRS\\Dispatcher.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAADwv1QAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T03:01:03.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.CQRS\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\DependencyInjection.cs",
+              "RelativeToolTip": "Common.Libraries.Services.CQRS\\DependencyInjection.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAEwF0AAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T02:55:58.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IRequest.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\IRequest.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.CQRS\\IRequest.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\IRequest.cs",
+              "RelativeToolTip": "Common.Libraries.Services.CQRS\\IRequest.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T02:50:13.591Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "CreateOrderCommand.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS.TestApi\\CreateOrderCommand.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.CQRS.TestApi\\CreateOrderCommand.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS.TestApi\\CreateOrderCommand.cs",
+              "RelativeToolTip": "Common.Libraries.Services.CQRS.TestApi\\CreateOrderCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T02:48:52.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS.TestApi\\Program.cs",
               "RelativeDocumentMoniker": "Common.Libraries.Services.CQRS.TestApi\\Program.cs",
               "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS.TestApi\\Program.cs",
               "RelativeToolTip": "Common.Libraries.Services.CQRS.TestApi\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAYwBgAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAC8AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T01:04:10.893Z",
+              "WhenOpened": "2025-08-07T02:48:23.716Z",
               "EditorCaption": ""
             }
           ]

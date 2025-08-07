@@ -36,9 +36,16 @@ var app = builder.Build();
 
 app.MapPost("/orders", async (CreateOrderCommand command, IDispatcher dispatcher, INotificationDispatcher notificationDispatcher) =>
 {
-    var orderId = await dispatcher.SendWithPipelines(command); //.Send(command);
+    var orderId = await dispatcher.Send(command); //.Send(command);
     await notificationDispatcher.Publish(new OrderCreatedNotification(orderId, "lmsasajnr@gmail.com"));
     return Results.Ok(orderId);
+});
+app.MapDelete("/orders", async (IDispatcher dispatcher) =>
+{
+    // Logic to delete an order by ID
+    await dispatcher.Send(new DeleteOrderCommand());
+    // For now, just return a success message
+    return Results.Ok($"Orders deleted successfully.");
 });
 
 app.MapGet("/orders/{id:guid}", async (Guid id, IDispatcher dispatcher) =>

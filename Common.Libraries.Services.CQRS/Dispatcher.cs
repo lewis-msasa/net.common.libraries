@@ -11,6 +11,7 @@ namespace Common.Libraries.Services.CQRS
 {
     public interface IDispatcher
     {
+        Task Send(IRequest request, CancellationToken cancellationToken = default);
         Task<TResponse> Send<TResponse>(IRequest<TResponse> request, CancellationToken cancellationToken = default);
         //Task<TResponse> SendWithPipelines<TResponse>(IRequest<TResponse> request, CancellationToken cancellationToken = default);
     }
@@ -55,6 +56,34 @@ namespace Common.Libraries.Services.CQRS
 
             return await handlerDelegate();
         }
+
+        public async Task Send(IRequest request, CancellationToken cancellationToken = default)
+        {
+            var requestType = request.GetType();
+            var handlerType = typeof(IRequestHandler<>).MakeGenericType(requestType);
+            var handler = _provider.GetService(handlerType);
+
+            var behaviors = _provider.GetServices(typeof(IVoidPipelineBehavior<>)
+                   .MakeGenericType(requestType))
+               .Cast<object>()
+               .ToList();
+
+            if (handler == null)
+                throw new InvalidOperationException($"Handler for {requestType.Name} not found");
+
+            RequestHandlerDelegate handlerDelegate = () =>
+            {
+                var method = handlerType.GetMethod("Handle");
+                return (Task)method.Invoke(handler, [request, cancellationToken]);
+            };
+
+            foreach (var behavior in behaviors.AsEnumerable().Reverse())
+            {
+                var next = handlerDelegate;
+                handlerDelegate = () => ((dynamic)behavior).Handle((dynamic)request, next);
+            }
+            await handlerDelegate();
+        }
         //public async Task<TResponse> Send<TResponse>(IRequest<TResponse> request, CancellationToken cancellationToken = default)
         //{
         //    var handlerType = typeof(IRequestHandler<,>).MakeGenericType(request.GetType(), typeof(TResponse));
@@ -94,7 +123,7 @@ namespace Common.Libraries.Services.CQRS
         //        var auditStartMethod = auditType.GetMethod("LogStartAsync");
         //        await (auditStartMethod?.Invoke(auditStrategy, [(IRequest<TResponse>)ctx.Request]) as Task)!;
         //    }
-                
+
 
         //    // Caching
         //    if (cacheStrategy != null)

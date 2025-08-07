@@ -77,6 +77,7 @@ namespace Common.Libraries.Services.CQRS
         {
             assemblies = assemblies.Append(typeof(IDispatcher).Assembly).ToArray();
             var handlerInterface = typeof(IRequestHandler<,>);
+            var voidHandlerInterface = typeof(IRequestHandler<>);
 
             foreach (var assembly in assemblies)
             {
@@ -87,6 +88,10 @@ namespace Common.Libraries.Services.CQRS
                     foreach (var iface in type.GetInterfaces())
                     {
                         if (iface.IsGenericType && iface.GetGenericTypeDefinition() == handlerInterface)
+                        {
+                            services.AddTransient(iface, type);
+                        }
+                        if (iface.IsGenericType && iface.GetGenericTypeDefinition() == voidHandlerInterface)
                         {
                             services.AddTransient(iface, type);
                         }

@@ -23,7 +23,7 @@ namespace Common.Libraries.Services.EFCore.Repositories
         public async Task<T> GetOneAsync(Expression<Func<T, bool>> predicate = null,
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
             string[] includeString = null,
-            bool disableTracking = true)
+            bool disableTracking = true, CancellationToken cancellationToken = default)
         {
             var query = _dbContext.Set<T>().Where(predicate);
             if (includeString != null)
@@ -45,7 +45,7 @@ namespace Common.Libraries.Services.EFCore.Repositories
             return await query?.FirstOrDefaultAsync();
         }
 
-        public async Task<T> AddAsync(T entity)
+        public async Task<T> AddAsync(T entity, CancellationToken cancellationToken = default)
         {
             await _dbContext.Set<T>().AddAsync(entity);
             var result = await _dbContext.SaveChangesAsync();
@@ -53,7 +53,7 @@ namespace Common.Libraries.Services.EFCore.Repositories
             return entity;
         }
 
-        public async Task<int> DeleteAsync(T entity)
+        public async Task<int> DeleteAsync(T entity, CancellationToken cancellationToken = default)
         {
 
             _dbContext.Set<T>().Remove(entity);
@@ -61,43 +61,20 @@ namespace Common.Libraries.Services.EFCore.Repositories
             return result;
         }
 
-        public async Task<IReadOnlyList<T>> GetAllAsync()
+        public async Task<IReadOnlyList<T>> GetAllAsync(CancellationToken cancellationToken = default)
         {
             return await _dbContext.Set<T>().ToListAsync();
         }
 
-        public async Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate)
+        public async Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default)
         {
             return await _dbContext.Set<T>().Where(predicate).ToListAsync();
         }
         
 
-        public async Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate = null,
-            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
-            List<Expression<Func<T, object>>> includes = null, 
-            bool disableTracking = true)
-        {
-              
-            var query = _dbContext.Set<T>().Where(predicate);
-            includes.ForEach(include =>
-            {
-                query.Include(include);
-               
-            });
-            if(orderBy != null)
-            {
-                query = orderBy(query);
-            }
-            if (!disableTracking)
-            {
-                query = query.AsNoTracking();
-            }
-            return await query.ToListAsync();
-        }
 
 
-
-        public async Task<IReadOnlyList<T>> GetPaginatedByCondtionAsync(Expression<Func<T, bool>> predicate, int page, int size, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string[] includeString = null, bool disableTracking = true)
+        public async Task<IReadOnlyList<T>> GetPaginatedByCondtionAsync(Expression<Func<T, bool>> predicate, int page, int size, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string[] includeString = null, bool disableTracking = true, CancellationToken cancellationToken = default)
         {
             
             page = page != 0 ? page - 1 : page;
@@ -122,7 +99,7 @@ namespace Common.Libraries.Services.EFCore.Repositories
         }
         
 
-        public async Task<int> UpdateAsync(T entity)
+        public async Task<int> UpdateAsync(T entity, CancellationToken cancellationToken = default)
         {
             _dbContext.Set<T>().Update(entity);
 
@@ -134,7 +111,7 @@ namespace Common.Libraries.Services.EFCore.Repositories
 
         public async Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate = null, 
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, 
-            string[] includeString = null, bool disableTracking = true)
+            string[] includeString = null, bool disableTracking = true, CancellationToken cancellationToken = default)
         {
             var query = _dbContext.Set<T>().Where(predicate);
             if (includeString != null)
@@ -156,7 +133,7 @@ namespace Common.Libraries.Services.EFCore.Repositories
             return await query.ToListAsync();
         }
 
-        public async Task<IReadOnlyList<T>> GetPaginatedAsync(int page, int size, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string[] includeString = null, bool disableTracking = true)
+        public async Task<IReadOnlyList<T>> GetPaginatedAsync(int page, int size, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string[] includeString = null, bool disableTracking = true, CancellationToken cancellationToken = default)
         {
             
             page = page != 0 ? page - 1 : page;
@@ -181,12 +158,14 @@ namespace Common.Libraries.Services.EFCore.Repositories
             return await query.ToListAsync();
         }
 
-        public async Task<int> CountAsync(Expression<Func<T, bool>> predicate = null)
+        public async Task<int> CountAsync(Expression<Func<T, bool>> predicate = null, CancellationToken cancellationToken = default)
         {
            if(predicate != null)
              return await _dbContext.Set<T>().CountAsync(predicate);
            else
              return await _dbContext.Set<T>().CountAsync();
         }
+
+       
     }
 }

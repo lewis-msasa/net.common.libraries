@@ -11,30 +11,27 @@ namespace Common.Libraries.Services.Repositories
 {
     public interface IRepository<T> where T : class, IEntity
     {
-        Task<IReadOnlyList<T>> GetAllAsync();
+        Task<IReadOnlyList<T>> GetAllAsync(CancellationToken cancellationToken = default);
 
         Task<T> GetOneAsync(Expression<Func<T, bool>> predicate = null,
           Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
          string[] includeString = null,
-          bool disableTracking = true);
+          bool disableTracking = true, CancellationToken cancellationToken = default);
 
        
 
 
-        Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate);
+        Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default);
 
         Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate = null,
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
            string[] includeString = null,
-            bool disableTracking = true);
-        Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate = null,
-            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
-            List<Expression<Func<T, object>>> includes = null,
-            bool disableTracking = true);
+            bool disableTracking = true, CancellationToken cancellationToken = default);
+     
 
         Task<IReadOnlyList<T>> GetPaginatedAsync(int page,
             int size, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
-            string[] includeString = null, bool disableTracking = true);
+            string[] includeString = null, bool disableTracking = true, CancellationToken cancellationToken = default);
 
        
 
@@ -42,14 +39,14 @@ namespace Common.Libraries.Services.Repositories
             int page, int size,
            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
            string[] includeString = null,
-           bool disableTracking = true);
+           bool disableTracking = true, CancellationToken cancellationToken = default);
 
-        Task<int> CountAsync(Expression<Func<T, bool>> predicate = null);
+        Task<int> CountAsync(Expression<Func<T, bool>> predicate = null, CancellationToken cancellationToken = default);
 
-        Task<T> AddAsync(T entity);
+        Task<T> AddAsync(T entity, CancellationToken cancellationToken = default);
 
-        Task<int> UpdateAsync(T entity);
+        Task<int> UpdateAsync(T entity, CancellationToken cancellationToken = default);
 
-        Task<int> DeleteAsync(T entity);
+        Task<int> DeleteAsync(T entity, CancellationToken cancellationToken = default);
     }
 }

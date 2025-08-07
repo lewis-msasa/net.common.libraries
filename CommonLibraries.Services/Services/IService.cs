@@ -12,28 +12,28 @@ namespace Common.Libraries.Services.Services
 {
     public interface IService<T, TD> where T : IEntity where TD : IDTO 
     {
-        Task<int> CountAsync(Expression<Func<T, bool>> predicate = null);
+        Task<int> CountAsync(Expression<Func<T, bool>> predicate = null, CancellationToken cancellationToken = default);
         Task<T> GetOneAsync(Expression<Func<T, bool>> predicate = null,
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
             string[] includeString = null,
-            bool disableTracking = true);
-        Task<T> CreateAsync(T entity);
+            bool disableTracking = true, CancellationToken cancellationToken = default);
+        Task<T> CreateAsync(T entity, CancellationToken cancellationToken = default);
        
 
         Task<ICollection<T>> GetPaginatedAsync(int page, int size,
-            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string[] includeString = null, bool disableTracking = true);
+            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string[] includeString = null, bool disableTracking = true, CancellationToken cancellationToken = default);
 
-        Task<ICollection<T>> CreateManyAsync(ICollection<T> entity);
-        Task<int> DeleteAsync(T entity);
+        Task<ICollection<T>> CreateManyAsync(ICollection<T> entity, CancellationToken cancellationToken = default);
+        Task<int> DeleteAsync(T entity, CancellationToken cancellationToken = default);
 
-        Task<int> DeleteManyAsync(Expression<Func<T, bool>> predicate);
+        Task<int> DeleteManyAsync(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default);
 
-        Task<int> UpdateAsync(T dto);
+        Task<int> UpdateAsync(T dto, CancellationToken cancellationToken = default);
 
-        Task<int> UpdateManyAsync(ICollection<T> entities);
-        Task<ICollection<T>> GetAsync();
+        Task<int> UpdateManyAsync(ICollection<T> entities, CancellationToken cancellationToken = default);
+        Task<ICollection<T>> GetAsync(CancellationToken cancellationToken = default);
 
-        Task<ICollection<T>> GetByConditionAsync(Expression<Func<T, bool>> predicate);
+        Task<ICollection<T>> GetByConditionAsync(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default);
 
         Task<ICollection<T>> GetPaginatedByConditionAsync(
             Expression<Func<T, bool>> predicate,
@@ -41,35 +41,35 @@ namespace Common.Libraries.Services.Services
             int size,
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
             string[] includeString = null,
-            bool disableTracking = true
+            bool disableTracking = true, CancellationToken cancellationToken = default
             );
     }
     public interface IServiceWithMapping<T, TD> where T : IEntity where TD : IDTO
     {
-        Task<int> CountAsync(Expression<Func<T, bool>> predicate = null);
+        Task<int> CountAsync(Expression<Func<T, bool>> predicate = null, CancellationToken cancellationToken = default);
         Task<TD> GetOneAsync(Expression<Func<T, bool>> predicate = null,
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
             Func<T,TD> mapping = null,
             string[] includeString = null,
-            bool disableTracking = true);
-        Task<TD> CreateAsync(T entity, Func<T, TD> mapping);
+            bool disableTracking = true, CancellationToken cancellationToken = default);
+        Task<TD> CreateAsync(T entity, Func<T, TD> mapping, CancellationToken cancellationToken = default);
 
 
         Task<ICollection<TD>> GetPaginatedAsync(int page, int size,
             Func<ICollection<T>, ICollection<TD>> mapping = null,
-            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string[] includeString = null, bool disableTracking = true);
+            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string[] includeString = null, bool disableTracking = true, CancellationToken cancellationToken = default);
 
-        Task<ICollection<TD>> CreateManyAsync(ICollection<T> entity, Func<ICollection<T>, ICollection<TD>> mapping = null);
-        Task<int> DeleteAsync(T entity);
+        Task<ICollection<TD>> CreateManyAsync(ICollection<T> entity, Func<ICollection<T>, ICollection<TD>> mapping = null, CancellationToken cancellationToken = default);
+        Task<int> DeleteAsync(T entity, CancellationToken cancellationToken = default);
 
-        Task<int> DeleteManyAsync(Expression<Func<T, bool>> predicate);
+        Task<int> DeleteManyAsync(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default);
 
-        Task<int> UpdateAsync(T dto);
+        Task<int> UpdateAsync(T dto, CancellationToken cancellationToken = default);
 
-        Task<int> UpdateManyAsync(ICollection<T> entities);
-        Task<ICollection<TD>> GetAsync(Func<ICollection<T>, ICollection<TD>> mapping = null);
+        Task<int> UpdateManyAsync(ICollection<T> entities, CancellationToken cancellationToken = default);
+        Task<ICollection<TD>> GetAsync(Func<ICollection<T>, ICollection<TD>> mapping = null, CancellationToken cancellationToken = default);
 
-        Task<ICollection<TD>> GetByConditionAsync(Expression<Func<T, bool>> predicate, Func<ICollection<T>, ICollection<TD>> mapping = null);
+        Task<ICollection<TD>> GetByConditionAsync(Expression<Func<T, bool>> predicate, Func<ICollection<T>, ICollection<TD>> mapping = null, CancellationToken cancellationToken = default);
 
         Task<ICollection<TD>> GetPaginatedByConditionAsync(
             Expression<Func<T, bool>> predicate,
@@ -78,7 +78,7 @@ namespace Common.Libraries.Services.Services
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
             Func<ICollection<T>, ICollection<TD>> mapping = null,
             string[] includeString = null,
-            bool disableTracking = true
+            bool disableTracking = true, CancellationToken cancellationToken = default
             );
     }
 }
