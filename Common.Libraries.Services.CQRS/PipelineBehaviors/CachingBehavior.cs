@@ -7,25 +7,24 @@ using System.Threading.Tasks;
 
 namespace Common.Libraries.Services.CQRS.PipelineBehaviors
 {
-    public class AuthorizationBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TRequest : IRequest<TResponse>
+    public class CachingBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TRequest : IRequest<TResponse>
     {
-        
+      
         private readonly IServiceProvider _provider;
 
-        public AuthorizationBehavior(IServiceProvider provider)
+        public CachingBehavior(IServiceProvider provider)
         {
             _provider = provider;
         }
 
         public async Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next)
         {
-            
-            if (_provider.TryGetService<IPermissionStrategy<TRequest>>(out var strategy))
+            if (_provider.TryGetService<ICacheStrategy<TRequest, TResponse>>(out var cacheStrategy))
             {
-                await strategy.IsAuthorizedAsync(request);
+            
+                var cachedResponse = await cacheStrategy.TryGetAsync(request);
             }
             return await next();
         }
     }
-
 }

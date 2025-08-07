@@ -1,4 +1,5 @@
-﻿using Common.Libraries.Services.Entities;
+﻿using Common.Libraries.Services.EFCore.Repositories;
+using Common.Libraries.Services.Entities;
 using Common.Libraries.Services.Repositories;
 using Common.Libraries.Services.UnitOfWork;
 using Microsoft.EntityFrameworkCore;
@@ -36,7 +37,7 @@ namespace Common.Libraries.Services.EFCore.UnitOfWork
         }
         public IRepository<T> Repository<T>() where T : class, IEntity
         {
-            return new UnitOfWorkRepository<T,Context>(_dbContext);
+            return new EFRepository<T,Context>(_dbContext);
         }
         private bool disposed = false;
         protected virtual void Dispose(bool disposing)

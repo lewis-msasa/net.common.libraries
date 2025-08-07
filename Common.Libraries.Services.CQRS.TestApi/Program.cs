@@ -1,4 +1,5 @@
 using Common.Libraries.Services.CQRS;
+using Common.Libraries.Services.CQRS.Notification;
 using Common.Libraries.Services.CQRS.PipelineBehaviors;
 using Common.Libraries.Services.CQRS.TestApi;
 
@@ -18,8 +19,12 @@ builder.Services.AddMemoryCache();
 //builder.Services.AddScoped<IRequestHandler<CreateOrderCommand, Guid>, CreateOrderHandler>();
 //builder.Services.AddScoped<IRequestHandler<GetOrderByIdQuery, OrderDto>, GetOrderByIdHandler>();
 builder.Services.AddRequestHandlers([typeof(CreateOrderHandler).Assembly]);
+builder.Services.AddNotificationHandlers([typeof(SendOrderEmailHandler).Assembly]);
 
-builder.Services.RegisterCORSBehaviorsServices();
+//builder.Services.RegisterCORSBehaviorsServices();
+builder.Services.AddPipelines([]);
+builder.Services.AddNotificationPipelines([]);
+
 builder.Services.AddScoped<ICacheStrategy<GetOrderByIdQuery, OrderDto>, GetOrderByIdCache>();
 builder.Services.AddScoped<IMetricsStrategy<GetOrderByIdQuery, OrderDto>, BasicMetrics<GetOrderByIdQuery, OrderDto>>();
 builder.Services.AddScoped<IPermissionStrategy<CreateOrderCommand>, CreateOrderPermissionStrategy>();
@@ -29,9 +34,10 @@ builder.Services.AddScoped<IAuditStrategy<CreateOrderCommand>, CreateOrderAuditS
 
 var app = builder.Build();
 
-app.MapPost("/orders", async (CreateOrderCommand command, IDispatcher dispatcher) =>
+app.MapPost("/orders", async (CreateOrderCommand command, IDispatcher dispatcher, INotificationDispatcher notificationDispatcher) =>
 {
     var orderId = await dispatcher.SendWithPipelines(command); //.Send(command);
+    await notificationDispatcher.Publish(new OrderCreatedNotification(orderId, "lmsasajnr@gmail.com"));
     return Results.Ok(orderId);
 });
 
