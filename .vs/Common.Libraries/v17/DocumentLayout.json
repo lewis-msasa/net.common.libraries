@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{70C25BF1-4290-40B2-B74C-923A1B5BA813}|Common.Libraries.Services.BackgroundJobService.TestApi\\Common.Libraries.Services.BackgroundJobService.TestApi.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.backgroundjobservice.testapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70C25BF1-4290-40B2-B74C-923A1B5BA813}|Common.Libraries.Services.BackgroundJobService.TestApi\\Common.Libraries.Services.BackgroundJobService.TestApi.csproj|solutionrelative:common.libraries.services.backgroundjobservice.testapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.efcore\\common.libraries.services.efcore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|solutionrelative:common.libraries.services.efcore\\common.libraries.services.efcore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.efcore\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|solutionrelative:common.libraries.services.efcore\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.efcore\\repositories\\efrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|solutionrelative:common.libraries.services.efcore\\repositories\\efrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.efcore\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|solutionrelative:common.libraries.services.efcore\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,53 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Common.Libraries.Services.EFCore",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj",
-              "RelativeDocumentMoniker": "Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj",
-              "RelativeToolTip": "Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-08T09:05:53.278Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EFRepository.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\Repositories\\EFRepository.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.Services.EFCore\\Repositories\\EFRepository.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\Repositories\\EFRepository.cs",
-              "RelativeToolTip": "Common.Libraries.Services.EFCore\\Repositories\\EFRepository.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAA4AAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.BackgroundJobService.TestApi\\Program.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.BackgroundJobService.TestApi\\Program.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.BackgroundJobService.TestApi\\Program.cs",
+              "RelativeToolTip": "Common.Libraries.Services.BackgroundJobService.TestApi\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T09:05:22.509Z",
+              "WhenOpened": "2025-08-08T10:14:59.302Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\UnitOfWork\\IUnitOfWork.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.Services.EFCore\\UnitOfWork\\IUnitOfWork.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\UnitOfWork\\IUnitOfWork.cs",
-              "RelativeToolTip": "Common.Libraries.Services.EFCore\\UnitOfWork\\IUnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T08:58:55.614Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.Services.EFCore\\DependencyInjection.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\DependencyInjection.cs",
-              "RelativeToolTip": "Common.Libraries.Services.EFCore\\DependencyInjection.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwCUAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T08:58:39.857Z",
+              "Title": "Common.Libraries.Services.EFCore",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj",
+              "RelativeToolTip": "Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-08T09:05:53.278Z",
               "EditorCaption": ""
             }
           ]

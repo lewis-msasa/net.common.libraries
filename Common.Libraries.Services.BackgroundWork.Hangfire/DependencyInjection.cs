@@ -40,11 +40,11 @@ namespace Common.Libraries.Services.BackgroundWork.Hangfire
             services.AddSingleton<IBackgroundJobService, HangfireBackgroundJobService>();
             return services;
         }
-        public static IApplicationBuilder HangfireAppExtension(this IApplicationBuilder app, string endpoint)
+        public static IApplicationBuilder HangfireAppExtension(this IApplicationBuilder app,string username,string password, string endpoint)
         {
            app.UseHangfireDashboard(endpoint, new DashboardOptions
            {
-               Authorization = new[] { new HangfireAuthorizationFilter() }
+               Authorization = [new HangfireBasicAuthFilter(username, password)]
            });
             return app;
         }
