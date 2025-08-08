@@ -136,6 +136,30 @@ namespace Common.Libraries.Services.CQRS
 
             return services;
         }
+        public static IServiceCollection AddVoidPipelines(this IServiceCollection services, Assembly[] assemblies = default!)
+        {
+            assemblies = assemblies.Append(typeof(IDispatcher).Assembly).ToArray();
+            var behaviorType = typeof(IVoidPipelineBehavior<>);
+
+            var openGenericBehaviors = assemblies
+                .SelectMany(a => a.GetTypes())
+                .Where(t =>
+                    t.IsClass &&
+                    !t.IsAbstract &&
+                    t.IsGenericTypeDefinition &&
+                    t.GetInterfaces()
+                        .Any(i =>
+                            i.IsGenericType &&
+                            i.GetGenericTypeDefinition() == behaviorType))
+                .ToList();
+
+            foreach (var behavior in openGenericBehaviors)
+            {
+                services.AddScoped(behaviorType, behavior);
+            }
+
+            return services;
+        }
 
 
         public static IServiceCollection AddRequestHandlersAndPipelines(this IServiceCollection services, Assembly[] assemblies)

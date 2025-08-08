@@ -12,16 +12,18 @@ using System.Threading.Tasks;
 namespace Common.Libraries.Services.EFCore.UnitOfWork
 {
     
-    public class UnitOfWork<Context> : IUnitOfWork, IDisposable where Context : DbContext
+    public class UnitOfWork<T,Context> : IDisposable,IUnitOfWork<T> where T: class, IEntity where Context : DbContext
     {
         private readonly Context _dbContext;
+        private readonly IRepository<T> _repository;
         public UnitOfWork(Context dbContext)
         {
+            _repository = new UnitOfWorkRepository<T, Context>(dbContext);
             _dbContext = dbContext;
         }
-        public Task<int> Commit()
+        public Task<int> Commit(CancellationToken cancellationToken)
         {
-            return _dbContext.SaveChangesAsync();
+            return _dbContext.SaveChangesAsync(cancellationToken);
         }
         public void Rollback()
         {
@@ -35,9 +37,9 @@ namespace Common.Libraries.Services.EFCore.UnitOfWork
                 }
             }
         }
-        public IRepository<T> Repository<T>() where T : class, IEntity
+        public IRepository<T> Repository() 
         {
-            return new UnitOfWorkRepository<T,Context>(_dbContext);
+            return _repository;
         }
         private bool disposed = false;
         protected virtual void Dispose(bool disposing)

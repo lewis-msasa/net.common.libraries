@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Common.Libraries.Services.EFCore.Repositories
 {
-    public class EFRepository<T, Context> : IRepository<T> where T : class, IEntity where Context : DbContext
+    public class EFRepository<T, Context> : IDisposable,IRepository<T> where T : class, IEntity where Context : DbContext
     {
         private readonly Context _dbContext;
 
@@ -166,6 +166,22 @@ namespace Common.Libraries.Services.EFCore.Repositories
              return await _dbContext.Set<T>().CountAsync();
         }
 
-       
+        private bool disposed = false;
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!disposed)
+            {
+                if (disposing)
+                {
+                    _dbContext.Dispose();
+                }
+            }
+            disposed = true;
+        }
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
     }
 }

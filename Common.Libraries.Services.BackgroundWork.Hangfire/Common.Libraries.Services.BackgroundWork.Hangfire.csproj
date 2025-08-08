@@ -1,10 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+	  <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>1.0.0</Version>
+    <Version>1.0.3</Version>
+    <Authors>Lewis Msasa</Authors>
+	  <Company>NovaBank</Company>
+	  <PackageDescription>For Hangfire background services</PackageDescription>
+	  <RepositoryUrl>https://github.com/novabankapp/common.Libraries</RepositoryUrl>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>

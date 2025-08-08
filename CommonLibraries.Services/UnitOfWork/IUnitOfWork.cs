@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace Common.Libraries.Services.UnitOfWork
 {
-    public interface IUnitOfWork : IDisposable
+    public interface IUnitOfWork<T> : IDisposable where T : class, IEntity
     {
-        Task<int> Commit();
+        Task<int> Commit(CancellationToken cancellationToken);
         void Rollback();
-        IRepository<T> Repository<T>() where T : class, IEntity;
+        IRepository<T> Repository();
     }
 }
