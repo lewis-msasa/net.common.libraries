@@ -11,23 +11,25 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Common.Libraries.USSD.TNM
+namespace Common.Libraries.USSD.Airtel
 {
-    public class TNMSocketServer : SocketTcpServer
+    public class AirtelSocketServer : SocketTcpServer
     {
+
         private readonly ILogger _logger;
         private readonly IProtocolFramer _protocolFramer;
         private readonly IProcessRequest<UssdRequest> _processRequest;
-        private readonly IProcessResponse<ServerRequest, ServerResponse> _processResponse;
+        private readonly IProcessResponse<ServerRequest,ServerResponse> _processResponse;
         private readonly IResponseMapper<ServerResponse, UssdResponse> _responseMapper;
         private readonly IRequestMapper<UssdRequest, ServerRequest> _requestMapper;
         private readonly IUSSDSettings _ussdSettings;
         private readonly Dictionary<string, DateTime> _sessions;
-        public TNMSocketServer(ILogger logger, IProtocolFramer protocolFramer,
-            IProcessRequest<UssdRequest> processRequest,
+
+        public AirtelSocketServer(ILogger logger, IProtocolFramer protocolFramer,
+            IProcessRequest<UssdRequest> processRequest, 
             IProcessResponse<ServerRequest, ServerResponse> processResponse,
-            IResponseMapper<ServerResponse, UssdResponse> responseMapper, IUSSDSettings ussdSettings,
-            IRequestMapper<UssdRequest, ServerRequest> requestMapper) : base(IPAddress.Parse(ussdSettings.IPAddress), ussdSettings.Port, logger, protocolFramer)
+            IResponseMapper<ServerResponse, UssdResponse> responseMapper, IUSSDSettings ussdSettings, 
+            IRequestMapper<UssdRequest, ServerRequest> requestMapper) : base(IPAddress.Parse(ussdSettings.IPAddress),ussdSettings.Port, logger, protocolFramer) 
         {
             _logger = logger;
             _protocolFramer = protocolFramer;
@@ -37,8 +39,7 @@ namespace Common.Libraries.USSD.TNM
             _ussdSettings = ussdSettings;
             _requestMapper = requestMapper;
             _sessions = new Dictionary<string, DateTime>();
-        }
-
+        } 
         protected override async Task HandleClientAsync(Guid clientId, Socket clientSocket)
         {
             var cancellationToken = CancellationToken.None;
@@ -66,8 +67,7 @@ namespace Common.Libraries.USSD.TNM
                     _logger.LogWarning("Failed to process request from {ClientId}: {Message}", clientId, message);
                     continue; // Skip sending a response if processing failed
                 }
-                //the request is what we send to server
-                
+                //the airtel request is what we send to server
                 var serverRequest = await _requestMapper.Map(request);
                 if (!_sessions.ContainsKey(serverRequest.SessionID))
                 {
@@ -76,13 +76,12 @@ namespace Common.Libraries.USSD.TNM
                 else
                 {
                     var sessionDate = _sessions[serverRequest.SessionID];
-                    if (DateTime.UtcNow.Subtract(sessionDate) >= TimeSpan.FromMinutes(_ussdSettings.SessionMinutesToRefresh))
+                    if(DateTime.UtcNow.Subtract(sessionDate) >= TimeSpan.FromMinutes(_ussdSettings.SessionMinutesToRefresh))
                     {
                         _sessions[serverRequest.SessionID] = DateTime.UtcNow;
                     }
                     serverRequest.FirstRequest = false;
                 }
-
                 //return session id, screen id, message, if response is required - to airtel this is a RESPONSE request_type ( this should be returned in the ServerResponse class
                 //turn the ServerResponse to UssdResponse, then turn this to xml and then add headers
                 var serverResponse = await _processResponse.Process(serverRequest);
@@ -102,7 +101,6 @@ namespace Common.Libraries.USSD.TNM
                 //sent to the client
                 byte[] responseBytes = Encoding.UTF8.GetBytes(xmlResponse);
                 await _protocolFramer.WriteMessageAsync(clientSocket, responseBytes, cancellationToken);
-
             }
         }
     }
