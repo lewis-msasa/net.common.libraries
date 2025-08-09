@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{220F3109-8A7F-4A6F-A749-78CB26082610}|Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.validation.fluentvalidation\\common.libraries.services.validation.fluentvalidation.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{220F3109-8A7F-4A6F-A749-78CB26082610}|Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj|solutionrelative:common.libraries.services.validation.fluentvalidation\\common.libraries.services.validation.fluentvalidation.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{FB716667-7255-4573-9C83-D0ECC0B78C13}|Common.Libraries.Services.Validation\\Common.Libraries.Services.Validation.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.validation\\common.libraries.services.validation.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{FB716667-7255-4573-9C83-D0ECC0B78C13}|Common.Libraries.Services.Validation\\Common.Libraries.Services.Validation.csproj|solutionrelative:common.libraries.services.validation\\common.libraries.services.validation.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB716667-7255-4573-9C83-D0ECC0B78C13}|Common.Libraries.Services.Validation\\Common.Libraries.Services.Validation.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.validation\\common.libraries.services.validation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FB716667-7255-4573-9C83-D0ECC0B78C13}|Common.Libraries.Services.Validation\\Common.Libraries.Services.Validation.csproj|solutionrelative:common.libraries.services.validation\\common.libraries.services.validation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{220F3109-8A7F-4A6F-A749-78CB26082610}|Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.validation.fluentvalidation\\common.libraries.services.validation.fluentvalidation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{220F3109-8A7F-4A6F-A749-78CB26082610}|Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj|solutionrelative:common.libraries.services.validation.fluentvalidation\\common.libraries.services.validation.fluentvalidation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{220F3109-8A7F-4A6F-A749-78CB26082610}|Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.validation.fluentvalidation\\common.libraries.services.validation.fluentvalidation.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{220F3109-8A7F-4A6F-A749-78CB26082610}|Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj|solutionrelative:common.libraries.services.validation.fluentvalidation\\common.libraries.services.validation.fluentvalidation.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{220F3109-8A7F-4A6F-A749-78CB26082610}|Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.validation.fluentvalidation\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,6 +75,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Common.Libraries.Services.Validation",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Validation\\Common.Libraries.Services.Validation.csproj",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.Validation\\Common.Libraries.Services.Validation.csproj",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Validation\\Common.Libraries.Services.Validation.csproj",
+              "RelativeToolTip": "Common.Libraries.Services.Validation\\Common.Libraries.Services.Validation.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-09T06:34:07.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Common.Libraries.Services.Validation",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Validation\\Common.Libraries.Services.Validation.csproj",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.Validation\\Common.Libraries.Services.Validation.csproj",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Validation\\Common.Libraries.Services.Validation.csproj",
+              "RelativeToolTip": "Common.Libraries.Services.Validation\\Common.Libraries.Services.Validation.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-09T06:33:58.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Common.Libraries.Services.Validation.FluentValidation",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj",
               "RelativeDocumentMoniker": "Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj",
@@ -78,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "Common.Libraries.Services.CQRS\\DependencyInjection.cs",
@@ -91,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Validation.FluentValidation\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "Common.Libraries.Services.Validation.FluentValidation\\DependencyInjection.cs",
@@ -104,7 +137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "FluentValidationExtensions.cs",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Validation.FluentValidation\\FluentValidationExtensions.cs",
               "RelativeDocumentMoniker": "Common.Libraries.Services.Validation.FluentValidation\\FluentValidationExtensions.cs",
@@ -117,20 +150,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Common.Libraries.Services.Validation.FluentValidation",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj",
               "RelativeDocumentMoniker": "Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj",
               "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj",
               "RelativeToolTip": "Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-08-09T05:52:51.679Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "FluentValidator.cs",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Validation.FluentValidation\\FluentValidator.cs",
               "RelativeDocumentMoniker": "Common.Libraries.Services.Validation.FluentValidation\\FluentValidator.cs",
@@ -143,7 +176,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "IRequestValidator.cs",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Validation\\IRequestValidator.cs",
               "RelativeDocumentMoniker": "Common.Libraries.Services.Validation\\IRequestValidator.cs",
@@ -156,7 +189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "EFRepository.cs",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\Repositories\\EFRepository.cs",
               "RelativeDocumentMoniker": "Common.Libraries.Services.EFCore\\Repositories\\EFRepository.cs",
@@ -169,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "HangfireBackgroundService.cs",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.BackgroundWork.Hangfire\\HangfireBackgroundService.cs",
               "RelativeDocumentMoniker": "Common.Libraries.Services.BackgroundWork.Hangfire\\HangfireBackgroundService.cs",
@@ -181,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.BackgroundWork.Hangfire\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "Common.Libraries.Services.BackgroundWork.Hangfire\\DependencyInjection.cs",
@@ -193,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Common.Libraries.Services.BackgroundWork.Hangfire.csproj",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.BackgroundWork.Hangfire\\Common.Libraries.Services.BackgroundWork.Hangfire.csproj",
               "RelativeDocumentMoniker": "Common.Libraries.Services.BackgroundWork.Hangfire\\Common.Libraries.Services.BackgroundWork.Hangfire.csproj",
@@ -206,7 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.BackgroundJobService.TestApi\\Program.cs",
               "RelativeDocumentMoniker": "Common.Libraries.Services.BackgroundJobService.TestApi\\Program.cs",
@@ -218,7 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Common.Libraries.Services.EFCore.csproj",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj",
               "RelativeDocumentMoniker": "Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj",
