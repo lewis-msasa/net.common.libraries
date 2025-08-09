@@ -3,20 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.efcore\\common.libraries.services.efcore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|solutionrelative:common.libraries.services.efcore\\common.libraries.services.efcore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{220F3109-8A7F-4A6F-A749-78CB26082610}|Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.validation.fluentvalidation\\common.libraries.services.validation.fluentvalidation.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{220F3109-8A7F-4A6F-A749-78CB26082610}|Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj|solutionrelative:common.libraries.services.validation.fluentvalidation\\common.libraries.services.validation.fluentvalidation.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.efcore\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|solutionrelative:common.libraries.services.efcore\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{220F3109-8A7F-4A6F-A749-78CB26082610}|Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.validation.fluentvalidation\\common.libraries.services.validation.fluentvalidation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{220F3109-8A7F-4A6F-A749-78CB26082610}|Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj|solutionrelative:common.libraries.services.validation.fluentvalidation\\common.libraries.services.validation.fluentvalidation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{220F3109-8A7F-4A6F-A749-78CB26082610}|Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.validation.fluentvalidation\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{220F3109-8A7F-4A6F-A749-78CB26082610}|Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj|solutionrelative:common.libraries.services.validation.fluentvalidation\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.cqrs\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AC72632-82F9-4C1A-97CA-899545DC55C5}|Common.Libraries.Services.CQRS\\Common.Libraries.Services.CQRS.csproj|solutionrelative:common.libraries.services.cqrs\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{220F3109-8A7F-4A6F-A749-78CB26082610}|Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.validation.fluentvalidation\\fluentvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{220F3109-8A7F-4A6F-A749-78CB26082610}|Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj|solutionrelative:common.libraries.services.validation.fluentvalidation\\fluentvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{220F3109-8A7F-4A6F-A749-78CB26082610}|Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.validation.fluentvalidation\\fluentvalidationextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{220F3109-8A7F-4A6F-A749-78CB26082610}|Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj|solutionrelative:common.libraries.services.validation.fluentvalidation\\fluentvalidationextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB716667-7255-4573-9C83-D0ECC0B78C13}|Common.Libraries.Services.Validation\\Common.Libraries.Services.Validation.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.validation\\irequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB716667-7255-4573-9C83-D0ECC0B78C13}|Common.Libraries.Services.Validation\\Common.Libraries.Services.Validation.csproj|solutionrelative:common.libraries.services.validation\\irequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.efcore\\repositories\\efrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|solutionrelative:common.libraries.services.efcore\\repositories\\efrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.efcore\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|solutionrelative:common.libraries.services.efcore\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6928F93C-432E-4D03-A47C-80125F7A1039}|Common.Libraries.Services.BackgroundWork.Hangfire\\Common.Libraries.Services.BackgroundWork.Hangfire.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.backgroundwork.hangfire\\hangfirebackgroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6928F93C-432E-4D03-A47C-80125F7A1039}|Common.Libraries.Services.BackgroundWork.Hangfire\\Common.Libraries.Services.BackgroundWork.Hangfire.csproj|solutionrelative:common.libraries.services.backgroundwork.hangfire\\hangfirebackgroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70C25BF1-4290-40B2-B74C-923A1B5BA813}|Common.Libraries.Services.BackgroundJobService.TestApi\\Common.Libraries.Services.BackgroundJobService.TestApi.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.backgroundjobservice.testapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70C25BF1-4290-40B2-B74C-923A1B5BA813}|Common.Libraries.Services.BackgroundJobService.TestApi\\Common.Libraries.Services.BackgroundJobService.TestApi.csproj|solutionrelative:common.libraries.services.backgroundjobservice.testapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6928F93C-432E-4D03-A47C-80125F7A1039}|Common.Libraries.Services.BackgroundWork.Hangfire\\Common.Libraries.Services.BackgroundWork.Hangfire.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.backgroundwork.hangfire\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6928F93C-432E-4D03-A47C-80125F7A1039}|Common.Libraries.Services.BackgroundWork.Hangfire\\Common.Libraries.Services.BackgroundWork.Hangfire.csproj|solutionrelative:common.libraries.services.backgroundwork.hangfire\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6928F93C-432E-4D03-A47C-80125F7A1039}|Common.Libraries.Services.BackgroundWork.Hangfire\\Common.Libraries.Services.BackgroundWork.Hangfire.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.backgroundwork.hangfire\\common.libraries.services.backgroundwork.hangfire.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6928F93C-432E-4D03-A47C-80125F7A1039}|Common.Libraries.Services.BackgroundWork.Hangfire\\Common.Libraries.Services.BackgroundWork.Hangfire.csproj|solutionrelative:common.libraries.services.backgroundwork.hangfire\\common.libraries.services.backgroundwork.hangfire.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.efcore\\common.libraries.services.efcore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|solutionrelative:common.libraries.services.efcore\\common.libraries.services.efcore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,53 +67,166 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Common.Libraries.Services.EFCore",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj",
-              "RelativeDocumentMoniker": "Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj",
-              "RelativeToolTip": "Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
+              "Title": "Common.Libraries.Services.Validation.FluentValidation",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj",
+              "RelativeToolTip": "Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-08T09:05:53.278Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EFRepository.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\Repositories\\EFRepository.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.Services.EFCore\\Repositories\\EFRepository.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\Repositories\\EFRepository.cs",
-              "RelativeToolTip": "Common.Libraries.Services.EFCore\\Repositories\\EFRepository.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T09:05:22.509Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\UnitOfWork\\IUnitOfWork.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.Services.EFCore\\UnitOfWork\\IUnitOfWork.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\UnitOfWork\\IUnitOfWork.cs",
-              "RelativeToolTip": "Common.Libraries.Services.EFCore\\UnitOfWork\\IUnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T08:58:55.614Z",
+              "WhenOpened": "2025-08-09T06:00:03.065Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.Services.EFCore\\DependencyInjection.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\DependencyInjection.cs",
-              "RelativeToolTip": "Common.Libraries.Services.EFCore\\DependencyInjection.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwCUAAAAkAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.CQRS\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\DependencyInjection.cs",
+              "RelativeToolTip": "Common.Libraries.Services.CQRS\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T08:58:39.857Z",
+              "WhenOpened": "2025-08-09T05:56:52.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Validation.FluentValidation\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.Validation.FluentValidation\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Validation.FluentValidation\\DependencyInjection.cs",
+              "RelativeToolTip": "Common.Libraries.Services.Validation.FluentValidation\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T05:56:12.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FluentValidationExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Validation.FluentValidation\\FluentValidationExtensions.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.Validation.FluentValidation\\FluentValidationExtensions.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Validation.FluentValidation\\FluentValidationExtensions.cs",
+              "RelativeToolTip": "Common.Libraries.Services.Validation.FluentValidation\\FluentValidationExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T05:55:44.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Common.Libraries.Services.Validation.FluentValidation",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj",
+              "RelativeToolTip": "Common.Libraries.Services.Validation.FluentValidation\\Common.Libraries.Services.Validation.FluentValidation.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-09T05:52:51.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FluentValidator.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Validation.FluentValidation\\FluentValidator.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.Validation.FluentValidation\\FluentValidator.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Validation.FluentValidation\\FluentValidator.cs",
+              "RelativeToolTip": "Common.Libraries.Services.Validation.FluentValidation\\FluentValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T05:53:09.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IRequestValidator.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Validation\\IRequestValidator.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.Validation\\IRequestValidator.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Validation\\IRequestValidator.cs",
+              "RelativeToolTip": "Common.Libraries.Services.Validation\\IRequestValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T05:51:19.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EFRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\Repositories\\EFRepository.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.EFCore\\Repositories\\EFRepository.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\Repositories\\EFRepository.cs",
+              "RelativeToolTip": "Common.Libraries.Services.EFCore\\Repositories\\EFRepository.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAIwEYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T14:00:00.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HangfireBackgroundService.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.BackgroundWork.Hangfire\\HangfireBackgroundService.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.BackgroundWork.Hangfire\\HangfireBackgroundService.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.BackgroundWork.Hangfire\\HangfireBackgroundService.cs",
+              "RelativeToolTip": "Common.Libraries.Services.BackgroundWork.Hangfire\\HangfireBackgroundService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T12:45:30.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.BackgroundWork.Hangfire\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.BackgroundWork.Hangfire\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.BackgroundWork.Hangfire\\DependencyInjection.cs",
+              "RelativeToolTip": "Common.Libraries.Services.BackgroundWork.Hangfire\\DependencyInjection.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAxwCwAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T10:25:22.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Common.Libraries.Services.BackgroundWork.Hangfire.csproj",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.BackgroundWork.Hangfire\\Common.Libraries.Services.BackgroundWork.Hangfire.csproj",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.BackgroundWork.Hangfire\\Common.Libraries.Services.BackgroundWork.Hangfire.csproj",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.BackgroundWork.Hangfire\\Common.Libraries.Services.BackgroundWork.Hangfire.csproj",
+              "RelativeToolTip": "Common.Libraries.Services.BackgroundWork.Hangfire\\Common.Libraries.Services.BackgroundWork.Hangfire.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-08T10:25:09.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.BackgroundJobService.TestApi\\Program.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.BackgroundJobService.TestApi\\Program.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.BackgroundJobService.TestApi\\Program.cs",
+              "RelativeToolTip": "Common.Libraries.Services.BackgroundJobService.TestApi\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T10:14:59.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Common.Libraries.Services.EFCore.csproj",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj",
+              "RelativeToolTip": "Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-08T09:05:53.278Z",
               "EditorCaption": ""
             }
           ]

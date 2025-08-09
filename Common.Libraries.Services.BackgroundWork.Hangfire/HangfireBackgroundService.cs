@@ -22,6 +22,7 @@ namespace Common.Libraries.Services.BackgroundWork.Hangfire
 
         public void AddOrUpdateRecurring<T>(string jobId, Expression<Func<T, Task>> methodCall, string cronExpression)
         {
+            
             RecurringJob.AddOrUpdate(jobId, methodCall, cronExpression);
         }
 
