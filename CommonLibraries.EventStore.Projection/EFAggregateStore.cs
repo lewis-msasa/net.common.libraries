@@ -52,19 +52,19 @@ namespace Common.Libraries.EventStore.Projection
             _deserializer = deserializer;
         }
 
-        public async Task<bool> Exists(AggregateId<T,TSnapshot> aggregateId)
+        public async Task<bool> Exists(AggregateId<T,TSnapshot> aggregateId, CancellationToken cancellationToken = default!)
         {
             var eventItem = await _eventRepository.GetOneAsync(e => e.AggregateId == aggregateId.Value);
             return (eventItem != null);
         }
 
-        public async Task<T> Load(AggregateId<T,TSnapshot> aggregateId)
+        public async Task<T> Load(AggregateId<T,TSnapshot> aggregateId, CancellationToken cancellationToken = default!)
         {
             var aggregateType = typeof(T).Name;
 
             var snapshot = await _eventSnapshotRepository.GetOneAsync(s => s.AggregateId == aggregateId.Value, o => o.OrderByDescending(t => t.Timestamp));
             var aggregate = (T)Activator.CreateInstance(typeof(T), true);
-            var events = await _eventRepository.GetAsync(e => e.AggregateId == aggregateId.Value && e.AggregateType == typeof(T).Name);
+            var events = await _eventRepository.GetAsync(e => e.AggregateId == aggregateId.Value && e.AggregateType == typeof(T).Name,cancellationToken);
             if (!events.Any())
                 return null;
             var domainEvents = events.Select(e => _deserializer.Deserialize(e.EventData, e.EventType));
@@ -81,11 +81,11 @@ namespace Common.Libraries.EventStore.Projection
             
         }
 
-        public async Task Save(T aggregate)
+        public async Task Save(T aggregate, CancellationToken cancellationToken = default!)
         {
             var changes = aggregate.GetChanges().ToList();
 
-            var events = await _eventRepository.GetAsync(t => t.AggregateId == aggregate.Id);
+            var events = await _eventRepository.GetAsync(t => t.AggregateId == aggregate.Id,cancellationToken);
             var currentVersion = events.MaxBy(t => t.Version)?.Version ?? -1;
             aggregate.Version = currentVersion;
             var eventEntities = changes.Select((e, index) => new Event
@@ -110,7 +110,7 @@ namespace Common.Libraries.EventStore.Projection
 
         }
 
-        public async Task SaveSnapshot(T aggregate)
+        public async Task SaveSnapshot(T aggregate, CancellationToken cancellationToken = default!)
         {
             var snapshot = aggregate.CreateSnapShot();
             await _eventSnapshotRepository.UpdateAsync(snapshot);

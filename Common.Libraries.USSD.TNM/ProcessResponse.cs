@@ -10,6 +10,13 @@ namespace Common.Libraries.USSD.TNM
     public abstract class ProcessResponse : IProcessResponse<ServerRequest, ServerResponse>, IResponseMapper<ServerResponse, UssdResponse>
     {
         private readonly IXmlReader<UssdResponse> _xmlReader;
+        private readonly IApiService<ServerRequest, ServerResponse> _apiService;
+
+        public ProcessResponse(IXmlReader<UssdResponse> xmlReader, IApiService<ServerRequest, ServerResponse> apiService)
+        {
+            _xmlReader = xmlReader;
+            _apiService = apiService;
+        }
 
         public Task<UssdResponse> Map(ServerResponse response)
         {
@@ -28,7 +35,7 @@ namespace Common.Libraries.USSD.TNM
         public Task<ServerResponse> Process(ServerRequest request)
         {
             //api call here
-            throw new NotImplementedException();
+            return _apiService.Call(request);
         }
 
         public async Task<string> Process(UssdResponse response)

@@ -24,37 +24,37 @@ namespace Common.Libraries.Services.Cassandra.Repositories
             _table = new Table<T>(_session);
         }
 
-        public async Task<T> AddAsync(T entity)
+        public async Task<T> AddAsync(T entity, CancellationToken cancellationToken = default!)
         {
             await _mapper.InsertAsync(entity);
             return entity;
         }
 
-        public async Task<int> CountAsync(Expression<Func<T, bool>> predicate = null)
+        public async Task<int> CountAsync(Expression<Func<T, bool>> predicate = null,CancellationToken cancellationToken = default!)
         {
             var result = await _mapper.FetchAsync<T>();
             return result.Count();
         }
 
-        public async Task<int> DeleteAsync(T entity)
+        public async Task<int> DeleteAsync(T entity, CancellationToken cancellationToken = default!)
         {
             await _mapper.DeleteAsync(entity);
             return 1;
         }
 
-        public async Task<IReadOnlyList<T>> GetAllAsync()
+        public async Task<IReadOnlyList<T>> GetAllAsync(CancellationToken cancellationToken = default!)
         {
             var result = await _mapper.FetchAsync<T>();
             return result.ToList();
         }
 
-        public async Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate)
+        public async Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default!)
         {
             var result = await _table.Where(predicate).ExecuteAsync();
             return result.ToList();
         }
 
-        public async Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string[] includeString = null, bool disableTracking = true)
+        public async Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string[] includeString = null, bool disableTracking = true, CancellationToken cancellationToken = default!)
         {
              
             var query = _table.Where(predicate);
@@ -67,7 +67,7 @@ namespace Common.Libraries.Services.Cassandra.Repositories
             return result.ToList();
         }
 
-        public async Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, List<Expression<Func<T, object>>> includes = null, bool disableTracking = true)
+        public async Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, List<Expression<Func<T, object>>> includes = null, bool disableTracking = true, CancellationToken cancellationToken = default!)
         {
             var query = _table.Where(predicate);
 
@@ -79,7 +79,7 @@ namespace Common.Libraries.Services.Cassandra.Repositories
             return result.ToList();
         }
 
-        public async Task<T> GetOneAsync(Expression<Func<T, bool>> predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string[] includeString = null, bool disableTracking = true)
+        public async Task<T> GetOneAsync(Expression<Func<T, bool>> predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string[] includeString = null, bool disableTracking = true, CancellationToken cancellationToken = default!)
         {
             var query = _table.Where(predicate);
 
@@ -91,7 +91,7 @@ namespace Common.Libraries.Services.Cassandra.Repositories
             return result.FirstOrDefault();
         }
 
-        public async Task<IReadOnlyList<T>> GetPaginatedAsync(int page, int size, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string[] includeString = null, bool disableTracking = true)
+        public async Task<IReadOnlyList<T>> GetPaginatedAsync(int page, int size, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string[] includeString = null, bool disableTracking = true, CancellationToken cancellationToken = default!)
         {
             page = page != 0 ? page - 1 : page;
             var query = _table.Where(i => true);
@@ -104,7 +104,7 @@ namespace Common.Libraries.Services.Cassandra.Repositories
             return result.Skip(page).Take(size).ToList();
         }
 
-        public async Task<IReadOnlyList<T>> GetPaginatedByCondtionAsync(Expression<Func<T, bool>> predicate, int page, int size, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string[] includeString = null, bool disableTracking = true)
+        public async Task<IReadOnlyList<T>> GetPaginatedByCondtionAsync(Expression<Func<T, bool>> predicate, int page, int size, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string[] includeString = null, bool disableTracking = true, CancellationToken cancellationToken = default!)
         {
             page = page != 0 ? page - 1 : page;
             var query = _table.Where(predicate);
@@ -117,7 +117,7 @@ namespace Common.Libraries.Services.Cassandra.Repositories
             return result.Skip(page).Take(size).ToList();
         }
 
-        public async Task<int> UpdateAsync(T entity)
+        public async Task<int> UpdateAsync(T entity, CancellationToken cancellationToken = default!)
         {
            await _mapper.UpdateAsync(entity);
             return 1;

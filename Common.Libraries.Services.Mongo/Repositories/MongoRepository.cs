@@ -24,19 +24,19 @@ namespace Common.Libraries.Services.Mongo.Repositories
             _collection = _database.GetCollection<T>(nameof(T));
         }
 
-        public async Task<T> AddAsync(T entity)
+        public async Task<T> AddAsync(T entity, CancellationToken cancellationToken = default!)
         {
             await _collection.InsertOneAsync(entity);
             return entity;
         }
 
-        public async Task<int> CountAsync(Expression<Func<T, bool>> predicate = null)
+        public async Task<int> CountAsync(Expression<Func<T, bool>> predicate = null, CancellationToken cancellationToken = default!)
         {
             var result = await _collection.CountDocumentsAsync(predicate);
             return Convert.ToInt32(result);
         }
 
-        public async Task<int> DeleteAsync(T entity)
+        public async Task<int> DeleteAsync(T entity, CancellationToken cancellationToken = default!)
         {
 
             var filter = Builders<T>.Filter.Eq(e => e.Id, entity.Id);
@@ -45,43 +45,43 @@ namespace Common.Libraries.Services.Mongo.Repositories
 
         }
 
-        public async Task<IReadOnlyList<T>> GetAllAsync()
+        public async Task<IReadOnlyList<T>> GetAllAsync(CancellationToken cancellationToken = default!)
         {
             return await _collection.AsQueryable().ToListAsync();
         }
 
-        public async Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate)
+        public async Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default!)
         {
             var result = await _collection.FindAsync(predicate);
             return await result.ToListAsync();
         }
 
-        public async Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string[] includeString = null, bool disableTracking = true)
+        public async Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string[] includeString = null, bool disableTracking = true, CancellationToken cancellationToken = default!)
         {
             var result = await _collection.FindAsync(predicate);
             return await result.ToListAsync();
         }
 
-        public async Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, List<Expression<Func<T, object>>> includes = null, bool disableTracking = true)
+        public async Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, List<Expression<Func<T, object>>> includes = null, bool disableTracking = true, CancellationToken cancellationToken = default!)
         {
             var result = await _collection.FindAsync(predicate);
             return await result.ToListAsync();
         }
 
-        public async Task<T> GetOneAsync(Expression<Func<T, bool>> predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string[] includeString = null, bool disableTracking = true)
+        public async Task<T> GetOneAsync(Expression<Func<T, bool>> predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string[] includeString = null, bool disableTracking = true, CancellationToken cancellationToken = default!)
         {
             var result = await _collection.FindAsync(predicate);
             return await result.FirstOrDefaultAsync();
         }
 
-        public async Task<IReadOnlyList<T>> GetPaginatedAsync(int page, int size, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string[] includeString = null, bool disableTracking = true)
+        public async Task<IReadOnlyList<T>> GetPaginatedAsync(int page, int size, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string[] includeString = null, bool disableTracking = true, CancellationToken cancellationToken = default!)
         {
             page = page != 0 ? page - 1 : page;
             var result =   _collection.Find(f => f!= null);
             return await result.Skip(page).Limit(size).ToListAsync();
         }
 
-        public async Task<IReadOnlyList<T>> GetPaginatedByCondtionAsync(Expression<Func<T, bool>> predicate, int page, int size, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string[] includeString = null, bool disableTracking = true)
+        public async Task<IReadOnlyList<T>> GetPaginatedByCondtionAsync(Expression<Func<T, bool>> predicate, int page, int size, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string[] includeString = null, bool disableTracking = true, CancellationToken cancellationToken = default!)
         {
            
             page = page != 0 ? page - 1 : page;
@@ -89,7 +89,7 @@ namespace Common.Libraries.Services.Mongo.Repositories
             return await result.Skip(page).Limit(size).ToListAsync();
         }
 
-        public async Task<int> UpdateAsync(T entity)
+        public async Task<int> UpdateAsync(T entity, CancellationToken cancellationToken = default!)
         {
             var result = await _collection.ReplaceOneAsync(x => x == entity,entity);
             return Convert.ToInt32(result.MatchedCount);

@@ -28,7 +28,7 @@ namespace Common.Libraries.USSD.TNM
             {
                return  new ServerRequest
                 {
-                    FirstRequest = request.Msg.Contains(_settings.ShortCode) && request.Type == "1" ? true ? false,
+                    FirstRequest = request.Msg.Contains(_settings.ShortCode) && request.Type == "1" ? true : false,
                     ServiceProvider = _settings.Network,
                     MobileNumber = request.Msisdn,
                     ScreenID = "1",

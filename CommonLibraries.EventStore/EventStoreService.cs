@@ -26,7 +26,7 @@ namespace Common.Libraries.EventStore
 
             await Task.WhenAll(
                 _subscriptionManagers
-                    .Select(projection => projection.Start())
+                    .Select(projection => projection.Start(cancellationToken))
             );
         }
 

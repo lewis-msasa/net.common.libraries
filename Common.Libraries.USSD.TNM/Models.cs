@@ -47,23 +47,5 @@ namespace Common.Libraries.USSD.TNM
         public string Msisdn { get; set; }
     }
 
-    public class ServerRequest : IRequest
-    {
-        public bool FirstRequest { get; set; }
-        public string? SessionID { get; set; }
-        public string? MobileNumber { get; set; }
-        public string? USSDBody { get; set; }
-        public string? ScreenID { get; set; }
-        
-        public string? ServiceProvider { get; set; }
-
-    }
-    public class ServerResponse : IResponse
-    {
-        public string? SessionID { get; set; }
-        public string? Sequence { get; set; }
-        public string? USSDBody { get; set; }
-        public string? RequestType { get; set; }
-        public bool ResponseRequired { get; set; }
-    }
+  
 }

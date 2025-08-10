@@ -20,7 +20,7 @@ namespace Common.Libraries.EventStore
             _logger = logger;
         }
 
-        public async Task Save(T aggregate)
+        public async Task Save(T aggregate, CancellationToken cancellationToken = default!)
         {
             if (aggregate == null)
                 throw new ArgumentNullException(nameof(aggregate));
@@ -36,7 +36,7 @@ namespace Common.Libraries.EventStore
             aggregate.ClearChanges();
         }
 
-        public async Task<T> Load(AggregateId<T,TSnapshot> aggregateId)
+        public async Task<T> Load(AggregateId<T,TSnapshot> aggregateId, CancellationToken cancellationToken = default!)
         {
             if (aggregateId == null)
                 throw new ArgumentNullException(nameof(aggregateId));
@@ -60,7 +60,7 @@ namespace Common.Libraries.EventStore
             return aggregate;
         }
 
-        public async Task<bool> Exists(AggregateId<T,TSnapshot> aggregateId) 
+        public async Task<bool> Exists(AggregateId<T,TSnapshot> aggregateId, CancellationToken cancellationToken = default!) 
         {
             var stream = GetStreamName(aggregateId);
             var result = await _connection.ReadEventAsync(stream, 1, false);

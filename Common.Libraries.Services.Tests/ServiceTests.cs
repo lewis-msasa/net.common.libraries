@@ -40,12 +40,12 @@ namespace Common.Libraries.Services.Tests
         public async Task CreateAsync_Calls_AddAsync_And_Returns_Entity()
         {
             var ent = new MyEntity { Id = 1, Name = "Test" };
-            _repoMock.Setup(r => r.AddAsync(ent)).ReturnsAsync(ent);
+            _repoMock.Setup(r => r.AddAsync(ent, It.IsAny<CancellationToken>())).ReturnsAsync(ent);
 
             var result = await _service.CreateAsync(ent);
 
             Assert.Equal(ent, result);
-            _repoMock.Verify(r => r.AddAsync(ent), Times.Once);
+            _repoMock.Verify(r => r.AddAsync(ent, It.IsAny<CancellationToken>()), Times.Once);
         }
 
         [Fact]
@@ -56,7 +56,7 @@ namespace Common.Libraries.Services.Tests
             new MyEntity { Id = 1 }, new MyEntity { Id = 2 }
         };
 
-            _repoMock.Setup(r => r.AddAsync(It.IsAny<MyEntity>()))
+            _repoMock.Setup(r => r.AddAsync(It.IsAny<MyEntity>(), It.IsAny<CancellationToken>()))
                 .ReturnsAsync((MyEntity e) => e);
 
             var result = await _service.CreateManyAsync(list);
@@ -64,19 +64,19 @@ namespace Common.Libraries.Services.Tests
             Assert.Equal(2, result.Count);
             Assert.Contains(result, e => e.Id == 1);
             Assert.Contains(result, e => e.Id == 2);
-            _repoMock.Verify(r => r.AddAsync(It.IsAny<MyEntity>()), Times.Exactly(2));
+            _repoMock.Verify(r => r.AddAsync(It.IsAny<MyEntity>(), It.IsAny<CancellationToken>()), Times.Exactly(2));
         }
 
         [Fact]
         public async Task DeleteAsync_Delegates_To_Repository()
         {
             var ent = new MyEntity { Id = 3 };
-            _repoMock.Setup(r => r.DeleteAsync(ent)).ReturnsAsync(1);
+            _repoMock.Setup(r => r.DeleteAsync(ent, It.IsAny<CancellationToken>())).ReturnsAsync(1);
 
             var result = await _service.DeleteAsync(ent);
 
             Assert.Equal(1, result);
-            _repoMock.Verify(r => r.DeleteAsync(ent), Times.Once);
+            _repoMock.Verify(r => r.DeleteAsync(ent, It.IsAny<CancellationToken>()), Times.Once);
         }
 
         [Fact]
@@ -89,27 +89,27 @@ namespace Common.Libraries.Services.Tests
         };
 
             Expression<Func<MyEntity, bool>> predicate = e => e.Id > 0;
-            _repoMock.Setup(r => r.GetAsync(predicate)).ReturnsAsync(list);
-            _repoMock.Setup(r => r.DeleteAsync(It.IsAny<MyEntity>())).ReturnsAsync(1);
+            _repoMock.Setup(r => r.GetAsync(predicate,It.IsAny<CancellationToken>())).ReturnsAsync(list);
+            _repoMock.Setup(r => r.DeleteAsync(It.IsAny<MyEntity>(), It.IsAny<CancellationToken>())).ReturnsAsync(1);
 
             var deletedCount = await _service.DeleteManyAsync(predicate);
 
             Assert.Equal(2, deletedCount);
-            _repoMock.Verify(r => r.GetAsync(predicate), Times.Once);
-            _repoMock.Verify(r => r.DeleteAsync(It.IsAny<MyEntity>()), Times.Exactly(2));
+            _repoMock.Verify(r => r.GetAsync(predicate, It.IsAny<CancellationToken>()), Times.Once);
+            _repoMock.Verify(r => r.DeleteAsync(It.IsAny<MyEntity>(), It.IsAny<CancellationToken>()), Times.Exactly(2));
         }
 
         [Fact]
         public async Task GetAsync_Returns_All()
         {
             var all = new List<MyEntity> { new MyEntity { Id = 5 } };
-            _repoMock.Setup(r => r.GetAllAsync()).ReturnsAsync(all);
+            _repoMock.Setup(r => r.GetAllAsync(It.IsAny<CancellationToken>())).ReturnsAsync(all);
 
             var result = await _service.GetAsync();
 
             Assert.Single(result);
             Assert.Equal(5, result.First().Id);
-            _repoMock.Verify(r => r.GetAllAsync(), Times.Once);
+            _repoMock.Verify(r => r.GetAllAsync(It.IsAny<CancellationToken>()), Times.Once);
         }
 
         [Fact]
@@ -120,7 +120,7 @@ namespace Common.Libraries.Services.Tests
                     It.IsAny<Expression<Func<MyEntity, bool>>>(),
                     It.IsAny<Func<IQueryable<MyEntity>, IOrderedQueryable<MyEntity>>>(),
                     null,
-                    true))
+                    true, It.IsAny<CancellationToken>()))
                 .ReturnsAsync(ent);
 
             var result = await _service.GetOneAsync(e => e.Id == 42);
@@ -128,7 +128,7 @@ namespace Common.Libraries.Services.Tests
             Assert.Equal(42, result.Id);
             _repoMock.Verify(r => r.GetOneAsync(
                 It.IsAny<Expression<Func<MyEntity, bool>>>(),
-                null, null, true), Times.Once);
+                null, null, true, It.IsAny<CancellationToken>()), Times.Once);
         }
 
         [Fact]
@@ -139,23 +139,23 @@ namespace Common.Libraries.Services.Tests
             new MyEntity { Id = 1 },
             new MyEntity { Id = 2 }
         };
-            _repoMock.Setup(r => r.UpdateAsync(It.IsAny<MyEntity>())).ReturnsAsync(1);
+            _repoMock.Setup(r => r.UpdateAsync(It.IsAny<MyEntity>(), It.IsAny<CancellationToken>())).ReturnsAsync(1);
 
             var total = await _service.UpdateManyAsync(list);
 
             Assert.Equal(2, total);
-            _repoMock.Verify(r => r.UpdateAsync(It.IsAny<MyEntity>()), Times.Exactly(2));
+            _repoMock.Verify(r => r.UpdateAsync(It.IsAny<MyEntity>(), It.IsAny<CancellationToken>()), Times.Exactly(2));
         }
 
         [Fact]
         public async Task CountAsync_Delegates_To_Repo()
         {
-            _repoMock.Setup(r => r.CountAsync(null)).ReturnsAsync(42);
+            _repoMock.Setup(r => r.CountAsync(null, It.IsAny<CancellationToken>())).ReturnsAsync(42);
 
             var count = await _service.CountAsync();
 
             Assert.Equal(42, count);
-            _repoMock.Verify(r => r.CountAsync(null), Times.Once);
+            _repoMock.Verify(r => r.CountAsync(null, It.IsAny<CancellationToken>()), Times.Once);
         }
     }
 
@@ -177,13 +177,13 @@ namespace Common.Libraries.Services.Tests
         public async Task CreateAsync_WithMapping_ReturnsMappedDto()
         {
             var ent = new MyEntity { Id = 1, Name = "A" };
-            _repoMock.Setup(r => r.AddAsync(ent)).ReturnsAsync(ent);
+            _repoMock.Setup(r => r.AddAsync(ent, It.IsAny<CancellationToken>())).ReturnsAsync(ent);
 
             var dto = await _service.CreateAsync(ent, Map);
 
             Assert.Equal(ent.Id, dto.Id);
             Assert.Equal(ent.Name, dto.Name);
-            _repoMock.Verify(r => r.AddAsync(ent), Times.Once);
+            _repoMock.Verify(r => r.AddAsync(ent, It.IsAny<CancellationToken>()), Times.Once);
         }
         [Fact]
         public async Task CreateManyAsync_Mapping_ReturnsEntitiesAsDtos()
@@ -192,7 +192,7 @@ namespace Common.Libraries.Services.Tests
             {
                 new() { Id = 1 }, new() { Id = 2 }
             };
-            _repoMock.Setup(r => r.AddAsync(It.IsAny<MyEntity>()))
+            _repoMock.Setup(r => r.AddAsync(It.IsAny<MyEntity>(), It.IsAny<CancellationToken>()))
                      .ReturnsAsync((MyEntity e) => e);
 
             var result = await _service.CreateManyAsync(list, MapMany);
@@ -207,7 +207,7 @@ namespace Common.Libraries.Services.Tests
                 new() { Id = 10, Name = "X" },
                 new() { Id = 20, Name = "Y" }
             };
-            _repoMock.Setup(r => r.GetAllAsync()).ReturnsAsync(data);
+            _repoMock.Setup(r => r.GetAllAsync(It.IsAny<CancellationToken>())).ReturnsAsync(data);
 
             var result = await _service.GetAsync(MapMany);
 
@@ -221,7 +221,7 @@ namespace Common.Libraries.Services.Tests
                     Assert.Equal("Y", dto.Name);
                 });
 
-            _repoMock.Verify(r => r.GetAllAsync(), Times.Once);
+            _repoMock.Verify(r => r.GetAllAsync(It.IsAny<CancellationToken>()), Times.Once);
         }
         [Fact]
         public async Task GetOneAsync_NullMapping_ReturnsDefault()
@@ -229,7 +229,7 @@ namespace Common.Libraries.Services.Tests
             var ent = new MyEntity { Id = 99 };
             _repoMock.Setup(r => r.GetOneAsync(
                 It.IsAny<Expression<Func<MyEntity, bool>>>(),
-                null, null, true))
+                null, null, true, It.IsAny<CancellationToken>()))
                 .ReturnsAsync(ent);
 
             var result = await _service.GetOneAsync(e => e.Id == 99, null, null);
@@ -241,8 +241,8 @@ namespace Common.Libraries.Services.Tests
         {
             var data = new List<MyEntity> { new() { Id = 1 }, new() { Id = 2 } };
             Expression<Func<MyEntity, bool>> pred = e => true;
-            _repoMock.Setup(r => r.GetAsync(pred)).ReturnsAsync(data);
-            _repoMock.Setup(r => r.DeleteAsync(It.IsAny<MyEntity>()))
+            _repoMock.Setup(r => r.GetAsync(pred, It.IsAny<CancellationToken>())).ReturnsAsync(data);
+            _repoMock.Setup(r => r.DeleteAsync(It.IsAny<MyEntity>(), It.IsAny<CancellationToken>()))
                      .ReturnsAsync(1);
 
             var count = await _service.DeleteManyAsync(pred);

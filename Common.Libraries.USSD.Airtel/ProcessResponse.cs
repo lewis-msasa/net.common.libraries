@@ -10,6 +10,13 @@ namespace Common.Libraries.USSD.Airtel
     public class ProcessResponse : IProcessResponse<ServerRequest, ServerResponse>, IResponseMapper<ServerResponse, UssdResponse>
     {
         private readonly IXmlReader<UssdResponse> _xmlReader;
+        private readonly IApiService<ServerRequest, ServerResponse> _apiService;
+
+        public ProcessResponse(IXmlReader<UssdResponse> xmlReader, IApiService<ServerRequest, ServerResponse> apiService)
+        {
+            _xmlReader = xmlReader;
+            _apiService = apiService;
+        }
 
         public Task<UssdResponse> Map(ServerResponse response)
         {
@@ -19,7 +26,7 @@ namespace Common.Libraries.USSD.Airtel
         public Task<ServerResponse> Process(ServerRequest request)
         {
             //1. do api call here
-            throw new NotImplementedException();
+            return _apiService.Call(request);
         }
 
         public async Task<string> Process(UssdResponse response)
@@ -45,9 +52,9 @@ namespace Common.Libraries.USSD.Airtel
                                     Members = new List<Member>
                                     {
                                         new Member { Name = "SESSION_ID", Value = new MemberValue { String = response.SessionID } },
-                                        new Member { Name = "SEQUENCE", Value = new MemberValue { String = response.Sequence } },
+                                        new Member { Name = "SEQUENCE", Value = new MemberValue { String = response.SessionID } },
                                         new Member { Name = "USSD_BODY", Value = new MemberValue { String = response.USSDBody } },
-                                        new Member { Name = "REQUEST_TYPE", Value = new MemberValue { String = response.RequestType } },
+                                        new Member { Name = "REQUEST_TYPE", Value = new MemberValue { String = "RESPONSE" } },
                                         new Member { Name = "END_OF_SESSION", Value = new MemberValue { String = response.ResponseRequired ? "True" : "False" } },  //True or False
                                     }
                                 }

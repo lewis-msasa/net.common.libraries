@@ -16,17 +16,17 @@ namespace Common.Libraries.EventStore
 
         public Task Save<T>(
             long version,
-            AggregateState<T>.Result update
+            AggregateState<T>.Result update, CancellationToken cancellationToken = default!
         )
             where T : class, IAggregateState<T>, new()
             => _connection.AppendEvents(
                 update.State.StreamName, version, update.Events.ToArray()
             );
 
-        public Task<T> Load<T>(Guid id) where T : IAggregateState<T>, new()
+        public Task<T> Load<T>(Guid id, CancellationToken cancellationToken = default!) where T : IAggregateState<T>, new()
             => Load<T>(id, (x, e) => x.When(x, e));
 
-        async Task<T> Load<T>(Guid id, Func<T, object, T> when)
+        async Task<T> Load<T>(Guid id, Func<T, object, T> when, CancellationToken cancellationToken = default!)
             where T : IAggregateState<T>, new()
         {
             const int maxSliceSize = 4096;
