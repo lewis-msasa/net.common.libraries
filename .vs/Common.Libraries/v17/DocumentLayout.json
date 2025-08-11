@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.USSD.Impl\\Common.Libraries.USSD.Impl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Common.Libraries.USSD.Impl\\Common.Libraries.USSD.Impl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.efcore\\unitofwork\\unitofworkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|solutionrelative:common.libraries.services.efcore\\unitofwork\\unitofworkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -47,6 +51,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Common.Libraries.USSD.Impl.csproj",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.USSD.Impl\\Common.Libraries.USSD.Impl.csproj",
+              "RelativeDocumentMoniker": "Common.Libraries.USSD.Impl\\Common.Libraries.USSD.Impl.csproj",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.USSD.Impl\\Common.Libraries.USSD.Impl.csproj",
+              "RelativeToolTip": "Common.Libraries.USSD.Impl\\Common.Libraries.USSD.Impl.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-11T07:46:08.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "UnitOfWorkRepository.cs",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\UnitOfWork\\UnitOfWorkRepository.cs",
               "RelativeDocumentMoniker": "Common.Libraries.Services.EFCore\\UnitOfWork\\UnitOfWorkRepository.cs",
@@ -54,12 +71,11 @@
               "RelativeToolTip": "Common.Libraries.Services.EFCore\\UnitOfWork\\UnitOfWorkRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T18:26:31.918Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-10T18:26:31.918Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "Common.Libraries.Services.CQRS\\DependencyInjection.cs",
@@ -67,12 +83,11 @@
               "RelativeToolTip": "Common.Libraries.Services.CQRS\\DependencyInjection.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T16:13:48.518Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-10T16:13:48.518Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Validation.FluentValidation\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "Common.Libraries.Services.Validation.FluentValidation\\DependencyInjection.cs",
@@ -84,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Request.cs",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.USSD\\Request.cs",
               "RelativeDocumentMoniker": "Common.Libraries.USSD\\Request.cs",
@@ -96,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Response.cs",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.USSD\\Response.cs",
               "RelativeDocumentMoniker": "Common.Libraries.USSD\\Response.cs",
@@ -108,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ProcessResponse.cs",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.USSD.TNM\\ProcessResponse.cs",
               "RelativeDocumentMoniker": "Common.Libraries.USSD.TNM\\ProcessResponse.cs",
@@ -120,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Models.cs",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.USSD.TNM\\Models.cs",
               "RelativeDocumentMoniker": "Common.Libraries.USSD.TNM\\Models.cs",
@@ -132,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Models.cs",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.USSD.Airtel\\Models.cs",
               "RelativeDocumentMoniker": "Common.Libraries.USSD.Airtel\\Models.cs",

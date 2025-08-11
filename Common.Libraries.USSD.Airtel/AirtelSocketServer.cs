@@ -29,7 +29,7 @@ namespace Common.Libraries.USSD.Airtel
             IProcessRequest<UssdRequest> processRequest, 
             IProcessResponse<ServerRequest, ServerResponse> processResponse,
             IResponseMapper<ServerResponse, UssdResponse> responseMapper, IUSSDSettings ussdSettings, 
-            IRequestMapper<UssdRequest, ServerRequest> requestMapper) : base(IPAddress.Parse(ussdSettings.IPAddress),ussdSettings.Port, logger, protocolFramer) 
+            IRequestMapper<UssdRequest, ServerRequest> requestMapper) : base(IPAddress.Any/*,IPAddress.Parse(ussdSettings.IPAddress)*/,ussdSettings.IncomingPacketsPort, logger, protocolFramer) 
         {
             _logger = logger;
             _protocolFramer = protocolFramer;

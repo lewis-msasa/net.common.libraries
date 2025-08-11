@@ -16,5 +16,6 @@ namespace Common.Libraries.USSD.Settings
         public string Network {  get; set; }    
 
         public string ShortCode { get; set; }
+        public int IncomingPacketsPort { get;set; }
     }
 }

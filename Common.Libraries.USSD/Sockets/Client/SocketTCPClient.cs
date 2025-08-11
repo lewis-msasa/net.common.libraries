@@ -40,39 +40,39 @@ namespace Common.Libraries.USSD.Sockets.Client
             await ProcessAsync(_clientSocket, _cts.Token);
         }
 
-        public async Task SendMessageAsync(byte[] message, CancellationToken cancellationToken = default)
-        {
-            var lengthBuffer = BitConverter.GetBytes(message.Length);
-            await _clientSocket.SendAsync(lengthBuffer, SocketFlags.None, cancellationToken);
-            await _clientSocket.SendAsync(message, SocketFlags.None, cancellationToken);
-        }
+        //public async Task SendMessageAsync(byte[] message, CancellationToken cancellationToken = default)
+        //{
+        //    var lengthBuffer = BitConverter.GetBytes(message.Length);
+        //    await _clientSocket.SendAsync(lengthBuffer, SocketFlags.None, cancellationToken);
+        //    await _clientSocket.SendAsync(message, SocketFlags.None, cancellationToken);
+        //}
 
-        public async Task<byte[]> ReceiveMessageAsync(CancellationToken cancellationToken = default)
-        {
-            var lengthBuffer = new byte[4];
-            await ReceiveExactAsync(lengthBuffer, 0, 4, cancellationToken);
+        //public async Task<byte[]> ReceiveMessageAsync(CancellationToken cancellationToken = default)
+        //{
+        //    var lengthBuffer = new byte[4];
+        //    await ReceiveExactAsync(lengthBuffer, 0, 4, cancellationToken);
 
-            int messageLength = BitConverter.ToInt32(lengthBuffer, 0);
-            if (messageLength <= 0 || messageLength > 10_000_000)
-                throw new InvalidOperationException($"Invalid message length: {messageLength}");
+        //    int messageLength = BitConverter.ToInt32(lengthBuffer, 0);
+        //    if (messageLength <= 0 || messageLength > 10_000_000)
+        //        throw new InvalidOperationException($"Invalid message length: {messageLength}");
 
-            var messageBuffer = new byte[messageLength];
-            await ReceiveExactAsync(messageBuffer, 0, messageLength, cancellationToken);
+        //    var messageBuffer = new byte[messageLength];
+        //    await ReceiveExactAsync(messageBuffer, 0, messageLength, cancellationToken);
 
-            return messageBuffer;
-        }
+        //    return messageBuffer;
+        //}
 
-        private async Task ReceiveExactAsync(byte[] buffer, int offset, int size, CancellationToken cancellationToken)
-        {
-            int received = 0;
-            while (received < size)
-            {
-                int bytes = await _clientSocket.ReceiveAsync(buffer.AsMemory(offset + received, size - received), SocketFlags.None, cancellationToken);
-                if (bytes == 0)
-                    throw new SocketException((int)SocketError.ConnectionReset);
-                received += bytes;
-            }
-        }
+        //private async Task ReceiveExactAsync(byte[] buffer, int offset, int size, CancellationToken cancellationToken)
+        //{
+        //    int received = 0;
+        //    while (received < size)
+        //    {
+        //        int bytes = await _clientSocket.ReceiveAsync(buffer.AsMemory(offset + received, size - received), SocketFlags.None, cancellationToken);
+        //        if (bytes == 0)
+        //            throw new SocketException((int)SocketError.ConnectionReset);
+        //        received += bytes;
+        //    }
+        //}
 
         /// <summary>
         /// Override to implement your client logic with framing
