@@ -27,11 +27,13 @@ namespace Common.Libraries.USSD.Airtel
 
     public class Param
     {
+        [XmlElement("value")]
         public Value Value { get; set; }
     }
 
     public class Value
     {
+        [XmlElement("struct")]
         public Struct Struct { get; set; }
     }
 
@@ -45,7 +47,7 @@ namespace Common.Libraries.USSD.Airtel
     {
         [XmlElement("name")]
         public string Name { get; set; }
-
+        [XmlElement("value")]
         public MemberValue Value { get; set; }
     }
 

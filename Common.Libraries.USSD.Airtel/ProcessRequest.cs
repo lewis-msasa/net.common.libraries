@@ -27,7 +27,7 @@ namespace Common.Libraries.USSD.Airtel
 
             var req =  new ServerRequest
             {
-                
+                ServiceProvider = _settings.Network,
                 SessionID = dict.TryGetValue("SESSION_ID", out var sid) ? sid : null,
                 MobileNumber = dict.TryGetValue("MOBILE_NUMBER", out var mobile) ? mobile : null,
                 USSDBody = dict.TryGetValue("USSD_BODY", out var ussd) ? ussd : null,

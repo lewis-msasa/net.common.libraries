@@ -74,7 +74,7 @@ namespace Common.Libraries.USSD
         {
             try
             {
-                var response = await _apiRequestService.PostAsync<ServerResponse>($"{_ussdSettings.IPAddress}/",
+                var response = await _apiRequestService.PostAsync<ServerResponse>($"{_ussdSettings.ApiUrl}",
                           new Dictionary<string, string> {
                        { "Content-Type", "application/json" },
                        { "Authorization", $"Bearer " }

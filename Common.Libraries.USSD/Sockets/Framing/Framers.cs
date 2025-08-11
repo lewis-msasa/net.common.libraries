@@ -1,4 +1,5 @@
 ﻿using System.Net.Sockets;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -60,9 +61,9 @@ namespace Common.Libraries.USSD.Sockets.Framing
         private readonly byte[] _delimiter;
         private readonly List<byte> _buffer = new();
 
-        public DelimiterFramer(byte[] delimiter)
+        public DelimiterFramer(byte[]? delimiter = null)
         {
-            _delimiter = delimiter ?? throw new ArgumentNullException(nameof(delimiter));
+            _delimiter = delimiter ?? Encoding.ASCII.GetBytes("\n");
             if (_delimiter.Length == 0) throw new ArgumentException("Delimiter cannot be empty");
         }
 
@@ -150,7 +151,7 @@ namespace Common.Libraries.USSD.Sockets.Framing
     {
         private readonly int _bufferSize;
 
-        public NoFraming(int bufferSize = 1024)
+        public NoFraming(int bufferSize = 2048)
         {
             _bufferSize = bufferSize;
         }

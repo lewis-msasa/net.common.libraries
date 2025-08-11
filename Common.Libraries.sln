@@ -123,6 +123,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestApis", "TestApis", "{2A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Libraries.Services.DataBag", "Common.Libraries.Services.DataBag\Common.Libraries.Services.DataBag.csproj", "{7630B841-CD87-4271-B12E-7C8ED19BA0D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Libraries.USSD.Impl", "Common.Libraries.USSD.Impl\Common.Libraries.USSD.Impl.csproj", "{5FC09601-32C0-8A2F-915F-947E9DAC8AD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Libraries.USSD.Test.Console", "Common.Libraries.USSD.Test.Console\Common.Libraries.USSD.Test.Console.csproj", "{F7FD602D-CF0A-484F-89F7-CD04151FD16F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Libraries.USSD.Test.Client", "Common.Libraries.USSD.Test.Client\Common.Libraries.USSD.Test.Client.csproj", "{54686A69-4F28-4FE3-AD7F-8E580E4F0396}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Libraries.USSD.Test.Console.Airtel", "Common.Libraries.USSD.Test.Console.Airtel\Common.Libraries.USSD.Test.Console.Airtel.csproj", "{49C9F315-0C69-47FA-B7AF-F542EDE64351}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Libraries.USSD.Test.Client.Airtel", "Common.Libraries.USSD.Test.Client.Airtel\Common.Libraries.USSD.Test.Client.Airtel.csproj", "{6EE9E05D-2862-442C-8172-001ADA353BC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -301,6 +311,26 @@ Global
 		{7630B841-CD87-4271-B12E-7C8ED19BA0D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7630B841-CD87-4271-B12E-7C8ED19BA0D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7630B841-CD87-4271-B12E-7C8ED19BA0D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FC09601-32C0-8A2F-915F-947E9DAC8AD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FC09601-32C0-8A2F-915F-947E9DAC8AD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FC09601-32C0-8A2F-915F-947E9DAC8AD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FC09601-32C0-8A2F-915F-947E9DAC8AD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7FD602D-CF0A-484F-89F7-CD04151FD16F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7FD602D-CF0A-484F-89F7-CD04151FD16F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7FD602D-CF0A-484F-89F7-CD04151FD16F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7FD602D-CF0A-484F-89F7-CD04151FD16F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54686A69-4F28-4FE3-AD7F-8E580E4F0396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54686A69-4F28-4FE3-AD7F-8E580E4F0396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54686A69-4F28-4FE3-AD7F-8E580E4F0396}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54686A69-4F28-4FE3-AD7F-8E580E4F0396}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49C9F315-0C69-47FA-B7AF-F542EDE64351}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49C9F315-0C69-47FA-B7AF-F542EDE64351}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49C9F315-0C69-47FA-B7AF-F542EDE64351}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49C9F315-0C69-47FA-B7AF-F542EDE64351}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EE9E05D-2862-442C-8172-001ADA353BC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EE9E05D-2862-442C-8172-001ADA353BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EE9E05D-2862-442C-8172-001ADA353BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EE9E05D-2862-442C-8172-001ADA353BC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -356,6 +386,11 @@ Global
 		{A96E8981-7F28-4570-98CF-68B11390F18C} = {DB2AE795-BDB7-41B5-8AEE-58893E9A606F}
 		{2ACAAEC8-3090-4C1C-9314-3C833CD308E4} = {DB2AE795-BDB7-41B5-8AEE-58893E9A606F}
 		{7630B841-CD87-4271-B12E-7C8ED19BA0D8} = {63F53406-8CE7-42FB-A927-1C45989219AA}
+		{5FC09601-32C0-8A2F-915F-947E9DAC8AD6} = {DB2AE795-BDB7-41B5-8AEE-58893E9A606F}
+		{F7FD602D-CF0A-484F-89F7-CD04151FD16F} = {2ACAAEC8-3090-4C1C-9314-3C833CD308E4}
+		{54686A69-4F28-4FE3-AD7F-8E580E4F0396} = {2ACAAEC8-3090-4C1C-9314-3C833CD308E4}
+		{49C9F315-0C69-47FA-B7AF-F542EDE64351} = {2ACAAEC8-3090-4C1C-9314-3C833CD308E4}
+		{6EE9E05D-2862-442C-8172-001ADA353BC5} = {2ACAAEC8-3090-4C1C-9314-3C833CD308E4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {098DBDEC-B2B4-4933-B702-29F37D9A77A1}

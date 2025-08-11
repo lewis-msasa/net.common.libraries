@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Common.Libraries.USSD.TNM
 {
-    public abstract class ProcessResponse : IProcessResponse<ServerRequest, ServerResponse>, IResponseMapper<ServerResponse, UssdResponse>
+    public  class ProcessResponse : IProcessResponse<ServerRequest, ServerResponse>, IResponseMapper<ServerResponse, UssdResponse>
     {
         private readonly IXmlReader<UssdResponse> _xmlReader;
         private readonly IApiService<ServerRequest, ServerResponse> _apiService;
@@ -26,8 +26,8 @@ namespace Common.Libraries.USSD.TNM
                 Type = response.ResponseRequired ? "2" : "3",
                 Premium = new Premium
                 {
-                    Cost = string.Empty,
-                    Ref = string.Empty
+                    Cost = "",
+                    Ref = ""
                 }
             });
         }

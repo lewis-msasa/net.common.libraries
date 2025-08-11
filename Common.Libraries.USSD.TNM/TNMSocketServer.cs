@@ -15,7 +15,7 @@ namespace Common.Libraries.USSD.TNM
 {
     public class TNMSocketServer : SocketTcpServer
     {
-        private readonly ILogger _logger;
+        private readonly ILogger<TNMSocketServer> _logger;
         private readonly IProtocolFramer _protocolFramer;
         private readonly IProcessRequest<UssdRequest> _processRequest;
         private readonly IProcessResponse<ServerRequest, ServerResponse> _processResponse;
@@ -23,7 +23,7 @@ namespace Common.Libraries.USSD.TNM
         private readonly IRequestMapper<UssdRequest, ServerRequest> _requestMapper;
         private readonly IUSSDSettings _ussdSettings;
         private readonly Dictionary<string, DateTime> _sessions;
-        public TNMSocketServer(ILogger logger, IProtocolFramer protocolFramer,
+        public TNMSocketServer(ILogger<TNMSocketServer> logger, IProtocolFramer protocolFramer,
             IProcessRequest<UssdRequest> processRequest,
             IProcessResponse<ServerRequest, ServerResponse> processResponse,
             IResponseMapper<ServerResponse, UssdResponse> responseMapper, IUSSDSettings ussdSettings,

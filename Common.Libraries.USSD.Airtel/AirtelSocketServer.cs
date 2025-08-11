@@ -16,7 +16,7 @@ namespace Common.Libraries.USSD.Airtel
     public class AirtelSocketServer : SocketTcpServer
     {
 
-        private readonly ILogger _logger;
+        private readonly ILogger<AirtelSocketServer> _logger;
         private readonly IProtocolFramer _protocolFramer;
         private readonly IProcessRequest<UssdRequest> _processRequest;
         private readonly IProcessResponse<ServerRequest,ServerResponse> _processResponse;
@@ -25,7 +25,7 @@ namespace Common.Libraries.USSD.Airtel
         private readonly IUSSDSettings _ussdSettings;
         private readonly Dictionary<string, DateTime> _sessions;
 
-        public AirtelSocketServer(ILogger logger, IProtocolFramer protocolFramer,
+        public AirtelSocketServer(ILogger<AirtelSocketServer> logger, IProtocolFramer protocolFramer,
             IProcessRequest<UssdRequest> processRequest, 
             IProcessResponse<ServerRequest, ServerResponse> processResponse,
             IResponseMapper<ServerResponse, UssdResponse> responseMapper, IUSSDSettings ussdSettings, 

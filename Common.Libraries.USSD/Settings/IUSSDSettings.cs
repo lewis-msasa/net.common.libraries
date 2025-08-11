@@ -6,6 +6,8 @@
         int Port { get; set; }
         string Network { get; set; }
 
+        string ApiUrl { get; set; }
+
         int IncomingPacketsPort { get; set; }
 
         int SessionMinutesToRefresh { get; set; }

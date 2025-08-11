@@ -11,11 +11,13 @@ namespace Common.Libraries.USSD.Settings
         public string IPAddress { get; set; } 
         public int Port { get; set; }
 
+        
         public int SessionMinutesToRefresh { get; set; }
 
         public string Network {  get; set; }    
 
         public string ShortCode { get; set; }
         public int IncomingPacketsPort { get;set; }
+        public string ApiUrl { get ; set ; }
     }
 }
