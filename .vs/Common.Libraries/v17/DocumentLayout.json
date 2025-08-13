@@ -3,40 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6EE9E05D-2862-442C-8172-001ADA353BC5}|Common.Libraries.USSD.Test.Client.Airtel\\Common.Libraries.USSD.Test.Client.Airtel.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.ussd.test.client.airtel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EE9E05D-2862-442C-8172-001ADA353BC5}|Common.Libraries.USSD.Test.Client.Airtel\\Common.Libraries.USSD.Test.Client.Airtel.csproj|solutionrelative:common.libraries.ussd.test.client.airtel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AEC64BAB-42D7-43D2-8FD5-07E2B245C8AB}|Common.Libraries.Services.Mapping\\Common.Libraries.Services.Mapping.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.mapping\\common.libraries.services.mapping.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AEC64BAB-42D7-43D2-8FD5-07E2B245C8AB}|Common.Libraries.Services.Mapping\\Common.Libraries.Services.Mapping.csproj|solutionrelative:common.libraries.services.mapping\\common.libraries.services.mapping.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C1E2709-292F-4A1C-8AB4-5185F536FD17}|Common.Libraries.USSD\\Common.Libraries.USSD.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.ussd\\iapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C1E2709-292F-4A1C-8AB4-5185F536FD17}|Common.Libraries.USSD\\Common.Libraries.USSD.csproj|solutionrelative:common.libraries.ussd\\iapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AEC64BAB-42D7-43D2-8FD5-07E2B245C8AB}|Common.Libraries.Services.Mapping\\Common.Libraries.Services.Mapping.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.mapping\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEC64BAB-42D7-43D2-8FD5-07E2B245C8AB}|Common.Libraries.Services.Mapping\\Common.Libraries.Services.Mapping.csproj|solutionrelative:common.libraries.services.mapping\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A96E8981-7F28-4570-98CF-68B11390F18C}|Common.Libraries.USSD.Airtel\\Common.Libraries.USSD.Airtel.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.ussd.airtel\\airtelsocketserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A96E8981-7F28-4570-98CF-68B11390F18C}|Common.Libraries.USSD.Airtel\\Common.Libraries.USSD.Airtel.csproj|solutionrelative:common.libraries.ussd.airtel\\airtelsocketserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AEC64BAB-42D7-43D2-8FD5-07E2B245C8AB}|Common.Libraries.Services.Mapping\\Common.Libraries.Services.Mapping.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.mapping\\imapfrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEC64BAB-42D7-43D2-8FD5-07E2B245C8AB}|Common.Libraries.Services.Mapping\\Common.Libraries.Services.Mapping.csproj|solutionrelative:common.libraries.services.mapping\\imapfrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A96E8981-7F28-4570-98CF-68B11390F18C}|Common.Libraries.USSD.Airtel\\Common.Libraries.USSD.Airtel.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.ussd.airtel\\processrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A96E8981-7F28-4570-98CF-68B11390F18C}|Common.Libraries.USSD.Airtel\\Common.Libraries.USSD.Airtel.csproj|solutionrelative:common.libraries.ussd.airtel\\processrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AEC64BAB-42D7-43D2-8FD5-07E2B245C8AB}|Common.Libraries.Services.Mapping\\Common.Libraries.Services.Mapping.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.mapping\\imapto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEC64BAB-42D7-43D2-8FD5-07E2B245C8AB}|Common.Libraries.Services.Mapping\\Common.Libraries.Services.Mapping.csproj|solutionrelative:common.libraries.services.mapping\\imapto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3972D73B-11ED-468E-BAE3-719D3245E34C}|Common.Libraries.USSD.TNM\\Common.Libraries.USSD.TNM.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.ussd.tnm\\processrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3972D73B-11ED-468E-BAE3-719D3245E34C}|Common.Libraries.USSD.TNM\\Common.Libraries.USSD.TNM.csproj|solutionrelative:common.libraries.ussd.tnm\\processrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.services\\mapping\\imapto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|solutionrelative:commonlibraries.services\\mapping\\imapto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49C9F315-0C69-47FA-B7AF-F542EDE64351}|Common.Libraries.USSD.Test.Console.Airtel\\Common.Libraries.USSD.Test.Console.Airtel.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.ussd.test.console.airtel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49C9F315-0C69-47FA-B7AF-F542EDE64351}|Common.Libraries.USSD.Test.Console.Airtel\\Common.Libraries.USSD.Test.Console.Airtel.csproj|solutionrelative:common.libraries.ussd.test.console.airtel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.services\\common.libraries.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|solutionrelative:commonlibraries.services\\common.libraries.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C1E2709-292F-4A1C-8AB4-5185F536FD17}|Common.Libraries.USSD\\Common.Libraries.USSD.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.ussd\\sockets\\framing\\framers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C1E2709-292F-4A1C-8AB4-5185F536FD17}|Common.Libraries.USSD\\Common.Libraries.USSD.csproj|solutionrelative:common.libraries.ussd\\sockets\\framing\\framers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A96E8981-7F28-4570-98CF-68B11390F18C}|Common.Libraries.USSD.Airtel\\Common.Libraries.USSD.Airtel.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.ussd.airtel\\models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A96E8981-7F28-4570-98CF-68B11390F18C}|Common.Libraries.USSD.Airtel\\Common.Libraries.USSD.Airtel.csproj|solutionrelative:common.libraries.ussd.airtel\\models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49C9F315-0C69-47FA-B7AF-F542EDE64351}|Common.Libraries.USSD.Test.Console.Airtel\\Common.Libraries.USSD.Test.Console.Airtel.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.ussd.test.console.airtel\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{49C9F315-0C69-47FA-B7AF-F542EDE64351}|Common.Libraries.USSD.Test.Console.Airtel\\Common.Libraries.USSD.Test.Console.Airtel.csproj|solutionrelative:common.libraries.ussd.test.console.airtel\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{B4BE560C-9CA3-4006-8AFC-3986C512D590}|Common.Libraries.EventBus.Kafka\\Common.Libraries.EventBus.Kafka.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.eventbus.kafka\\consumer\\kafkaconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4BE560C-9CA3-4006-8AFC-3986C512D590}|Common.Libraries.EventBus.Kafka\\Common.Libraries.EventBus.Kafka.csproj|solutionrelative:common.libraries.eventbus.kafka\\consumer\\kafkaconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,123 +38,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProcessRequest.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.USSD.TNM\\ProcessRequest.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.USSD.TNM\\ProcessRequest.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.USSD.TNM\\ProcessRequest.cs",
-              "RelativeToolTip": "Common.Libraries.USSD.TNM\\ProcessRequest.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAIwBgAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T12:17:46.236Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Framers.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.USSD\\Sockets\\Framing\\Framers.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.USSD\\Sockets\\Framing\\Framers.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.USSD\\Sockets\\Framing\\Framers.cs",
-              "RelativeToolTip": "Common.Libraries.USSD\\Sockets\\Framing\\Framers.cs",
-              "ViewState": "AgIAAIoAAAAAAAAAAAAiwJkAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T12:01:39.431Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Models.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.USSD.Airtel\\Models.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.USSD.Airtel\\Models.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.USSD.Airtel\\Models.cs",
-              "RelativeToolTip": "Common.Libraries.USSD.Airtel\\Models.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAuwDEAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T11:45:48.081Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProcessRequest.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.USSD.Airtel\\ProcessRequest.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.USSD.Airtel\\ProcessRequest.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.USSD.Airtel\\ProcessRequest.cs",
-              "RelativeToolTip": "Common.Libraries.USSD.Airtel\\ProcessRequest.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAcwDMAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T11:41:05.023Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IApiService.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.USSD\\IApiService.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.USSD\\IApiService.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.USSD\\IApiService.cs",
-              "RelativeToolTip": "Common.Libraries.USSD\\IApiService.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAowFEAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T11:35:53.565Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.USSD.Test.Console.Airtel\\Program.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.USSD.Test.Console.Airtel\\Program.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.USSD.Test.Console.Airtel\\Program.cs",
-              "RelativeToolTip": "Common.Libraries.USSD.Test.Console.Airtel\\Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACMAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T11:38:24.976Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.USSD.Test.Console.Airtel\\appsettings.json",
-              "RelativeDocumentMoniker": "Common.Libraries.USSD.Test.Console.Airtel\\appsettings.json",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.USSD.Test.Console.Airtel\\appsettings.json",
-              "RelativeToolTip": "Common.Libraries.USSD.Test.Console.Airtel\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-11T11:37:17.862Z",
+              "DocumentIndex": 0,
+              "Title": "Common.Libraries.Services.Mapping",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Mapping\\Common.Libraries.Services.Mapping.csproj",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.Mapping\\Common.Libraries.Services.Mapping.csproj",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Mapping\\Common.Libraries.Services.Mapping.csproj",
+              "RelativeToolTip": "Common.Libraries.Services.Mapping\\Common.Libraries.Services.Mapping.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-13T12:39:39.237Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AirtelSocketServer.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.USSD.Airtel\\AirtelSocketServer.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.USSD.Airtel\\AirtelSocketServer.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.USSD.Airtel\\AirtelSocketServer.cs",
-              "RelativeToolTip": "Common.Libraries.USSD.Airtel\\AirtelSocketServer.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAYwEAAAAAQAAAAAAAAAA==",
+              "Title": "IMapFrom.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Mapping\\IMapFrom.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.Mapping\\IMapFrom.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Mapping\\IMapFrom.cs",
+              "RelativeToolTip": "Common.Libraries.Services.Mapping\\IMapFrom.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T11:35:41.658Z",
+              "WhenOpened": "2025-08-13T12:25:08.15Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.USSD.Test.Client.Airtel\\Program.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.USSD.Test.Client.Airtel\\Program.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.USSD.Test.Client.Airtel\\Program.cs",
-              "RelativeToolTip": "Common.Libraries.USSD.Test.Client.Airtel\\Program.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAuwEcAAAA2AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Mapper.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Mapping\\Mapper.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.Mapping\\Mapper.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Mapping\\Mapper.cs",
+              "RelativeToolTip": "Common.Libraries.Services.Mapping\\Mapper.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAuwCkAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T11:15:01.466Z",
+              "WhenOpened": "2025-08-13T12:18:51.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IMapTo.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Mapping\\IMapTo.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.Mapping\\IMapTo.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Mapping\\IMapTo.cs",
+              "RelativeToolTip": "Common.Libraries.Services.Mapping\\IMapTo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T12:18:49.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Common.Libraries.Services",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Common.Libraries.Services.csproj",
+              "RelativeDocumentMoniker": "CommonLibraries.Services\\Common.Libraries.Services.csproj",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Common.Libraries.Services.csproj",
+              "RelativeToolTip": "CommonLibraries.Services\\Common.Libraries.Services.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-13T12:04:12.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "KafkaConsumer.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.EventBus.Kafka\\Consumer\\KafkaConsumer.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.EventBus.Kafka\\Consumer\\KafkaConsumer.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.EventBus.Kafka\\Consumer\\KafkaConsumer.cs",
+              "RelativeToolTip": "Common.Libraries.EventBus.Kafka\\Consumer\\KafkaConsumer.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAADgvykAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T07:50:10.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IMapTo.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Mapping\\IMapTo.cs",
+              "RelativeDocumentMoniker": "CommonLibraries.Services\\Mapping\\IMapTo.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Mapping\\IMapTo.cs",
+              "RelativeToolTip": "CommonLibraries.Services\\Mapping\\IMapTo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T07:24:46.591Z",
               "EditorCaption": ""
             }
           ]

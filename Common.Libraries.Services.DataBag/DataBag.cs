@@ -11,22 +11,23 @@ namespace Common.Libraries.DataBag
     public class DataBag : IDisposable
     {
         private readonly IDataBagStore _store;
-
-        public DataBag(IDataBagStore store)
+        private readonly string _name;
+        public DataBag(IDataBagStore store, string name)
         {
             _store = store;
+            _name = name;   
         }
 
-        public Task SetAsync<T>(string key, T value) => _store.SetAsync(key, value);
-        public Task<T?> GetAsync<T>(string key) => _store.GetAsync<T>(key);
-        public Task<bool> ContainsAsync(string key) => _store.ContainsAsync(key);
-        public Task<bool> RemoveAsync(string key) => _store.RemoveAsync(key);
+        public Task SetAsync<T>(string key, T value) => _store.SetAsync(key,_name, value);
+        public Task<T?> GetAsync<T>(string key) => _store.GetAsync<T>(key,_name);
+        public Task<bool> ContainsAsync(string key) => _store.ContainsAsync(key, _name);
+        public Task<bool> RemoveAsync(string key) => _store.RemoveAsync(key, _name);
         public void Set<T>(DataBagKey<T> key, T value) => SetAsync(key.Name, value);
         public Task<T?> GetAsync<T>(DataBagKey<T> key) => GetAsync<T>(key.Name);
 
         public void Dispose()
         {
-            _store.CloseAsync();
+            _store.CloseAsync(_name);
             
         }
     }

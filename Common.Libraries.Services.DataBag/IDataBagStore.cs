@@ -9,27 +9,27 @@ namespace Common.Libraries.DataBag
 {
     public interface IDataBagStore
     {
-        Task SetAsync<T>(string key, T value, CancellationToken cancellationToken = default!);
-        Task<T?> GetAsync<T>(string key, CancellationToken cancellationToken = default!);
-        Task<bool> RemoveAsync(string key, CancellationToken cancellationToken = default!);
-        Task<bool> ContainsAsync(string key, CancellationToken cancellationToken = default!);
-        Task CloseAsync(CancellationToken cancellationToken = default!);
+        Task SetAsync<T>(string key, string storeName, T value, CancellationToken cancellationToken = default!);
+        Task<T?> GetAsync<T>(string key, string storeName, CancellationToken cancellationToken = default!);
+        Task<bool> RemoveAsync(string key, string storeName, CancellationToken cancellationToken = default!);
+        Task<bool> ContainsAsync(string key, string storeName, CancellationToken cancellationToken = default!);
+        Task CloseAsync(string storeName, CancellationToken cancellationToken = default!);
     }
     public class DictionaryDataStore : IDataBagStore
     {
         private readonly ConcurrentDictionary<string, object> _store = new();
-        public Task<bool> ContainsAsync(string key, CancellationToken cancellationToken = default!)
+        public Task<bool> ContainsAsync(string key, string storeName, CancellationToken cancellationToken = default!)
         {
            
             return Task.FromResult(_store.ContainsKey(key));
         }
 
-        public Task<bool> RemoveAsync(string key, CancellationToken cancellationToken = default!)
+        public Task<bool> RemoveAsync(string key, string storeName, CancellationToken cancellationToken = default!)
         {
             return Task.FromResult(_store.TryRemove(key, out _));
         }
 
-        public Task<T?> GetAsync<T>(string key, CancellationToken cancellationToken = default!)
+        public Task<T?> GetAsync<T>(string key, string storeName, CancellationToken cancellationToken = default!)
         {
            if (_store.TryGetValue(key, out var val) && val is T typed)
             {
@@ -38,13 +38,13 @@ namespace Common.Libraries.DataBag
             return Task.FromResult<T?>(default);
         }
 
-        public Task SetAsync<T>(string key, T value, CancellationToken cancellationToken = default!)
+        public Task SetAsync<T>(string key, string storeName, T value, CancellationToken cancellationToken = default!)
         {
             _store[key] = value;
             return Task.CompletedTask;
         }
 
-        public Task CloseAsync(CancellationToken cancellationToken = default)
+        public Task CloseAsync(string storeName, CancellationToken cancellationToken = default)
         {
             return Task.CompletedTask;
         }

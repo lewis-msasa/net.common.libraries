@@ -133,6 +133,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Libraries.USSD.Test.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Libraries.USSD.Test.Client.Airtel", "Common.Libraries.USSD.Test.Client.Airtel\Common.Libraries.USSD.Test.Client.Airtel.csproj", "{6EE9E05D-2862-442C-8172-001ADA353BC5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Libraries.Services.Authentication", "Common.Libraries.Services.Authentication\Common.Libraries.Services.Authentication.csproj", "{440FB22B-F4D2-4E76-B76F-D0FA1D7AB62B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -331,6 +333,10 @@ Global
 		{6EE9E05D-2862-442C-8172-001ADA353BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EE9E05D-2862-442C-8172-001ADA353BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EE9E05D-2862-442C-8172-001ADA353BC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{440FB22B-F4D2-4E76-B76F-D0FA1D7AB62B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{440FB22B-F4D2-4E76-B76F-D0FA1D7AB62B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{440FB22B-F4D2-4E76-B76F-D0FA1D7AB62B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{440FB22B-F4D2-4E76-B76F-D0FA1D7AB62B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -391,6 +397,7 @@ Global
 		{54686A69-4F28-4FE3-AD7F-8E580E4F0396} = {2ACAAEC8-3090-4C1C-9314-3C833CD308E4}
 		{49C9F315-0C69-47FA-B7AF-F542EDE64351} = {2ACAAEC8-3090-4C1C-9314-3C833CD308E4}
 		{6EE9E05D-2862-442C-8172-001ADA353BC5} = {2ACAAEC8-3090-4C1C-9314-3C833CD308E4}
+		{440FB22B-F4D2-4E76-B76F-D0FA1D7AB62B} = {0BD6CAC2-FC95-4A28-BD26-6207CD05304C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {098DBDEC-B2B4-4933-B702-29F37D9A77A1}
