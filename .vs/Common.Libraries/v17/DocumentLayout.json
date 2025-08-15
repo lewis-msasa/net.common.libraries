@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ADA8C6F8-3963-4B36-A794-6ECE5C9BEBCF}|Common.Libraries.EventSourcing\\Common.Libraries.EventSourcing.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.eventsourcing\\iaggregatestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADA8C6F8-3963-4B36-A794-6ECE5C9BEBCF}|Common.Libraries.EventSourcing\\Common.Libraries.EventSourcing.csproj|solutionrelative:common.libraries.eventsourcing\\iaggregatestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.efcore\\common.libraries.services.efcore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|solutionrelative:common.libraries.services.efcore\\common.libraries.services.efcore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADA8C6F8-3963-4B36-A794-6ECE5C9BEBCF}|Common.Libraries.EventSourcing\\Common.Libraries.EventSourcing.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.eventsourcing\\aggregateid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADA8C6F8-3963-4B36-A794-6ECE5C9BEBCF}|Common.Libraries.EventSourcing\\Common.Libraries.EventSourcing.csproj|solutionrelative:common.libraries.eventsourcing\\aggregateid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.efcore\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|solutionrelative:common.libraries.services.efcore\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2685366-7791-43B4-A9A3-880FBD49B4D2}|CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.eventstore.projection\\efaggregatestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2685366-7791-43B4-A9A3-880FBD49B4D2}|CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj|solutionrelative:commonlibraries.eventstore.projection\\efaggregatestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.efcore\\unitofwork\\unitofworkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|solutionrelative:common.libraries.services.efcore\\unitofwork\\unitofworkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.efcore\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|solutionrelative:common.libraries.services.efcore\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.services\\common.libraries.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|solutionrelative:commonlibraries.services\\common.libraries.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.services\\unitofwork\\iunitofworkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|solutionrelative:commonlibraries.services\\unitofwork\\iunitofworkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.services\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|solutionrelative:commonlibraries.services\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +38,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AggregateId.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.EventSourcing\\AggregateId.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.EventSourcing\\AggregateId.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.EventSourcing\\AggregateId.cs",
-              "RelativeToolTip": "Common.Libraries.EventSourcing\\AggregateId.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T10:26:43.255Z",
+              "DocumentIndex": 0,
+              "Title": "Common.Libraries.Services.EFCore",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj",
+              "RelativeToolTip": "Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-15T14:27:49.572Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IAggregateStore.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.EventSourcing\\IAggregateStore.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.EventSourcing\\IAggregateStore.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.EventSourcing\\IAggregateStore.cs",
-              "RelativeToolTip": "Common.Libraries.EventSourcing\\IAggregateStore.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABTAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Common.Libraries.Services",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Common.Libraries.Services.csproj",
+              "RelativeDocumentMoniker": "CommonLibraries.Services\\Common.Libraries.Services.csproj",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Common.Libraries.Services.csproj",
+              "RelativeToolTip": "CommonLibraries.Services\\Common.Libraries.Services.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-15T14:26:52.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.EFCore\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\DependencyInjection.cs",
+              "RelativeToolTip": "Common.Libraries.Services.EFCore\\DependencyInjection.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAgwDgAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T10:26:17.255Z",
+              "WhenOpened": "2025-08-15T14:01:13.252Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "EFAggregateStore.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore.Projection\\EFAggregateStore.cs",
-              "RelativeDocumentMoniker": "CommonLibraries.EventStore.Projection\\EFAggregateStore.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore.Projection\\EFAggregateStore.cs",
-              "RelativeToolTip": "CommonLibraries.EventStore.Projection\\EFAggregateStore.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAmwCkAAACMAAAAAAAAAA==",
+              "Title": "UnitOfWorkRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\UnitOfWork\\UnitOfWorkRepository.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.EFCore\\UnitOfWork\\UnitOfWorkRepository.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\UnitOfWork\\UnitOfWorkRepository.cs",
+              "RelativeToolTip": "Common.Libraries.Services.EFCore\\UnitOfWork\\UnitOfWorkRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T06:47:39.176Z",
+              "WhenOpened": "2025-08-15T13:50:05.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IUnitOfWorkRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\UnitOfWork\\IUnitOfWorkRepository.cs",
+              "RelativeDocumentMoniker": "CommonLibraries.Services\\UnitOfWork\\IUnitOfWorkRepository.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\UnitOfWork\\IUnitOfWorkRepository.cs",
+              "RelativeToolTip": "CommonLibraries.Services\\UnitOfWork\\IUnitOfWorkRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T13:47:37.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.Services.EFCore\\UnitOfWork\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.EFCore\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeToolTip": "Common.Libraries.Services.EFCore\\UnitOfWork\\UnitOfWork.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAkwEAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T13:46:13.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\UnitOfWork\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "CommonLibraries.Services\\UnitOfWork\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\UnitOfWork\\IUnitOfWork.cs",
+              "RelativeToolTip": "CommonLibraries.Services\\UnitOfWork\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T13:46:08.596Z",
               "EditorCaption": ""
             }
           ]

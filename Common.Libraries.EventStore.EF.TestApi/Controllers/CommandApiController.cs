@@ -29,7 +29,7 @@ namespace Common.Libraries.EventStore.EF.TestApi.Controllers
                     typeof(T).Name
                 );
                 commandModifier?.Invoke(command);
-                await Service.Handle(command);
+                var r = await Service.Handle(command);
                 return new OkResult();
             }
             catch (Exception e)

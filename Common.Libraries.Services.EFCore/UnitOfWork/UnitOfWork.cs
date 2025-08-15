@@ -14,26 +14,28 @@ namespace Common.Libraries.Services.EFCore.UnitOfWork
 {
     using Microsoft.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore.Storage;
+    using Microsoft.Extensions.DependencyInjection;
 
     public class UnitOfWork<Context> : IDisposable, IUnitOfWork where Context : DbContext
     {
         private readonly Context _context;
         private IDbContextTransaction _transaction;
-        private IUnitOfWorkRepository _repository;
+        private IServiceScopeFactory _serviceScopeFactory;
 
-        public UnitOfWork(Context context)
+        public UnitOfWork(Context context, IServiceScopeFactory serviceScopeFactory)
         {
             _context = context;
-            _repository = new UnitOfWorkRepository(context);
+            _serviceScopeFactory = serviceScopeFactory;
         }
-        public IUnitOfWorkRepository Repository()
+
+        public IUnitOfWorkRepository<T> Repository<T>() where T : class, IEntity
         {
-            return _repository;
+            var scope = _serviceScopeFactory.CreateScope();
+            return scope.ServiceProvider.GetRequiredService<IUnitOfWorkRepository<T>>();
         }
         public async Task BeginTransactionAsync(CancellationToken cancellationToken = default)
         {
-            if (_transaction != null)
-                throw new InvalidOperationException("Transaction already started.");
+           
 
             _transaction = await _context.Database.BeginTransactionAsync();
         }
@@ -43,7 +45,10 @@ namespace Common.Libraries.Services.EFCore.UnitOfWork
             try
             {
                 var result = await _context.SaveChangesAsync(cancellationToken);
-                await _transaction.CommitAsync(cancellationToken);
+                if (_transaction != null)
+                {
+                    await _transaction.CommitAsync(cancellationToken);
+                }
                 return result;
             }
             catch
@@ -53,8 +58,11 @@ namespace Common.Libraries.Services.EFCore.UnitOfWork
             }
             finally
             {
-                await _transaction.DisposeAsync();
-                _transaction = null;
+                if (_transaction != null)
+                {
+                    await _transaction.DisposeAsync();
+                    _transaction = null;
+                }
             }
         }
 

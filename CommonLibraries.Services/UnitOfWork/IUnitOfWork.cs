@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace Common.Libraries.Services.UnitOfWork
 {
-    public interface IUnitOfWork : IDisposable
+    public interface IUnitOfWork : IDisposable 
     {
         Task BeginTransactionAsync(CancellationToken cancellationToken = default);
         Task<int> CommitAsync(CancellationToken cancellationToken = default);
         Task RollbackAsync(CancellationToken cancellationToken = default);
         Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
-        IUnitOfWorkRepository Repository();
+        IUnitOfWorkRepository<T> Repository<T>() where T : class, IEntity;
     }
 }

@@ -6,8 +6,8 @@ namespace Common.Libraries.EventSourcing
 {
     public abstract class ApplicationService<T,TSnapshot> where T : AggregateRoot<TSnapshot>, new() where TSnapshot : ISnapshot
     {
-        readonly Dictionary<Type, Func<object, Task>> _handlers =
-            new Dictionary<Type, Func<object, Task>>();
+        readonly Dictionary<Type, Func<object, Task<T>>> _handlers =
+            new Dictionary<Type, Func<object, Task<T>>>();
 
         readonly IAggregateStore<T,TSnapshot> _store;
 
@@ -15,7 +15,7 @@ namespace Common.Libraries.EventSourcing
 
         //static ILog Log => LogProvider.GetCurrentClassLogger();
 
-        public Task Handle<TCommand>(TCommand command)
+        public Task<T> Handle<TCommand>(TCommand command)
         {
             if (!_handlers.TryGetValue(typeof(TCommand), out var handler))
                 throw new InvalidOperationException(
@@ -24,6 +24,7 @@ namespace Common.Libraries.EventSourcing
 
             //Log.DebugFormat("Handling command: {command}", command.ToString());
             return handler(command);
+            
         }
 
         protected void CreateWhen<TCommand>(
@@ -43,6 +44,7 @@ namespace Common.Libraries.EventSourcing
                     var aggregate = creator(command, aggregateId);
 
                     await _store.Save(aggregate);
+                    return aggregate;
                 }
             );
 
@@ -62,6 +64,7 @@ namespace Common.Libraries.EventSourcing
 
                     updater(aggregate, command);
                     await _store.Save(aggregate);
+                    return aggregate;
                 }
             );
 
@@ -81,10 +84,11 @@ namespace Common.Libraries.EventSourcing
 
                     await updater(aggregate, command);
                     await _store.Save(aggregate);
+                    return aggregate;
                 }
             );
 
-        void When<TCommand>(Func<TCommand, Task> handler)
+        void When<TCommand>(Func<TCommand, Task<T>> handler)
             where TCommand : class
             => _handlers.Add(typeof(TCommand), c => handler((TCommand) c));
     }

@@ -2,10 +2,10 @@
 
 namespace Common.Libraries.Services.EFCore.UnitOfWork
 {
-    public interface IUnitOfWorkRepository
+    public interface IUnitOfWorkRepository<T> where T : class, IEntity
     {
-        Task<T> AddAsync<T>(T entity, CancellationToken cancellationToken = default) where T : class, IEntity;
-        Task<int> DeleteAsync<T>(T entity, CancellationToken cancellationToken = default) where T : class, IEntity;
-        Task<int> UpdateAsync<T>(T entity, CancellationToken cancellationToken = default) where T : class, IEntity;
+        Task<T> AddAsync(T entity, CancellationToken cancellationToken = default);
+        Task<int> DeleteAsync(T entity, CancellationToken cancellationToken = default);
+        Task<int> UpdateAsync(T entity, CancellationToken cancellationToken = default);
     }
 }

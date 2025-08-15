@@ -6,6 +6,7 @@ using Common.Libraries.Services.Repositories;
 using Common.Libraries.Services.Services;
 using Common.Libraries.Services.UnitOfWork;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -42,29 +43,29 @@ namespace Common.Libraries.Services.EFCore
             }
             return services;
         }
-        public static IServiceCollection AddEFUnitOfWorkDependencies(this IServiceCollection services, Assembly[] assemblies, Type contextType)
+        public static IServiceCollection AddEFUnitOfWorkDependencies(this IServiceCollection services, Assembly[] assemblies,  Type contextType)
         {
-            
+          
+                
             foreach (var assembly in assemblies)
             {
                 var allTypes = assembly.GetTypes();
 
-                // Get all classes that implement IEntity
                 var entityTypes = allTypes
                     .Where(t => t.IsClass && !t.IsAbstract && typeof(IEntity).IsAssignableFrom(t))
                     .ToList();
-
-
                 foreach (var entityType in entityTypes)
                 {
-
-                    var repoInterface = typeof(IUnitOfWork).MakeGenericType(entityType);
-                    var repoImplementation = typeof(UnitOfWork<>).MakeGenericType(entityType, contextType);
-                    services.AddScoped(repoInterface, repoImplementation);
+                   
+                    var repoUoWInterface = typeof(IUnitOfWorkRepository<>).MakeGenericType(entityType);
+                    var repoUoWImplementation = typeof(UnitOfWorkRepository<,>).MakeGenericType(entityType,contextType);
+                    services.AddScoped(repoUoWInterface, repoUoWImplementation);
 
                 }
 
             }
+            services.AddScoped(typeof(IUnitOfWork), typeof(UnitOfWork<>).MakeGenericType(contextType));
+
             return services;
         }
         public static IServiceCollection AddEFServicesDependencies(this IServiceCollection services, Assembly[] assemblies, Type contextType)
