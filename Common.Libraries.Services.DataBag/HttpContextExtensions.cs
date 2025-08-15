@@ -18,7 +18,7 @@ namespace Common.Libraries.DataBag
                 return bagFromItems;
             }
             var store = ctx.RequestServices.GetRequiredService<IDataBagStore>();
-            var bag = new DataBag(store);
+            var bag = new DataBag(store, "");
             ctx.Items[DataBagConstants.BagKey] = bag;
             return bag;
         }

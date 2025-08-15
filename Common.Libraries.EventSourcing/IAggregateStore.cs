@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace Common.Libraries.EventSourcing
 {
-    public interface IAggregateStore<T, TSnapshot> where T : AggregateRoot<TSnapshot>, new() where TSnapshot : ISnapshot
+    public interface IAggregateStore<T, TSnapshot> where T : AggregateRoot<TSnapshot> where TSnapshot : ISnapshot
     {
         Task<bool> Exists(AggregateId<T, TSnapshot> aggregateId, CancellationToken cancellationToken = default!);
 
@@ -13,7 +13,7 @@ namespace Common.Libraries.EventSourcing
 
        
     }
-    public interface ISaveSnapshot<T, TSnapshot> where T : AggregateRoot<TSnapshot>, new() where TSnapshot : ISnapshot
+    public interface ISaveSnapshot<T, TSnapshot> where T : AggregateRoot<TSnapshot> where TSnapshot : ISnapshot
     {
         Task SaveSnapshot(T aggregate, CancellationToken cancellationToken = default!);
     }

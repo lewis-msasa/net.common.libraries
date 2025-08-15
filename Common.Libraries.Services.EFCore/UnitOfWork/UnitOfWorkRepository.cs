@@ -10,155 +10,36 @@ using System.Threading.Tasks;
 
 namespace Common.Libraries.Services.EFCore.UnitOfWork
 {
-    public class UnitOfWorkRepository<T, Context> : IRepository<T> where T : class, IEntity where Context : DbContext
+    public class UnitOfWorkRepository : IUnitOfWorkRepository
     {
-        private readonly Context _dbContext;
+        private readonly DbContext _dbContext;
 
-        public UnitOfWorkRepository(Context dbContext)
+        public UnitOfWorkRepository(DbContext dbContext)
         {
             _dbContext = dbContext;
         }
 
-        public async Task<T> GetOneAsync(Expression<Func<T, bool>> predicate = null,
-            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
-            string[] includeString = null,
-            bool disableTracking = true, CancellationToken cancellationToken = default)
-        {
-            var query = _dbContext.Set<T>().Where(predicate);
-            if (includeString != null)
-            {
 
-                foreach (var inc in includeString)
-                {
-                    query = query.Include(inc);
-                }
-            }
-            if (orderBy != null)
-            {
-                query = orderBy(query);
-            }
-            if (!disableTracking)
-            {
-                query = query.AsNoTracking();
-            }
-            return await query?.FirstOrDefaultAsync();
-        }
-
-        public async Task<T> AddAsync(T entity, CancellationToken cancellationToken = default)
+        public async Task<T> AddAsync<T>(T entity, CancellationToken cancellationToken = default) where T : class, IEntity
         {
-            await _dbContext.Set<T>().AddAsync(entity,cancellationToken);
+            await _dbContext.Set<T>().AddAsync(entity, cancellationToken);
 
             return entity;
         }
 
-        public async Task<int> DeleteAsync(T entity, CancellationToken cancellationToken = default)
+        public async Task<int> DeleteAsync<T>(T entity, CancellationToken cancellationToken = default) where T : class, IEntity
         {
 
             _dbContext.Set<T>().Remove(entity);
             return 1;
         }
 
-        public async Task<IReadOnlyList<T>> GetAllAsync(CancellationToken cancellationToken = default)
-        {
-            return await _dbContext.Set<T>().ToListAsync(cancellationToken);
-        }
-
-        public async Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default)
-        {
-            return await _dbContext.Set<T>().Where(predicate).ToListAsync(cancellationToken);
-        }
-
-
-    
-
-
-
-        public async Task<IReadOnlyList<T>> GetPaginatedByCondtionAsync(Expression<Func<T, bool>> predicate, int page, int size, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string[] includeString = null, bool disableTracking = true, CancellationToken cancellationToken = default)
-        {
-
-            page = page != 0 ? page - 1 : page;
-            var query = _dbContext.Set<T>().Where(predicate).Take(size).Skip(page * size);
-            if (includeString != null)
-            {
-
-                foreach (var inc in includeString)
-                {
-                    query = query.Include(inc);
-                }
-            }
-            if (orderBy != null)
-            {
-                query = orderBy(query);
-            }
-            if (!disableTracking)
-            {
-                query = query.AsNoTracking();
-            }
-            return await query.ToListAsync(cancellationToken);
-        }
-
-
-        public async Task<int> UpdateAsync(T entity, CancellationToken cancellationToken = default)
+        public async Task<int> UpdateAsync<T>(T entity, CancellationToken cancellationToken = default) where T : class, IEntity
         {
             _dbContext.Set<T>().Update(entity);
             return 1;
         }
 
 
-
-        public async Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate = null,
-            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
-            string[] includeString = null, bool disableTracking = true, CancellationToken cancellationToken = default)
-        {
-            var query = _dbContext.Set<T>().Where(predicate);
-            if (includeString != null)
-            {
-
-                foreach (var inc in includeString)
-                {
-                    query = query.Include(inc);
-                }
-            }
-            if (orderBy != null)
-            {
-                query = orderBy(query);
-            }
-            if (!disableTracking)
-            {
-                query = query.AsNoTracking();
-            }
-            return await query.ToListAsync(cancellationToken);
-        }
-
-        public async Task<IReadOnlyList<T>> GetPaginatedAsync(int page, int size, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string[] includeString = null, bool disableTracking = true, CancellationToken cancellationToken = default)
-        {
-            page = page != 0 ? page - 1 : page;
-            IQueryable<T> query = _dbContext.Set<T>().Take(5).Skip(page * size);
-            if (includeString != null)
-            {
-
-                foreach (var inc in includeString)
-                {
-                    query = query.Include(inc);
-                }
-            }
-            if (orderBy != null)
-            {
-                query = orderBy(query);
-            }
-            if (!disableTracking)
-            {
-                query = query.AsNoTracking();
-            }
-            return await query.ToListAsync(cancellationToken);
-        }
-
-        public async Task<int> CountAsync(Expression<Func<T, bool>> predicate = null, CancellationToken cancellationToken = default)
-        {
-            if (predicate != null)
-                return await _dbContext.Set<T>().CountAsync(predicate);
-            else
-                return await _dbContext.Set<T>().CountAsync(cancellationToken);
-        }
     }
 }

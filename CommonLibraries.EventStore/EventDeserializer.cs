@@ -7,11 +7,11 @@ namespace Common.Libraries.EventStore
 {
 	public static class EventDeserializer
 	{
-		public static object Deserialze(this ResolvedEvent resolvedEvent)
+		public static IEvent Deserialze(this ResolvedEvent resolvedEvent)
 		{
 			var dataType = TypeMapper.GetType(resolvedEvent.Event.EventType);
 			var jsonData = Encoding.UTF8.GetString(resolvedEvent.Event.Data);
-			var data = JsonConvert.DeserializeObject(jsonData, dataType);
+			var data = JsonConvert.DeserializeObject<IEvent>(jsonData/*, dataType*/);
 			return data;
 		}
 

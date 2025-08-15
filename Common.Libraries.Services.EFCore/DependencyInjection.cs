@@ -58,8 +58,8 @@ namespace Common.Libraries.Services.EFCore
                 foreach (var entityType in entityTypes)
                 {
 
-                    var repoInterface = typeof(IUnitOfWork<>).MakeGenericType(entityType);
-                    var repoImplementation = typeof(UnitOfWork<,>).MakeGenericType(entityType, contextType);
+                    var repoInterface = typeof(IUnitOfWork).MakeGenericType(entityType);
+                    var repoImplementation = typeof(UnitOfWork<>).MakeGenericType(entityType, contextType);
                     services.AddScoped(repoInterface, repoImplementation);
 
                 }

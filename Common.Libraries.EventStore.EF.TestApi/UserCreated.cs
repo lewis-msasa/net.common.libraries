@@ -1,7 +1,9 @@
-﻿namespace Common.Libraries.EventStore.EF.TestApi
+﻿using Common.Libraries.EventSourcing;
+
+namespace Common.Libraries.EventStore.EF.TestApi
 {
     //event
-    public class UserCreated
+    public class UserCreated : IEvent
     {
         public Guid Id { get; set; }
 

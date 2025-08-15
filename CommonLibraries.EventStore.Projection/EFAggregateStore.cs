@@ -25,7 +25,7 @@ namespace Common.Libraries.EventStore.Projection
         public string EventType { get; set; }
         public string EventData { get; set; }
         public int Version { get; set; }
-        public DateTime Timestamp { get; set; }
+        public DateTimeOffset Timestamp { get; set; }
     }
 
     public class EventDto : IDTO
@@ -37,9 +37,9 @@ namespace Common.Libraries.EventStore.Projection
         public string EventType { get; set; }
         public string EventData { get; set; }
         public int Version { get; set; }
-        public DateTime Timestamp { get; set; }
+        public DateTimeOffset Timestamp { get; set; }
     }
-    public class EFAggregateStore<T,TSnapshot> : IAggregateStore<T,TSnapshot>, ISaveSnapshot<T,TSnapshot> where T : AggregateRoot<TSnapshot>, new() where TSnapshot : class,ISnapshot,IEntity
+    public class EFAggregateStore<T,TSnapshot> : IAggregateStore<T,TSnapshot>, ISaveSnapshot<T,TSnapshot> where T : AggregateRoot<TSnapshot> where TSnapshot : class,ISnapshot,IEntity
     {
         private readonly IRepository<Event> _eventRepository;
         private readonly IRepository<TSnapshot> _eventSnapshotRepository;

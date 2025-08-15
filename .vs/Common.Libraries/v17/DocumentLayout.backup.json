@@ -3,32 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AEC64BAB-42D7-43D2-8FD5-07E2B245C8AB}|Common.Libraries.Services.Mapping\\Common.Libraries.Services.Mapping.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.mapping\\common.libraries.services.mapping.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{AEC64BAB-42D7-43D2-8FD5-07E2B245C8AB}|Common.Libraries.Services.Mapping\\Common.Libraries.Services.Mapping.csproj|solutionrelative:common.libraries.services.mapping\\common.libraries.services.mapping.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{ADA8C6F8-3963-4B36-A794-6ECE5C9BEBCF}|Common.Libraries.EventSourcing\\Common.Libraries.EventSourcing.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.eventsourcing\\iaggregatestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADA8C6F8-3963-4B36-A794-6ECE5C9BEBCF}|Common.Libraries.EventSourcing\\Common.Libraries.EventSourcing.csproj|solutionrelative:common.libraries.eventsourcing\\iaggregatestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AEC64BAB-42D7-43D2-8FD5-07E2B245C8AB}|Common.Libraries.Services.Mapping\\Common.Libraries.Services.Mapping.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.mapping\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEC64BAB-42D7-43D2-8FD5-07E2B245C8AB}|Common.Libraries.Services.Mapping\\Common.Libraries.Services.Mapping.csproj|solutionrelative:common.libraries.services.mapping\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ADA8C6F8-3963-4B36-A794-6ECE5C9BEBCF}|Common.Libraries.EventSourcing\\Common.Libraries.EventSourcing.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.eventsourcing\\aggregateid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADA8C6F8-3963-4B36-A794-6ECE5C9BEBCF}|Common.Libraries.EventSourcing\\Common.Libraries.EventSourcing.csproj|solutionrelative:common.libraries.eventsourcing\\aggregateid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AEC64BAB-42D7-43D2-8FD5-07E2B245C8AB}|Common.Libraries.Services.Mapping\\Common.Libraries.Services.Mapping.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.mapping\\imapfrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEC64BAB-42D7-43D2-8FD5-07E2B245C8AB}|Common.Libraries.Services.Mapping\\Common.Libraries.Services.Mapping.csproj|solutionrelative:common.libraries.services.mapping\\imapfrom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEC64BAB-42D7-43D2-8FD5-07E2B245C8AB}|Common.Libraries.Services.Mapping\\Common.Libraries.Services.Mapping.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.mapping\\imapto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEC64BAB-42D7-43D2-8FD5-07E2B245C8AB}|Common.Libraries.Services.Mapping\\Common.Libraries.Services.Mapping.csproj|solutionrelative:common.libraries.services.mapping\\imapto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.services\\mapping\\imapto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|solutionrelative:commonlibraries.services\\mapping\\imapto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.services\\common.libraries.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B65A079B-68D3-449D-B7B4-6228953AF6C9}|CommonLibraries.Services\\Common.Libraries.Services.csproj|solutionrelative:commonlibraries.services\\common.libraries.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4BE560C-9CA3-4006-8AFC-3986C512D590}|Common.Libraries.EventBus.Kafka\\Common.Libraries.EventBus.Kafka.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.eventbus.kafka\\consumer\\kafkaconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4BE560C-9CA3-4006-8AFC-3986C512D590}|Common.Libraries.EventBus.Kafka\\Common.Libraries.EventBus.Kafka.csproj|solutionrelative:common.libraries.eventbus.kafka\\consumer\\kafkaconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C2685366-7791-43B4-A9A3-880FBD49B4D2}|CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.eventstore.projection\\efaggregatestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2685366-7791-43B4-A9A3-880FBD49B4D2}|CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj|solutionrelative:commonlibraries.eventstore.projection\\efaggregatestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,97 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AggregateId.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.EventSourcing\\AggregateId.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.EventSourcing\\AggregateId.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.EventSourcing\\AggregateId.cs",
+              "RelativeToolTip": "Common.Libraries.EventSourcing\\AggregateId.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T10:26:43.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Common.Libraries.Services.Mapping",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Mapping\\Common.Libraries.Services.Mapping.csproj",
-              "RelativeDocumentMoniker": "Common.Libraries.Services.Mapping\\Common.Libraries.Services.Mapping.csproj",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Mapping\\Common.Libraries.Services.Mapping.csproj",
-              "RelativeToolTip": "Common.Libraries.Services.Mapping\\Common.Libraries.Services.Mapping.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-13T12:39:39.237Z",
+              "Title": "IAggregateStore.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.EventSourcing\\IAggregateStore.cs",
+              "RelativeDocumentMoniker": "Common.Libraries.EventSourcing\\IAggregateStore.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.EventSourcing\\IAggregateStore.cs",
+              "RelativeToolTip": "Common.Libraries.EventSourcing\\IAggregateStore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T10:26:17.255Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IMapFrom.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Mapping\\IMapFrom.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.Services.Mapping\\IMapFrom.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Mapping\\IMapFrom.cs",
-              "RelativeToolTip": "Common.Libraries.Services.Mapping\\IMapFrom.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAHAAAAAAAAAA==",
+              "Title": "EFAggregateStore.cs",
+              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore.Projection\\EFAggregateStore.cs",
+              "RelativeDocumentMoniker": "CommonLibraries.EventStore.Projection\\EFAggregateStore.cs",
+              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore.Projection\\EFAggregateStore.cs",
+              "RelativeToolTip": "CommonLibraries.EventStore.Projection\\EFAggregateStore.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAmwCkAAACMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T12:25:08.15Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Mapper.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Mapping\\Mapper.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.Services.Mapping\\Mapper.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Mapping\\Mapper.cs",
-              "RelativeToolTip": "Common.Libraries.Services.Mapping\\Mapper.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAzwC4AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T12:18:51.907Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IMapTo.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Mapping\\IMapTo.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.Services.Mapping\\IMapTo.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Mapping\\IMapTo.cs",
-              "RelativeToolTip": "Common.Libraries.Services.Mapping\\IMapTo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T12:18:49.491Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Common.Libraries.Services",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Common.Libraries.Services.csproj",
-              "RelativeDocumentMoniker": "CommonLibraries.Services\\Common.Libraries.Services.csproj",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Common.Libraries.Services.csproj",
-              "RelativeToolTip": "CommonLibraries.Services\\Common.Libraries.Services.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-13T12:04:12.524Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "KafkaConsumer.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.EventBus.Kafka\\Consumer\\KafkaConsumer.cs",
-              "RelativeDocumentMoniker": "Common.Libraries.EventBus.Kafka\\Consumer\\KafkaConsumer.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.EventBus.Kafka\\Consumer\\KafkaConsumer.cs",
-              "RelativeToolTip": "Common.Libraries.EventBus.Kafka\\Consumer\\KafkaConsumer.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAADgvykAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T07:50:10.468Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IMapTo.cs",
-              "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Mapping\\IMapTo.cs",
-              "RelativeDocumentMoniker": "CommonLibraries.Services\\Mapping\\IMapTo.cs",
-              "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.Services\\Mapping\\IMapTo.cs",
-              "RelativeToolTip": "CommonLibraries.Services\\Mapping\\IMapTo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T07:24:46.591Z",
+              "WhenOpened": "2025-08-15T06:47:39.176Z",
               "EditorCaption": ""
             }
           ]

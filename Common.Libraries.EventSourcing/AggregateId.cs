@@ -3,7 +3,7 @@ using System;
 namespace Common.Libraries.EventSourcing
 {
     public abstract class AggregateId<T,TSnapshot> : Value<AggregateId<T,TSnapshot>>
-        where T : AggregateRoot<TSnapshot>, new () where TSnapshot : ISnapshot
+        where T : AggregateRoot<TSnapshot> where TSnapshot : ISnapshot
     {
         protected AggregateId(Guid value)
         {

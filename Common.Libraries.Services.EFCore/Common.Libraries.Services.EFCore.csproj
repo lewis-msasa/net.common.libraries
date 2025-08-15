@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>1.2.22</Version>
+    <Version>1.2.26</Version>
 	<Authors>Lewis Msasa</Authors>
 	<Company>NovaBank</Company>
 	<PackageDescription>For common Entity Framework services</PackageDescription>
@@ -13,14 +13,12 @@
 
 	<ItemGroup>
 		
-	
-		
-		<PackageReference Include="Common.Libraries.Services" Version="1.2.19" />
-		
-	
-		
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.6" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="9.0.6" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\CommonLibraries.Services\Common.Libraries.Services.csproj" />
 	</ItemGroup>
 
 

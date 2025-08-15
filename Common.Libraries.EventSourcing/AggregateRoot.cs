@@ -39,7 +39,7 @@ namespace Common.Libraries.EventSourcing
                 Version++;
             }
         }
-
+        //rehydrate
         public void LoadFromHistory(TSnapshot? snapshot, IEnumerable<object> events)
         {
             if (snapshot is not null)
@@ -53,6 +53,8 @@ namespace Common.Libraries.EventSourcing
         public abstract TSnapshot CreateSnapShot();
 
         public void ClearChanges() => _changes.Clear();
+
+        public IReadOnlyList<object> GetUncommittedChanges() => _changes.AsReadOnly();
 
         protected abstract void EnsureValidState();
 

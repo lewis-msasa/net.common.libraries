@@ -18,7 +18,7 @@ namespace Common.Libraries.DataBag
         }
         public async Task InvokeAsync(HttpContext context)
         {
-            var bag = new DataBag(_dataBagStore);
+            var bag = new DataBag(_dataBagStore, "");
             context.Items[DataBagConstants.BagKey] = bag;
             DataBagContext.Current = bag;
             try

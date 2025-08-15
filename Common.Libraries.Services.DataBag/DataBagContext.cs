@@ -24,7 +24,7 @@ namespace Common.Libraries.DataBag
         {
             get
             {
-                if(_current.Value == null) _current.Value = new DataBag(_storeFactory());
+                if(_current.Value == null) _current.Value = new DataBag(_storeFactory(),"");
                 return _current.Value;
             }
             set => _current.Value = value;

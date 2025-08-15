@@ -1,8 +1,9 @@
-﻿using System.Text.Json.Serialization;
+﻿using Common.Libraries.EventSourcing;
+using System.Text.Json.Serialization;
 
 namespace Common.Libraries.EventStore.EF.TestApi
 {
-    public class UsernameChanged
+    public class UsernameChanged : IEvent
     {
         [JsonConstructor]
         public UsernameChanged(Guid Id,Username username) { 
