@@ -1,6 +1,7 @@
 ﻿using Common.Libraries.Services.EFCore.UnitOfWork;
 using Common.Libraries.Services.Entities;
 using Common.Libraries.Services.Repositories;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Common.Libraries.Services.UnitOfWork
 {
-    public interface IUnitOfWork : IDisposable 
+    public interface IUnitOfWork<Context> : IDisposable where Context : DbContext
     {
         Task BeginTransactionAsync(CancellationToken cancellationToken = default);
         Task<int> CommitAsync(CancellationToken cancellationToken = default);

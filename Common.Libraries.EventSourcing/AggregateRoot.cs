@@ -36,7 +36,7 @@ namespace Common.Libraries.EventSourcing
             foreach (var e in history)
             {
                 When(e);
-                Version++;
+                //Version++;
             }
         }
         //rehydrate

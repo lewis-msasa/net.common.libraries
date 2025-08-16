@@ -16,22 +16,21 @@ namespace Common.Libraries.Services.EFCore.UnitOfWork
     using Microsoft.EntityFrameworkCore.Storage;
     using Microsoft.Extensions.DependencyInjection;
 
-    public class UnitOfWork<Context> : IDisposable, IUnitOfWork where Context : DbContext
+    public class UnitOfWork<Context> : IDisposable, IUnitOfWork<Context> where Context : DbContext
     {
         private readonly Context _context;
         private IDbContextTransaction _transaction;
-        private IServiceScopeFactory _serviceScopeFactory;
+        private readonly IServiceProvider _serviceProvider;
 
-        public UnitOfWork(Context context, IServiceScopeFactory serviceScopeFactory)
+        public UnitOfWork(Context context, IServiceProvider serviceProvider)
         {
             _context = context;
-            _serviceScopeFactory = serviceScopeFactory;
+            _serviceProvider = serviceProvider;
         }
 
         public IUnitOfWorkRepository<T> Repository<T>() where T : class, IEntity
         {
-            var scope = _serviceScopeFactory.CreateScope();
-            return scope.ServiceProvider.GetRequiredService<IUnitOfWorkRepository<T>>();
+            return new UnitOfWorkRepository<T, Context>(_context);
         }
         public async Task BeginTransactionAsync(CancellationToken cancellationToken = default)
         {

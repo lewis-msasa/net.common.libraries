@@ -64,7 +64,7 @@ namespace Common.Libraries.Services.EFCore
                 }
 
             }
-            services.AddScoped(typeof(IUnitOfWork), typeof(UnitOfWork<>).MakeGenericType(contextType));
+            services.AddScoped(typeof(IUnitOfWork<>).MakeGenericType(contextType), typeof(UnitOfWork<>).MakeGenericType(contextType));
 
             return services;
         }

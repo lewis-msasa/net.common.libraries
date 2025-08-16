@@ -10,6 +10,13 @@ namespace Common.Libraries.Services.BackgroundWork.Hangfire
 {
     public class HangfireBackgroundJobService : IBackgroundJobService
     {
+        private readonly IRecurringJobManager _recurringJobManager;
+
+        public HangfireBackgroundJobService(IRecurringJobManager recurringJobManager)
+        {
+            _recurringJobManager = recurringJobManager;
+        }
+
         public void Enqueue<T>(Expression<Func<T, Task>> methodCall)
         {
             BackgroundJob.Enqueue(methodCall);
@@ -23,7 +30,7 @@ namespace Common.Libraries.Services.BackgroundWork.Hangfire
         public void AddOrUpdateRecurring<T>(string jobId, Expression<Func<T, Task>> methodCall, string cronExpression)
         {
             
-            RecurringJob.AddOrUpdate(jobId, methodCall, cronExpression);
+            _recurringJobManager.AddOrUpdate(jobId, methodCall, cronExpression);
         }
 
         public void RemoveRecurring(string jobId)
