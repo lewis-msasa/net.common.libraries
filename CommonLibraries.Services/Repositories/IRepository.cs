@@ -14,7 +14,7 @@ namespace Common.Libraries.Services.Repositories
         Task<IReadOnlyList<T>> GetAllAsync(CancellationToken cancellationToken = default);
 
         Task<T> GetOneAsync(Expression<Func<T, bool>> predicate = null,
-          Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
+          Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null,
          string[] includeString = null,
           bool disableTracking = true, CancellationToken cancellationToken = default);
 

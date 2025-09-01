@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{ADA8C6F8-3963-4B36-A794-6ECE5C9BEBCF}|Common.Libraries.EventSourcing\\Common.Libraries.EventSourcing.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.eventsourcing\\aggregateroot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADA8C6F8-3963-4B36-A794-6ECE5C9BEBCF}|Common.Libraries.EventSourcing\\Common.Libraries.EventSourcing.csproj|solutionrelative:common.libraries.eventsourcing\\aggregateroot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C2685366-7791-43B4-A9A3-880FBD49B4D2}|CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\commonlibraries.eventstore.projection\\common.libraries.eventstore.ef.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{C2685366-7791-43B4-A9A3-880FBD49B4D2}|CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj|solutionrelative:commonlibraries.eventstore.projection\\common.libraries.eventstore.ef.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{ADA8C6F8-3963-4B36-A794-6ECE5C9BEBCF}|Common.Libraries.EventSourcing\\Common.Libraries.EventSourcing.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.eventsourcing\\common.libraries.eventsourcing.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{ADA8C6F8-3963-4B36-A794-6ECE5C9BEBCF}|Common.Libraries.EventSourcing\\Common.Libraries.EventSourcing.csproj|solutionrelative:common.libraries.eventsourcing\\common.libraries.eventsourcing.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADA8C6F8-3963-4B36-A794-6ECE5C9BEBCF}|Common.Libraries.EventSourcing\\Common.Libraries.EventSourcing.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.eventsourcing\\aggregateroot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADA8C6F8-3963-4B36-A794-6ECE5C9BEBCF}|Common.Libraries.EventSourcing\\Common.Libraries.EventSourcing.csproj|solutionrelative:common.libraries.eventsourcing\\aggregateroot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{22A8294E-F7C3-46AD-8BE0-CFAF7A020910}|Common.Libraries.Services.EFCore\\Common.Libraries.Services.EFCore.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.efcore\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,24 +38,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Common.Libraries.EventStore.EF",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj",
               "RelativeDocumentMoniker": "CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj",
               "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj",
               "RelativeToolTip": "CommonLibraries.EventStore.Projection\\Common.Libraries.EventStore.EF.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-08-16T19:31:55.583Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Common.Libraries.EventStore",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\CommonLibraries.EventStore\\Common.Libraries.EventStore.csproj",
               "RelativeDocumentMoniker": "CommonLibraries.EventStore\\Common.Libraries.EventStore.csproj",
@@ -68,7 +68,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Common.Libraries.EventSourcing",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.EventSourcing\\Common.Libraries.EventSourcing.csproj",
               "RelativeDocumentMoniker": "Common.Libraries.EventSourcing\\Common.Libraries.EventSourcing.csproj",
@@ -81,13 +81,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "AggregateRoot.cs",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.EventSourcing\\AggregateRoot.cs",
               "RelativeDocumentMoniker": "Common.Libraries.EventSourcing\\AggregateRoot.cs",
               "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.EventSourcing\\AggregateRoot.cs",
               "RelativeToolTip": "Common.Libraries.EventSourcing\\AggregateRoot.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAA4wAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAcwCcAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-16T19:30:09.169Z",
               "EditorCaption": ""

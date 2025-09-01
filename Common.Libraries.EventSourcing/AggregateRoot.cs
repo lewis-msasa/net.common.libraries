@@ -25,6 +25,7 @@ namespace Common.Libraries.EventSourcing
         protected void Apply(object @event)
         {
             When(@event);
+            //Version++;
             EnsureValidState();
             _changes.Add(@event);
         }
