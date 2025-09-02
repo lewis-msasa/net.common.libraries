@@ -9,6 +9,10 @@ namespace Common.Libraries.Services.Specification
     public interface ISpecEntity
     {
     }
+    public interface  HasId
+    {
+        public int Id { set; get; }
+    }
     public interface ISpecDto
     {
 

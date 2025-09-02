@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E6579BA0-7E6E-48C4-9080-BEA0B175F3DE}|Common.Libraries.Services.Specification\\Common.Libraries.Services.Specification.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.specification\\specservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6579BA0-7E6E-48C4-9080-BEA0B175F3DE}|Common.Libraries.Services.Specification\\Common.Libraries.Services.Specification.csproj|solutionrelative:common.libraries.services.specification\\specservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DCC0DD24-975B-4645-BA87-96CDA28220CD}|Common.Libraries.Specification.TestApi\\Common.Libraries.Specification.TestApi.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.specification.testapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DCC0DD24-975B-4645-BA87-96CDA28220CD}|Common.Libraries.Specification.TestApi\\Common.Libraries.Specification.TestApi.csproj|solutionrelative:common.libraries.specification.testapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E6579BA0-7E6E-48C4-9080-BEA0B175F3DE}|Common.Libraries.Services.Specification\\Common.Libraries.Services.Specification.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.specification\\extensionmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E6579BA0-7E6E-48C4-9080-BEA0B175F3DE}|Common.Libraries.Services.Specification\\Common.Libraries.Services.Specification.csproj|solutionrelative:common.libraries.services.specification\\extensionmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6579BA0-7E6E-48C4-9080-BEA0B175F3DE}|Common.Libraries.Services.Specification\\Common.Libraries.Services.Specification.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.specification\\specservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6579BA0-7E6E-48C4-9080-BEA0B175F3DE}|Common.Libraries.Services.Specification\\Common.Libraries.Services.Specification.csproj|solutionrelative:common.libraries.services.specification\\specservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FD19157B-E43B-42C0-AF8D-69F3224FF672}|Common.Libraries.Services.Specification.EFCore\\Common.Libraries.Services.Specification.EFCore.csproj|c:\\users\\lmsas\\source\\repos\\common.libraries\\common.libraries.services.specification.efcore\\efunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,11 +50,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Specification.TestApi\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Common.Libraries.Specification.TestApi\\Properties\\launchSettings.json",
@@ -67,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ExtensionMethods.cs",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Specification\\ExtensionMethods.cs",
               "RelativeDocumentMoniker": "Common.Libraries.Services.Specification\\ExtensionMethods.cs",
@@ -119,33 +119,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "SpecService.cs",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Specification\\SpecService.cs",
               "RelativeDocumentMoniker": "Common.Libraries.Services.Specification\\SpecService.cs",
               "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.Specification\\SpecService.cs",
               "RelativeToolTip": "Common.Libraries.Services.Specification\\SpecService.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAEwC0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAawDwAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-02T07:23:56.96Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Specification.TestApi\\Program.cs",
               "RelativeDocumentMoniker": "Common.Libraries.Specification.TestApi\\Program.cs",
               "ToolTip": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Specification.TestApi\\Program.cs",
               "RelativeToolTip": "Common.Libraries.Specification.TestApi\\Program.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAADEAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-02T07:10:40.014Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS.TestApi\\Program.cs",
               "RelativeDocumentMoniker": "Common.Libraries.Services.CQRS.TestApi\\Program.cs",
@@ -158,7 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\lmsas\\source\\repos\\Common.Libraries\\Common.Libraries.Services.CQRS.TestApi\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Common.Libraries.Services.CQRS.TestApi\\Properties\\launchSettings.json",

@@ -32,6 +32,7 @@ namespace Common.Libraries.Services.Specification
         public Service(IRepository<T> repository, IEntityMapper<T, TD> mapper, IUnitOfWork unitOfWork)
         {
             _repository = repository;
+            if(_mapper == null) throw new ArgumentNullException($"{nameof(mapper)} not found");
             _mapper = mapper;
             _unitOfWork = unitOfWork;
         }
