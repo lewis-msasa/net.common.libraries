@@ -8,10 +8,10 @@ namespace Common.Libraries.Services.Specification
 {
     public interface IUnitOfWork : IDisposable
     {
-        Task<int> SaveChangesAsync();
-        Task BeginTransactionAsync();
-        Task CommitTransactionAsync();
-        Task RollbackTransactionAsync();
+        Task<int> SaveChangesAsync(CancellationToken cancellationToken = default!);
+        Task BeginTransactionAsync(CancellationToken cancellationToken = default!);
+        Task CommitTransactionAsync(CancellationToken cancellationToken = default!);
+        Task RollbackTransactionAsync(CancellationToken cancellationToken = default!);
     }
 
 }

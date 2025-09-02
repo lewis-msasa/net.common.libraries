@@ -135,6 +135,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Libraries.USSD.Test.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Libraries.Services.Authentication", "Common.Libraries.Services.Authentication\Common.Libraries.Services.Authentication.csproj", "{440FB22B-F4D2-4E76-B76F-D0FA1D7AB62B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Libraries.Services.Specification", "Common.Libraries.Services.Specification\Common.Libraries.Services.Specification.csproj", "{E6579BA0-7E6E-48C4-9080-BEA0B175F3DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Libraries.Services.Specification.EFCore", "Common.Libraries.Services.Specification.EFCore\Common.Libraries.Services.Specification.EFCore.csproj", "{FD19157B-E43B-42C0-AF8D-69F3224FF672}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Specifications", "Specifications", "{89CC52DE-094F-4622-AE71-12E3406800E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Libraries.Specification.TestApi", "Common.Libraries.Specification.TestApi\Common.Libraries.Specification.TestApi.csproj", "{DCC0DD24-975B-4645-BA87-96CDA28220CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -337,6 +345,18 @@ Global
 		{440FB22B-F4D2-4E76-B76F-D0FA1D7AB62B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{440FB22B-F4D2-4E76-B76F-D0FA1D7AB62B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{440FB22B-F4D2-4E76-B76F-D0FA1D7AB62B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6579BA0-7E6E-48C4-9080-BEA0B175F3DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6579BA0-7E6E-48C4-9080-BEA0B175F3DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6579BA0-7E6E-48C4-9080-BEA0B175F3DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6579BA0-7E6E-48C4-9080-BEA0B175F3DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD19157B-E43B-42C0-AF8D-69F3224FF672}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD19157B-E43B-42C0-AF8D-69F3224FF672}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD19157B-E43B-42C0-AF8D-69F3224FF672}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD19157B-E43B-42C0-AF8D-69F3224FF672}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCC0DD24-975B-4645-BA87-96CDA28220CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCC0DD24-975B-4645-BA87-96CDA28220CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCC0DD24-975B-4645-BA87-96CDA28220CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCC0DD24-975B-4645-BA87-96CDA28220CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -398,6 +418,10 @@ Global
 		{49C9F315-0C69-47FA-B7AF-F542EDE64351} = {2ACAAEC8-3090-4C1C-9314-3C833CD308E4}
 		{6EE9E05D-2862-442C-8172-001ADA353BC5} = {2ACAAEC8-3090-4C1C-9314-3C833CD308E4}
 		{440FB22B-F4D2-4E76-B76F-D0FA1D7AB62B} = {0BD6CAC2-FC95-4A28-BD26-6207CD05304C}
+		{E6579BA0-7E6E-48C4-9080-BEA0B175F3DE} = {89CC52DE-094F-4622-AE71-12E3406800E1}
+		{FD19157B-E43B-42C0-AF8D-69F3224FF672} = {89CC52DE-094F-4622-AE71-12E3406800E1}
+		{89CC52DE-094F-4622-AE71-12E3406800E1} = {63F53406-8CE7-42FB-A927-1C45989219AA}
+		{DCC0DD24-975B-4645-BA87-96CDA28220CD} = {89CC52DE-094F-4622-AE71-12E3406800E1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {098DBDEC-B2B4-4933-B702-29F37D9A77A1}

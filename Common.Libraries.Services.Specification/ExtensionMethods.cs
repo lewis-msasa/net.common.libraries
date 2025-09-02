@@ -19,7 +19,7 @@ namespace Common.Libraries.Services.Specification
                 Expression.Invoke(left.Criteria, param),
                 Expression.Invoke(right.Criteria, param));
 
-            return new ExpressionSpecification<T>(Expression.Lambda<Func<T, bool>>(body, param));
+            return new Specification<T>().Where(Expression.Lambda<Func<T, bool>>(body, param));
         }
 
         public static ISpecification<T> Or<T>(this ISpecification<T> left, ISpecification<T> right)
@@ -30,20 +30,10 @@ namespace Common.Libraries.Services.Specification
                 Expression.Invoke(left.Criteria, param),
                 Expression.Invoke(right.Criteria, param));
 
-            return new ExpressionSpecification<T>(Expression.Lambda<Func<T, bool>>(body, param));
+            return new Specification<T>().Where(Expression.Lambda<Func<T, bool>>(body, param));
         }
     }
 
-    public class ExpressionSpecification<T> : Specification<T>
-    {
-        private readonly Expression<Func<T, bool>> _criteria;
-
-        public ExpressionSpecification(Expression<Func<T, bool>> criteria)
-        {
-            _criteria = criteria;
-        }
-
-        public override Expression<Func<T, bool>> Criteria => _criteria;
-    }
+   
 
 }

@@ -34,37 +34,29 @@ namespace Common.Libraries.Services.Specification.EFCore
             }
             return services;
         }
-        //public static IServiceCollection AddMappingDependencies(this IServiceCollection services, Assembly[] assemblies, Type contextType)
-        //{
-        //    foreach (var assembly in assemblies)
-        //    {
-        //        var allTypes = assembly.GetTypes();
+        public static IServiceCollection AddEntityMappers(this IServiceCollection services, params Assembly[] assemblies)
+        {
+            var mapperType = typeof(IEntityMapper<,>);
 
-        //        // Get all classes that implement IEntity
-        //        var entityTypes = allTypes
-        //            .Where(t => t.IsClass && !t.IsAbstract && typeof(ISpecEntity).IsAssignableFrom(t))
-        //            .ToList();
-        //        var dtoTypes = allTypes
-        //          .Where(t => t.IsClass && !t.IsAbstract && typeof(ISpecDto).IsAssignableFrom(t))
-        //          .ToDictionary(t => t.Name, t => t);
+            // If no assemblies passed, scan all loaded assemblies
+            var assembliesToScan = assemblies.Length > 0 ? assemblies : AppDomain.CurrentDomain.GetAssemblies();
 
+            var mapperImplementations = assembliesToScan
+                .SelectMany(a => a.GetTypes())
+                .Where(t => !t.IsAbstract && !t.IsInterface)
+                .SelectMany(t =>
+                    t.GetInterfaces()
+                        .Where(i => i.IsGenericType && i.GetGenericTypeDefinition() == mapperType)
+                        .Select(i => new { Implementation = t, Service = i })
+                );
 
-        //        foreach (var entityType in entityTypes)
-        //        {
-        //            var dtoName = entityType.Name + "Dto";
-        //            if (dtoTypes.TryGetValue(dtoName, out var dtoType))
-        //            {
-        //                var mapperInterface = typeof(IEntityMapper<,>).MakeGenericType(entityType, dtoType);
-        //                var mapperImplementation = typeof(EntityMapper<,>).MakeGenericType(entityType, dtoType);
-        //                services.AddScoped(mapperInterface, mapperImplementation);
-        //            }
-                   
+            foreach (var m in mapperImplementations)
+            {
+                services.AddScoped(m.Service, m.Implementation);
+            }
 
-        //        }
-
-        //    }
-        //    return services;
-        //}
+            return services;
+        }
         public static IServiceCollection AddEFUnitOfWorkDependencies(this IServiceCollection services, Type contextType)
         {
           
@@ -72,7 +64,7 @@ namespace Common.Libraries.Services.Specification.EFCore
 
             return services;
         }
-        public static IServiceCollection AddEFServicesDependencies(this IServiceCollection services, Assembly[] assemblies, Type contextType)
+        public static IServiceCollection AddEFServicesDependencies(this IServiceCollection services, Assembly[] assemblies, Type contextType, string dtoSufffix="Dto")
         {
 
             foreach (var assembly in assemblies)
@@ -94,7 +86,7 @@ namespace Common.Libraries.Services.Specification.EFCore
 
 
                     // Look for DTO with the same name + "Dto"
-                    var dtoName = entityType.Name + "Dto";
+                    var dtoName = entityType.Name + dtoSufffix;
                     if (dtoTypes.TryGetValue(dtoName, out var dtoType))
                     {
                         var serviceInterface = typeof(IService<,>).MakeGenericType(entityType, dtoType);

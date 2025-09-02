@@ -19,25 +19,25 @@ namespace Common.Libraries.Services.Specification.EFCore
             _context = context;
         }
 
-        public async Task<int> SaveChangesAsync()
+        public async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default!)
         {
-            return await _context.SaveChangesAsync();
+            return await _context.SaveChangesAsync(cancellationToken);
         }
 
-        public async Task BeginTransactionAsync()
+        public async Task BeginTransactionAsync(CancellationToken cancellationToken = default!)
         {
             if (_currentTransaction != null) return; // already started
-            _currentTransaction = await _context.Database.BeginTransactionAsync();
+            _currentTransaction = await _context.Database.BeginTransactionAsync(cancellationToken);
         }
 
-        public async Task CommitTransactionAsync()
+        public async Task CommitTransactionAsync(CancellationToken cancellationToken = default!)
         {
             try
             {
-                await _context.SaveChangesAsync();
+                await _context.SaveChangesAsync(cancellationToken);
                 if (_currentTransaction != null)
                 {
-                    await _currentTransaction.CommitAsync();
+                    await _currentTransaction.CommitAsync(cancellationToken);
                 }
             }
             catch
@@ -55,13 +55,13 @@ namespace Common.Libraries.Services.Specification.EFCore
             }
         }
 
-        public async Task RollbackTransactionAsync()
+        public async Task RollbackTransactionAsync(CancellationToken cancellationToken = default!)
         {
             try
             {
                 if (_currentTransaction != null)
                 {
-                    await _currentTransaction.RollbackAsync();
+                    await _currentTransaction.RollbackAsync(cancellationToken);
                 }
             }
             finally

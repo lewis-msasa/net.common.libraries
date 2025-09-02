@@ -36,6 +36,23 @@ namespace Common.Libraries.Services.Specification.EFCore
             var query = ApplySpecification(spec);
             return await query.CountAsync(cancellationToken);
         }
+        public async Task<T> AddAsync(T entity, CancellationToken cancellationToken = default!)
+        {
+            await _dbContext.Set<T>().AddAsync(entity,cancellationToken);
+            return entity; 
+        }
+
+        public Task UpdateAsync(T entity, CancellationToken cancellationToken = default!)
+        {
+            _dbContext.Set<T>().Update(entity);
+            return Task.CompletedTask;
+        }
+
+        public Task DeleteAsync(T entity, CancellationToken cancellationToken = default!)
+        {
+            _dbContext.Set<T>().Remove(entity);
+            return Task.CompletedTask;
+        }
 
         private IQueryable<T> ApplySpecification(ISpecification<T>? spec = null)
         {
